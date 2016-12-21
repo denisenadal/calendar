@@ -62,7 +62,10 @@
      */
     function loadCalendarApi() {
       console.log("begin api load");
-      gapi.client.load('calendar', 'v3', listUpcomingEvents);
+      //TODO get calID & calMonth
+      var calID = 'dmail.dixie.edu_o8rcipn2b5um5tc9b1ssjuo0mo@group.calendar.google.com';
+      var calMonth = "December";
+      gapi.client.load('calendar', 'v3', getEvents(calID,calMonth));
     }
 
     /**
@@ -70,43 +73,49 @@
      * the authorized user's calendar. If no events are found an
      * appropriate message is printed.
      */
-    function listUpcomingEvents() {
-      console.log("listUpcomingEvents runs");
-      var request = gapi.client.calendar.events.list({
-        'calendarId': 'dmail.dixie.edu_o8rcipn2b5um5tc9b1ssjuo0mo@group.calendar.google.com',
-        'timeMin': (new Date()).toISOString(),
-        'showDeleted': false,
-        'singleEvents': true,
-        'maxResults': 1000,
-        'orderBy': 'startTime'
-      });
+    function getEvents(calID,calMonth) {
+      return function(){
+        console.log("getEvents runs");
+        var request = gapi.client.calendar.events.list({
+            'calendarId': calID,
+            'timeMin': (new Date()).toISOString(),
+            'showDeleted': false,
+            'singleEvents': true,
+            'maxResults': 1000,
+            'orderBy': 'startTime'
+        });//end request definition
 
-      request.execute(function(resp) {
-        var calMonth = "December"
-        document.getElementById("cal-month").innerHTML = calMonth;
-        var events = resp.items;
-        var cells = document.getElementsByTagName('td');
-        console.log("length of cells: "+ cells.length);
-        appendPre('Upcoming events:');
-        if (events.length > 0) {
-          for (i = 0; i < events.length; i++) {
-            var event = events[i];
-            var when = event.start.dateTime;
-            if (!when) {
-              when = event.start.date;
+        request.execute(updateCalendar(resp));//ends execute callback function
+        };//ends anon return funcion
+    }//ends getEvents
+
+    function updateCalendar(resp) {
+        return function(){
+            var calMonth = "December"
+            document.getElementById("cal-month").innerHTML = calMonth;
+            var events = resp.items;
+            var cells = document.getElementsByTagName('td');
+            console.log("length of cells: "+ cells.length);
+            appendPre('Upcoming events:');
+            if (events.length > 0) {
+                for (i = 0; i < events.length; i++) {
+                    var event = events[i];
+                    var when = event.start.dateTime;
+                    if (!when) {
+                        when = event.start.date;
+                    }
+                    var when = new Date(Date.parse(when));
+                    var eventDate = when.getDate();
+                    var eventWeekDay = when.getDay();
+                    eventTime = when.toLocaleTimeString('en-US', { hour12: true,  hour:"numeric",minute:"2-digit" });
+                    cells[i].innerHTML = eventDate + '<br>' + event.summary + '<br> @' + eventTime;
+                }//ends events for loop
             }
-            var when = new Date(Date.parse(when));
-            var eventDate = when.getDate();
-            var eventWeekDay = when.getDay();
-            eventTime = when.toLocaleTimeString('en-US', { hour12: true,  hour:"numeric",minute:"2-digit" });
-            cells[i].innerHTML = eventDate + '<br>' + event.summary + '<br> @' + eventTime;
-          }
-        } else {
-          appendPre('No upcoming events found.');
-        }
-
-      });
-    }
+            else {
+                alert('No upcoming events found.');
+            }//end if/else for if returned events
+        }//end returned anon function
+    }//end updateCalendar
 
     /**
      * Append a pre element to the body containing the given message

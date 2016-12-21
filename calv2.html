@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>g-calendar test</title>
+    <style>
+        table,tr,tbody,thead,td,th{border-collapse: collapse;}
+        td{
+          width:150px;
+          height:150px;
+          border:1px solid #000;}
+        #authorized{display:none;}
+    </style>
+
+  <script type="text/javascript">
+    // Your Client ID can be retrieved from your project in the Google
+    // Developer Console, https://console.developers.google.com
+    var CLIENT_ID = '781532624008-amifuh5lt04sdbba90gojoq2tr656rse.apps.googleusercontent.com';
+
+    var SCOPES = ["https://www.googleapis.com/auth/calendar.readonly"];
+
+    /**
+     * Check if current user has authorized this application.
+     */
+    function checkAuth() {
+      gapi.auth.authorize(
+        {
+          'client_id': CLIENT_ID,
+          'scope': SCOPES.join(' '),
+          'immediate': true
+        }, handleAuthResult);
+    }
+
+    /** Handle response from authorization server.*/
+    function handleAuthResult(authResult) {
+      var authorizeDiv = document.getElementById('authorize-div');
+      var authorizedDiv = document.getElementById('authorized');
+      if (authResult && !authResult.error) {
+        // Hide auth UI, then load client library.
+        console.log("app has been authorized");
+        authorizeDiv.style.display = 'none';
+        authorizedDiv.style.display = 'block';
+        //TODO get value of user calID
+        //TODO get value of user selected month if no value use today's date
+        var calID = 'dmail.dixie.edu_o8rcipn2b5um5tc9b1ssjuo0mo@group.calendar.google.com';
+        var calMonth = new Date().getMonth;
+        loadCalendarApi(calID,calMonth);
+      } else {
+        // Show auth UI, allowing the user to initiate authorization by
+        // clicking authorize button.
+        authorizeDiv.style.display = 'inline';
+        console.log("not authorized");
+      }
+    }
+
+    /** Initiate auth flow in response to user clicking authorize button.*/
+    function handleAuthClick(event) {
+      gapi.auth.authorize(
+        {client_id: CLIENT_ID, scope: SCOPES, immediate: false},
+        handleAuthResult);
+      return false;
+    }
+
+    /**
+     * Load Google Calendar client library. List upcoming events
+     * once client library is loaded.
+     */
+    function loadCalendarApi(calID,calMonth) {
+      console.log("begin api load");
+      gapi.client.load('calendar', 'v3', getEvents(calID,calMonth));
+    }
+
+    /**
+     * Print the summary and start datetime/date of the next ten events in
+     * the authorized user's calendar. If no events are found an
+     * appropriate message is printed.
+     */
+    function getEvents(calID,calMonth) {
+      return function(){
+        console.log("getEvents runs");
+        var request = gapi.client.calendar.events.list({
+            'calendarId': calID,
+            'timeMin': (new Date()).toISOString(),
+            'showDeleted': false,
+            'singleEvents': true,
+            'maxResults': 1000,
+            'orderBy': 'startTime'
+        });//end request definition
+
+        request.execute(updateCalendar(resp));//ends execute callback function
+        };//ends anon return funcion
+    }//ends getEvents
+
+    function updateCalendar(resp) {
+        return function(){
+            document.getElementById("cal-month").innerHTML = calMonth;
+            var events = resp.items;
+            var cells = document.getElementsByTagName('td');
+            console.log("length of cells: "+ cells.length);
+
+                }//ends events for loop
+            }
+            else {
+                alert('No upcoming events found.');
+            }//end if/else for if returned events
+        }//end returned anon function
+    }//end updateCalendar
+
+    //builds the base calendar for selected month, or today if none is provided
+    function buildCalendar(calMonth){
+        //TODO build a calendar
+        var monthArray =  {'01':'January', '02':'February','04':'March','05':'April','06':'June','07':'July','08':'August','09':'September','10':'October','11':'November','0':'December'};
+        if (CalMonth){
+            //TODO go to selected month
+        }
+        else{
+            //TODO today's date
+        }
+    }//end buildCalendar
+  </script>
+  <script src="https://apis.google.com/js/client.js?onload=checkAuth">
+  </script>
+</head>
+</head>
+<body>
+    <div id="authorize-div">
+        <span>What is the CalendarID of the calendar you want to share?</span>
+        <input type="text" placeholder="google calendar ID" />
+        <span>Authorize access to Google Calendar API</span>
+        <!--Button for the user to click to initiate auth sequence -->
+        <button id="authorize-button" onclick="handleAuthClick(event)">
+          Authorize
+        </button>
+    </div>
+    <div id="authorized">
+        <h1 id="cal-month"></h1>
+        <table>
+        <thead>
+          <tr>
+            <th>Sunday</th>
+            <th>Monday</th>
+            <th>Tuesday</th>
+            <th>Wednesday</th>
+            <th>Thursday</th>
+            <th>Friday</th>
+            <th>Saturday</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td class="sun"></td>
+            <td class="mon"></td>
+            <td class="tues"></td>
+            <td class="wed"></td>
+            <td class="thurs"></td>
+            <td class="fri"></td>
+            <td class="sat"></td>
+          </tr>
+          <tr>
+            <td class="sun"></td>
+            <td class="mon"></td>
+            <td class="tues"></td>
+            <td class="wed"></td>
+            <td class="thurs"></td>
+            <td class="fri"></td>
+            <td class="sat"></td>
+          </tr>
+          <tr>
+            <td class="sun"></td>
+            <td class="mon"></td>
+            <td class="tues"></td>
+            <td class="wed"></td>
+            <td class="thurs"></td>
+            <td class="fri"></td>
+            <td class="sat"></td>
+          </tr>
+          <tr>
+            <td class="sun"></td>
+            <td class="mon"></td>
+            <td class="tues"></td>
+            <td class="wed"></td>
+            <td class="thurs"></td>
+            <td class="fri"></td>
+            <td class="sat"></td>
+          </tr>
+          <tr>
+            <td class="sun"></td>
+            <td class="mon"></td>
+            <td class="tues"></td>
+            <td class="wed"></td>
+            <td class="thurs"></td>
+            <td class="fri"></td>
+            <td class="sat"></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+</body>
+</html>
