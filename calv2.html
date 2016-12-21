@@ -265,7 +265,6 @@
     //set default month & year on page load
     var month = new Date().getMonth();
     var year = new Date().getFullYear();
-    console.log("i should be setting the year to "+year);
     var monthOptions = document.getElementById('cal-month').getElementsByTagName("option");
     var yearOptions = document.getElementById('cal-year').getElementsByTagName("option");
     for (var i=0; i < monthOptions.length; i++){
@@ -274,11 +273,23 @@
         }
     }
     for (var i=0; i < yearOptions.length; i++){
-        console.log(yearOptions[i])
         if(year == yearOptions[i].value){
             yearOptions[i].setAttribute("selected","selected");
         }
     }
+    var monthArray =  {'01':'January', '02':'February','04':'March','05':'April','06':'June','07':'July','08':'August','09':'September','10':'October','11':'November','0':'December'};
+    var calDays = document.getElementsByClassName('cal-day');
+    var dayOne = new Date(year,month,1);
+    var lastDay = new Date(year,parseInt(month)+1,0);
+    console.log("dayOne: "+dayOne);
+    console.log("lastday: "+lastDay);
+    var count = 0;
+    for (var i = dayOne.getDay(); i<lastDay+1; i++){
+        count+=1;
+        //FIXME day is not appending to node
+        calDays[i].textContent = count;
+    }//loop over days from starting day of week to end of month
+
     </script>
 </body>
 </html>
