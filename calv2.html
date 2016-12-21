@@ -6,15 +6,31 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>g-calendar test</title>
     <style>
+    *{
+        margin:0;
+        padding:0;
+        font-size: 18px;
+        line-height: 24px;
+    }
+        *{position: relative;box-sizing: border-box;}
         table,tr,tbody,thead,td,th{border-collapse: collapse;}
         td{
           width:150px;
           height:150px;
           border:1px solid #000;}
-        #authorized{display:none;}
+          #authorize-div{
+              background:rgba(0,100,255,.5);
+              padding:5rem;
+          }
+        #authorized{display:block;}
+        label,input,button{display: block;}
+        div{
+            width: 80%;
+            margin: 5rem auto;
+        }
     </style>
 
-  <script type="text/javascript">
+  <!-- <script type="text/javascript">
     // Your Client ID can be retrieved from your project in the Google
     // Developer Console, https://console.developers.google.com
     var CLIENT_ID = '781532624008-amifuh5lt04sdbba90gojoq2tr656rse.apps.googleusercontent.com';
@@ -97,15 +113,15 @@
                 document.getElementById("cal-month").innerHTML = calMonth + " " + calYear;
                 var calDays = document.getElementsByClassName('cal-day');
                 var calDates=[];
-                for (var i=0;i<calDays.length;i++){
+                for (var i=0; i<calDays.length; i++){
                     calDates[i] = calDays[i].textContent;
-                    for (var j=0;j<events.length,j++){
+                    for (var j=0; j<events.length; j++){
                         var when = events[i].start.dateTime;
                         if (!when) {
                             when = events[i].start.date;
                         }
                         var when = new Date(Date.parse(when));
-                        if(when.getDate(); == calDates[i]){
+                        if(when.getDate() == calDates[i]){
                             //add event to calendar
                             var eventTime = when.toLocaleTimeString('en-US', { hour12: true,  hour:"numeric",minute:"2-digit" });
                             var calEvent = (document.createElement('div')).setAttribute("class","cal-event");
@@ -126,33 +142,64 @@
 
 
     //builds the base calendar for selected month, or today if none is provided
-    function buildCalendar(calMonth){
-        //TODO build a calendar
+    function buildCalendar(){
+        var calYear = document.getElementById('cal-year').value;
+        var calMonth = document.getElementById('cal-month').value;
         var monthArray =  {'01':'January', '02':'February','04':'March','05':'April','06':'June','07':'July','08':'August','09':'September','10':'October','11':'November','0':'December'};
-        if (CalMonth){
-            //TODO go to selected month
-        }
-        else{
-            //TODO today's date
-        }
+        var calDays = document.getElementsByClassName('cal-day');
+        var dayOne = new Date(calYear,calMonth,1);
+        var lastDay = new Date(calYear,calMonth+1,0);
+        var count = 0;
+        for (var i = dayOne.getDay(); i<lastDay+1; i++){
+            count+=1;
+            calDays[i].innerHTML = count;
+        }//loop over days from starting day of week to end of month
+
     }//end buildCalendar
+
   </script>
   <script src="https://apis.google.com/js/client.js?onload=checkAuth">
-  </script>
+  </script> -->
 </head>
 </head>
 <body>
     <div id="authorize-div">
-        <span>What is the CalendarID of the calendar you want to share?</span>
-        <input type="text" placeholder="google calendar ID" />
-        <span>Authorize access to Google Calendar API</span>
+        <label for="g-id">What is the CalendarID of the calendar you want to share?</label>
+        <input type="text" placeholder="google calendar ID" id="g-id"/>
+        <label for="authorize-button">Authorize access to Google Calendar API</label>
         <!--Button for the user to click to initiate auth sequence -->
         <button id="authorize-button" onclick="handleAuthClick(event)">
           Authorize
         </button>
     </div>
     <div id="authorized">
-        <h1 id="cal-month"></h1>
+        <select name="month" id="cal-month">
+            <option value="0">January</option>
+            <option value="1">February</option>
+            <option value="2">March</option>
+            <option value="3">April</option>
+            <option value="4">May</option>
+            <option value="5">June</option>
+            <option value="6">July</option>
+            <option value="7">August</option>
+            <option value="8">September</option>
+            <option value="9">October</option>
+            <option value="10">November</option>
+            <option value="11">December</option>
+        </select>
+        <select name="year" id="cal-year">
+            <option value="2012">2012</option>
+            <option value="2013">2013</option>
+            <option value="2014">2014</option>
+            <option value="2015">2015</option>
+            <option value="2016">2016</option>
+            <option value="2017">2017</option>
+            <option value="2018">2018</option>
+            <option value="2019">2019</option>
+            <option value="2020">2020</option>
+            <option value="2021">2021</option>
+        </select>
+        <!--TODO create drop downs to select month and year - prefilled with today's values -->
         <table>
         <thead>
           <tr>
@@ -214,5 +261,24 @@
         </tbody>
       </table>
     </div>
+    <script>
+    //set default month & year on page load
+    var month = new Date().getMonth();
+    var year = new Date().getFullYear();
+    console.log("i should be setting the year to "+year);
+    var monthOptions = document.getElementById('cal-month').getElementsByTagName("option");
+    var yearOptions = document.getElementById('cal-year').getElementsByTagName("option");
+    for (var i=0; i < monthOptions.length; i++){
+        if(month = monthOptions[i].value){
+            monthOptions[i].setAttribute("selected","selected");
+        }
+    }
+    for (var i=0; i < yearOptions.length; i++){
+        console.log(yearOptions[i])
+        if(year == yearOptions[i].value){
+            yearOptions[i].setAttribute("selected","selected");
+        }
+    }
+    </script>
 </body>
 </html>
