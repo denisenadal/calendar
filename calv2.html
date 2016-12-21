@@ -44,9 +44,11 @@
         authorizedDiv.style.display = 'block';
         //TODO get value of user calID
         //TODO get value of user selected month if no value use today's date
+        //TODO get value of user selected year
         var calID = 'dmail.dixie.edu_o8rcipn2b5um5tc9b1ssjuo0mo@group.calendar.google.com';
         var calMonth = new Date().getMonth;
-        loadCalendarApi(calID,calMonth);
+        var calYear = new Date().getFullYear;
+        loadCalendarApi(calID,calMonth,calYear);
       } else {
         // Show auth UI, allowing the user to initiate authorization by
         // clicking authorize button.
@@ -64,49 +66,64 @@
     }
 
     /**
-     * Load Google Calendar client library. List upcoming events
-     * once client library is loaded.
-     */
-    function loadCalendarApi(calID,calMonth) {
+     * Load Google Calendar client library. & calls getEvents when loaded*/
+    function loadCalendarApi(calID,calMonth,calYear) {
       console.log("begin api load");
-      gapi.client.load('calendar', 'v3', getEvents(calID,calMonth));
+      gapi.client.load('calendar', 'v3', getEvents(calID,calMonth,calYear));
     }
 
-    /**
-     * Print the summary and start datetime/date of the next ten events in
-     * the authorized user's calendar. If no events are found an
-     * appropriate message is printed.
-     */
-    function getEvents(calID,calMonth) {
+    /**makes the request and returns events for specified date range*/
+    function getEvents(calID,calMonth,calYear) {
       return function(){
         console.log("getEvents runs");
         var request = gapi.client.calendar.events.list({
             'calendarId': calID,
-            'timeMin': (new Date()).toISOString(),
+            'timeMin': (new Date(calYear,calMonth,1,0,0,0)).toISOString(),
+            'timeMax': (new Date(calYear,calMonth+1,0,23,59,59)).toISOString(),
             'showDeleted': false,
             'singleEvents': true,
             'maxResults': 1000,
             'orderBy': 'startTime'
         });//end request definition
 
-        request.execute(updateCalendar(resp));//ends execute callback function
+        request.execute(updateCalendar(resp,calMonth,calYear));//updates calendar on success
         };//ends anon return funcion
     }//ends getEvents
 
-    function updateCalendar(resp) {
+    function updateCalendar(resp,calMonth,calYear) {
         return function(){
-            document.getElementById("cal-month").innerHTML = calMonth;
             var events = resp.items;
-            var cells = document.getElementsByTagName('td');
-            console.log("length of cells: "+ cells.length);
+            if (events.length > 0) {
+                document.getElementById("cal-month").innerHTML = calMonth + " " + calYear;
+                var calDays = document.getElementsByClassName('cal-day');
+                var calDates=[];
+                for (var i=0;i<calDays.length;i++){
+                    calDates[i] = calDays[i].textContent;
+                    for (var j=0;j<events.length,j++){
+                        var when = events[i].start.dateTime;
+                        if (!when) {
+                            when = events[i].start.date;
+                        }
+                        var when = new Date(Date.parse(when));
+                        if(when.getDate(); == calDates[i]){
+                            //add event to calendar
+                            var eventTime = when.toLocaleTimeString('en-US', { hour12: true,  hour:"numeric",minute:"2-digit" });
+                            var calEvent = (document.createElement('div')).setAttribute("class","cal-event");
+                            calEvent.innerHTML =  + when.getDate(); + '<br>' + event.summary + '<br> @' + eventTime;
 
-                }//ends events for loop
+                            calDays[i].appendChild(calEvent);
+                        }
+                    }//for each event in list
+                }//for each day in calendar
+
             }
             else {
                 alert('No upcoming events found.');
             }//end if/else for if returned events
         }//end returned anon function
     }//end updateCalendar
+
+
 
     //builds the base calendar for selected month, or today if none is provided
     function buildCalendar(calMonth){
@@ -150,49 +167,49 @@
         </thead>
         <tbody>
           <tr>
-            <td class="sun"></td>
-            <td class="mon"></td>
-            <td class="tues"></td>
-            <td class="wed"></td>
-            <td class="thurs"></td>
-            <td class="fri"></td>
-            <td class="sat"></td>
+            <td class="cal-day sun"></td>
+            <td class="cal-day mon"></td>
+            <td class="cal-day tues"></td>
+            <td class="cal-day wed"></td>
+            <td class="cal-day thurs"></td>
+            <td class="cal-day fri"></td>
+            <td class="cal-day sat"></td>
           </tr>
           <tr>
-            <td class="sun"></td>
-            <td class="mon"></td>
-            <td class="tues"></td>
-            <td class="wed"></td>
-            <td class="thurs"></td>
-            <td class="fri"></td>
-            <td class="sat"></td>
+            <td class="cal-day sun"></td>
+            <td class="cal-day mon"></td>
+            <td class="cal-day tues"></td>
+            <td class="cal-day wed"></td>
+            <td class="cal-day thurs"></td>
+            <td class="cal-day fri"></td>
+            <td class="cal-day sat"></td>
           </tr>
           <tr>
-            <td class="sun"></td>
-            <td class="mon"></td>
-            <td class="tues"></td>
-            <td class="wed"></td>
-            <td class="thurs"></td>
-            <td class="fri"></td>
-            <td class="sat"></td>
+            <td class="cal-day sun"></td>
+            <td class="cal-day mon"></td>
+            <td class="cal-day tues"></td>
+            <td class="cal-day wed"></td>
+            <td class="cal-day thurs"></td>
+            <td class="cal-day fri"></td>
+            <td class="cal-day sat"></td>
           </tr>
           <tr>
-            <td class="sun"></td>
-            <td class="mon"></td>
-            <td class="tues"></td>
-            <td class="wed"></td>
-            <td class="thurs"></td>
-            <td class="fri"></td>
-            <td class="sat"></td>
+            <td class="cal-day sun"></td>
+            <td class="cal-day mon"></td>
+            <td class="cal-day tues"></td>
+            <td class="cal-day wed"></td>
+            <td class="cal-day thurs"></td>
+            <td class="cal-day fri"></td>
+            <td class="cal-day sat"></td>
           </tr>
           <tr>
-            <td class="sun"></td>
-            <td class="mon"></td>
-            <td class="tues"></td>
-            <td class="wed"></td>
-            <td class="thurs"></td>
-            <td class="fri"></td>
-            <td class="sat"></td>
+            <td class="cal-day sun"></td>
+            <td class="cal-day mon"></td>
+            <td class="cal-day tues"></td>
+            <td class="cal-day wed"></td>
+            <td class="cal-day thurs"></td>
+            <td class="cal-day fri"></td>
+            <td class="cal-day sat"></td>
           </tr>
         </tbody>
       </table>
