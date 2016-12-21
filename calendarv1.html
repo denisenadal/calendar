@@ -8,8 +8,8 @@
   <style>
     table,tr,tbody,thead,td,th{border-collapse: collapse;}
     td{
-      width:200px;
-      height:200px;
+      width:150px;
+      height:150px;
       border:1px solid #000;}
   </style>
 
@@ -71,18 +71,19 @@
      * appropriate message is printed.
      */
     function listUpcomingEvents() {
-      console.log("listUpcomingEvents");
+      console.log("listUpcomingEvents runs");
       var request = gapi.client.calendar.events.list({
         'calendarId': 'dmail.dixie.edu_o8rcipn2b5um5tc9b1ssjuo0mo@group.calendar.google.com',
         'timeMin': (new Date()).toISOString(),
         'showDeleted': false,
         'singleEvents': true,
-        'maxResults': 10,
+        'maxResults': 1000,
         'orderBy': 'startTime'
       });
-      console.log(typeof request);
 
       request.execute(function(resp) {
+        var calMonth = "December"
+        document.getElementById("cal-month").innerHTML = calMonth;
         var events = resp.items;
         var cells = document.getElementsByTagName('td');
         console.log("length of cells: "+ cells.length);
@@ -97,10 +98,8 @@
             var when = new Date(Date.parse(when));
             var eventDate = when.getDate();
             var eventWeekDay = when.getDay();
-            var eventTime = ("0"+when.getMinutes()).slice(-2);
-            eventTime = when.getHours()+"" + eventTime;
-            cells[i].innerHTML =eventDate + '<br>' event.summary + '<br> @' + eventTime;
-
+            eventTime = when.toLocaleTimeString('en-US', { hour12: true,  hour:"numeric",minute:"2-digit" });
+            cells[i].innerHTML = eventDate + '<br>' + event.summary + '<br> @' + eventTime;
           }
         } else {
           appendPre('No upcoming events found.');
@@ -136,7 +135,7 @@
       Authorize
     </button>
   </div>
-
+<h1 id="cal-month"></h1>
   <table>
     <thead>
       <tr>
