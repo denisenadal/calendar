@@ -107,8 +107,8 @@
                     var when = new Date(Date.parse(when));
                     var eventDate = when.getDate();
                     var eventWeekDay = when.getDay();
-                    eventTime = when.toLocaleTimeString('en-US', { hour12: true,  hour:"numeric",minute:"2-digit" });
-                    cells[i].innerHTML = eventDate + '<br>' + event.summary + '<br> @' + eventTime;
+                    var eventTime = when.toLocaleTimeString('en-US', { hour12: true,  hour:"numeric",minute:"2-digit" });
+                    cells[i].innerHTML = when.getDate(); + '<br>' + event.summary + '<br> @' + eventTime;
                 }//ends events for loop
             }
             else {

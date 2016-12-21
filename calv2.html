@@ -11,26 +11,37 @@
         padding:0;
         font-size: 18px;
         line-height: 24px;
+        font-family: sans-serif;
     }
-        *{position: relative;box-sizing: border-box;}
-        table,tr,tbody,thead,td,th{border-collapse: collapse;}
-        td{
-          width:150px;
-          height:150px;
-          border:1px solid #000;}
-          #authorize-div{
-              background:rgba(0,100,255,.5);
-              padding:5rem;
-          }
+    *{position: relative;box-sizing: border-box;}
+    table,tr,tbody,thead,td,th{border-collapse: collapse;}
+    td{
+        width:8rem;
+        height:8rem;
+        border:1px solid rgba(0,0,0,.1);
+        vertical-align: top;
+        padding:1rem;
+      }
+      #authorize-div{
+        background:rgba(0,100,255,.5);
+        padding:5rem;
+      }
         #authorized{display:block;}
         label,input,button{display: block;}
-        div{
+        .wrap{
             width: 80%;
             margin: 5rem auto;
         }
+        .cal-event{
+            padding:.5rem;
+        }
+        .cal-event p,.cal-event br{
+            font-size: 14px;
+            line-height: 18px;
+        }
     </style>
 
-  <!-- <script type="text/javascript">
+ <script type="text/javascript">
     // Your Client ID can be retrieved from your project in the Google
     // Developer Console, https://console.developers.google.com
     var CLIENT_ID = '781532624008-amifuh5lt04sdbba90gojoq2tr656rse.apps.googleusercontent.com';
@@ -59,11 +70,9 @@
         authorizeDiv.style.display = 'none';
         authorizedDiv.style.display = 'block';
         //TODO get value of user calID
-        //TODO get value of user selected month if no value use today's date
-        //TODO get value of user selected year
+        var calYear = parseInt(document.getElementById('cal-year').value);
+        var calMonth = parseInt(document.getElementById('cal-month').value);
         var calID = 'dmail.dixie.edu_o8rcipn2b5um5tc9b1ssjuo0mo@group.calendar.google.com';
-        var calMonth = new Date().getMonth;
-        var calYear = new Date().getFullYear;
         loadCalendarApi(calID,calMonth,calYear);
       } else {
         // Show auth UI, allowing the user to initiate authorization by
@@ -92,52 +101,58 @@
     function getEvents(calID,calMonth,calYear) {
       return function(){
         console.log("getEvents runs");
+        var test = new Date(calYear,parseInt(calMonth)+1,0,23,59,59);
         var request = gapi.client.calendar.events.list({
             'calendarId': calID,
             'timeMin': (new Date(calYear,calMonth,1,0,0,0)).toISOString(),
-            'timeMax': (new Date(calYear,calMonth+1,0,23,59,59)).toISOString(),
+            'timeMax': (new Date(calYear,parseInt(calMonth)+1,0,23,59,59)).toISOString(),
             'showDeleted': false,
             'singleEvents': true,
             'maxResults': 1000,
             'orderBy': 'startTime'
         });//end request definition
 
-        request.execute(updateCalendar(resp,calMonth,calYear));//updates calendar on success
-        };//ends anon return funcion
+        request.then(
+            function (resp) {
+                var calYear = parseInt(document.getElementById('cal-year').value);
+                var calMonth = parseInt(document.getElementById('cal-month').value);
+                var events = JSON.parse(resp.body);
+                events = events["items"];
+                console.log("number of events: "+events.length);
+                if (events.length > 0) {
+                    var calDays = document.getElementsByClassName('cal-day');
+                    var calDates=[];
+                    for (var i=0; i<calDays.length; i++){
+                        calDates[i] = calDays[i].textContent;
+                        console.log("date in box: "+calDates[i]);
+                        for (var j=0; j<events.length; j++){
+                            var event =  events[j];
+                            var when = event.start.dateTime;
+                            if (!when) {
+                                when = event.start.date;
+                            }
+                            var when = new Date(Date.parse(when));
+                            if(when.getDate() == calDates[i]){
+                                //add event to calendar
+                                var eventTime = when.toLocaleTimeString('en-US', { hour12: true,  hour:"numeric",minute:"2-digit" });
+                                var calEvent = document.createElement('div');
+                                calEvent.setAttribute('class','cal-event')
+                                console.log(calEvent);
+                                calEvent.innerHTML =  '<p>' + event.summary + '<br> @' + eventTime + '</p>';
+
+                                calDays[i].appendChild(calEvent);
+                            }
+                        }//for each event in list
+                    }//for each day in calendar
+                }//ends if there's events
+                else {
+                    alert('No upcoming events found.');
+                }//end if/else for if returned events
+            }, //end success function
+        function(){alert("failed!");}
+        ); //ends then function
+      };//ends anon return function
     }//ends getEvents
-
-    function updateCalendar(resp,calMonth,calYear) {
-        return function(){
-            var events = resp.items;
-            if (events.length > 0) {
-                document.getElementById("cal-month").innerHTML = calMonth + " " + calYear;
-                var calDays = document.getElementsByClassName('cal-day');
-                var calDates=[];
-                for (var i=0; i<calDays.length; i++){
-                    calDates[i] = calDays[i].textContent;
-                    for (var j=0; j<events.length; j++){
-                        var when = events[i].start.dateTime;
-                        if (!when) {
-                            when = events[i].start.date;
-                        }
-                        var when = new Date(Date.parse(when));
-                        if(when.getDate() == calDates[i]){
-                            //add event to calendar
-                            var eventTime = when.toLocaleTimeString('en-US', { hour12: true,  hour:"numeric",minute:"2-digit" });
-                            var calEvent = (document.createElement('div')).setAttribute("class","cal-event");
-                            calEvent.innerHTML =  + when.getDate(); + '<br>' + event.summary + '<br> @' + eventTime;
-
-                            calDays[i].appendChild(calEvent);
-                        }
-                    }//for each event in list
-                }//for each day in calendar
-
-            }
-            else {
-                alert('No upcoming events found.');
-            }//end if/else for if returned events
-        }//end returned anon function
-    }//end updateCalendar
 
 
 
@@ -155,15 +170,23 @@
             calDays[i].innerHTML = count;
         }//loop over days from starting day of week to end of month
 
+        var dayOne = new Date(year,month,1);
+        var lastDay = new Date(year,parseInt(month)+1,0);
+        var count = 0;
+        for (var i = dayOne.getDay(); i<parseInt(lastDay.getDate())+1; i++){
+            count+=1;
+            //FIXME day is not appending to node
+            calDays[i].textContent = count;
+        }//loop over days from starting day of week to end of month
     }//end buildCalendar
 
   </script>
   <script src="https://apis.google.com/js/client.js?onload=checkAuth">
-  </script> -->
+  </script>
 </head>
 </head>
 <body>
-    <div id="authorize-div">
+    <div id="authorize-div" class="wrap">
         <label for="g-id">What is the CalendarID of the calendar you want to share?</label>
         <input type="text" placeholder="google calendar ID" id="g-id"/>
         <label for="authorize-button">Authorize access to Google Calendar API</label>
@@ -172,7 +195,7 @@
           Authorize
         </button>
     </div>
-    <div id="authorized">
+    <div id="authorized" class="wrap">
         <select name="month" id="cal-month">
             <option value="0">January</option>
             <option value="1">February</option>
@@ -277,18 +300,8 @@
             yearOptions[i].setAttribute("selected","selected");
         }
     }
-    var monthArray =  {'01':'January', '02':'February','04':'March','05':'April','06':'June','07':'July','08':'August','09':'September','10':'October','11':'November','0':'December'};
-    var calDays = document.getElementsByClassName('cal-day');
-    var dayOne = new Date(year,month,1);
-    var lastDay = new Date(year,parseInt(month)+1,0);
-    console.log("dayOne: "+dayOne);
-    console.log("lastday: "+lastDay);
-    var count = 0;
-    for (var i = dayOne.getDay(); i<lastDay+1; i++){
-        count+=1;
-        //FIXME day is not appending to node
-        calDays[i].textContent = count;
-    }//loop over days from starting day of week to end of month
+    //builds default calendar
+    buildCalendar();
 
     </script>
 </body>

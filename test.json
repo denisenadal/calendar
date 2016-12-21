@@ -1,0 +1,2756 @@
+{
+	"kind": "calendar#events",
+	"etag": "\"p324bnid9p62t20g\"",
+	"summary": "Intern Schedule",
+	"updated": "2016-12-21T15:12:35.909Z",
+	"timeZone": "America/Denver",
+	"accessRole": "owner",
+	"defaultReminders": [],
+	"items": [
+		{
+			"kind": "calendar#event",
+			"etag": "\"2945682170784000\"",
+			"id": "d25jvhvfmdp5m97tsdlprs538c_20161201T170000Z",
+			"status": "confirmed",
+			"htmlLink": "https://www.google.com/calendar/event?eid=ZDI1anZodmZtZHA1bTk3dHNkbHByczUzOGNfMjAxNjEyMDFUMTcwMDAwWiBkbWFpbC5kaXhpZS5lZHVfbzhyY2lwbjJiNXVtNXRjOWIxc3NqdW8wbW9AZw",
+			"created": "2016-08-17T17:53:51.000Z",
+			"updated": "2016-09-02T18:31:25.392Z",
+			"summary": "Denise",
+			"colorId": "3",
+			"creator": {
+				"email": "d00310169@dmail.dixie.edu",
+				"displayName": "D00310169@dmail.dixie.edu"
+			},
+			"organizer": {
+				"email": "dmail.dixie.edu_o8rcipn2b5um5tc9b1ssjuo0mo@group.calendar.google.com",
+				"displayName": "Intern Schedule",
+				"self": true
+			},
+			"start": {
+				"dateTime": "2016-12-01T10:00:00-07:00",
+				"timeZone": "America/Denver"
+			},
+			"end": {
+				"dateTime": "2016-12-01T12:00:00-07:00",
+				"timeZone": "America/Denver"
+			},
+			"recurringEventId": "d25jvhvfmdp5m97tsdlprs538c_R20160906T160000",
+			"originalStartTime": {
+				"dateTime": "2016-12-01T10:00:00-07:00",
+				"timeZone": "America/Denver"
+			},
+			"iCalUID": "d25jvhvfmdp5m97tsdlprs538c_R20160906T160000@google.com",
+			"sequence": 1,
+			"hangoutLink": "https://plus.google.com/hangouts/_/dmail.dixie.edu/denise?hceid=ZG1haWwuZGl4aWUuZWR1X284cmNpcG4yYjV1bTV0YzliMXNzanVvMG1vQGdyb3VwLmNhbGVuZGFyLmdvb2dsZS5jb20.7gtbv2a0095emh6jj329c1q5q0",
+			"reminders": {
+				"useDefault": true
+			}
+		},
+		{
+			"kind": "calendar#event",
+			"etag": "\"2954011452734000\"",
+			"id": "2oo0ivu65bic8jpt1r1p5um79c_20161201T190000Z",
+			"status": "confirmed",
+			"htmlLink": "https://www.google.com/calendar/event?eid=Mm9vMGl2dTY1YmljOGpwdDFyMXA1dW03OWNfMjAxNjEyMDFUMTkwMDAwWiBkbWFpbC5kaXhpZS5lZHVfbzhyY2lwbjJiNXVtNXRjOWIxc3NqdW8wbW9AZw",
+			"created": "2016-09-06T22:13:35.000Z",
+			"updated": "2016-10-20T23:22:06.367Z",
+			"summary": "Ross",
+			"colorId": "10",
+			"creator": {
+				"email": "d00310169@dmail.dixie.edu",
+				"displayName": "D00310169@dmail.dixie.edu"
+			},
+			"organizer": {
+				"email": "dmail.dixie.edu_o8rcipn2b5um5tc9b1ssjuo0mo@group.calendar.google.com",
+				"displayName": "Intern Schedule",
+				"self": true
+			},
+			"start": {
+				"dateTime": "2016-12-01T12:00:00-07:00",
+				"timeZone": "America/Denver"
+			},
+			"end": {
+				"dateTime": "2016-12-01T15:00:00-07:00",
+				"timeZone": "America/Denver"
+			},
+			"recurringEventId": "2oo0ivu65bic8jpt1r1p5um79c",
+			"originalStartTime": {
+				"dateTime": "2016-12-01T12:00:00-07:00",
+				"timeZone": "America/Denver"
+			},
+			"iCalUID": "2oo0ivu65bic8jpt1r1p5um79c@google.com",
+			"sequence": 2,
+			"hangoutLink": "https://plus.google.com/hangouts/_/dmail.dixie.edu/ross?hceid=ZG1haWwuZGl4aWUuZWR1X284cmNpcG4yYjV1bTV0YzliMXNzanVvMG1vQGdyb3VwLmNhbGVuZGFyLmdvb2dsZS5jb20.lnhrmvdi9skqus5cabmcfl2d8s",
+			"reminders": {
+				"useDefault": true
+			}
+		},
+		{
+			"kind": "calendar#event",
+			"etag": "\"2947907344080000\"",
+			"id": "dj708n6g0mnkhtdkn9jef2s4kc_20161201T210000Z",
+			"status": "confirmed",
+			"htmlLink": "https://www.google.com/calendar/event?eid=ZGo3MDhuNmcwbW5raHRka245amVmMnM0a2NfMjAxNjEyMDFUMjEwMDAwWiBkbWFpbC5kaXhpZS5lZHVfbzhyY2lwbjJiNXVtNXRjOWIxc3NqdW8wbW9AZw",
+			"created": "2016-08-24T16:34:00.000Z",
+			"updated": "2016-09-15T15:34:32.040Z",
+			"summary": "Victoria",
+			"colorId": "5",
+			"creator": {
+				"email": "d00310169@dmail.dixie.edu",
+				"displayName": "D00310169@dmail.dixie.edu"
+			},
+			"organizer": {
+				"email": "dmail.dixie.edu_o8rcipn2b5um5tc9b1ssjuo0mo@group.calendar.google.com",
+				"displayName": "Intern Schedule",
+				"self": true
+			},
+			"start": {
+				"dateTime": "2016-12-01T14:00:00-07:00",
+				"timeZone": "America/Denver"
+			},
+			"end": {
+				"dateTime": "2016-12-01T16:00:00-07:00",
+				"timeZone": "America/Denver"
+			},
+			"recurringEventId": "dj708n6g0mnkhtdkn9jef2s4kc",
+			"originalStartTime": {
+				"dateTime": "2016-12-01T14:00:00-07:00",
+				"timeZone": "America/Denver"
+			},
+			"iCalUID": "dj708n6g0mnkhtdkn9jef2s4kc@google.com",
+			"sequence": 1,
+			"hangoutLink": "https://plus.google.com/hangouts/_/dmail.dixie.edu/dmail-dixie-edu?hceid=ZG1haWwuZGl4aWUuZWR1X284cmNpcG4yYjV1bTV0YzliMXNzanVvMG1vQGdyb3VwLmNhbGVuZGFyLmdvb2dsZS5jb20.99c4q8oec01bkhqc3cipi2gjf4",
+			"reminders": {
+				"useDefault": true
+			}
+		},
+		{
+			"kind": "calendar#event",
+			"etag": "\"2946398271354000\"",
+			"id": "kmftp21tkoaid48dskvvq1ce5s_20161201T210000Z",
+			"status": "confirmed",
+			"htmlLink": "https://www.google.com/calendar/event?eid=a21mdHAyMXRrb2FpZDQ4ZHNrdnZxMWNlNXNfMjAxNjEyMDFUMjEwMDAwWiBkbWFpbC5kaXhpZS5lZHVfbzhyY2lwbjJiNXVtNXRjOWIxc3NqdW8wbW9AZw",
+			"created": "2016-08-19T18:39:31.000Z",
+			"updated": "2016-09-06T21:58:55.677Z",
+			"summary": "Matt",
+			"colorId": "11",
+			"creator": {
+				"email": "d00310169@dmail.dixie.edu",
+				"displayName": "D00310169@dmail.dixie.edu"
+			},
+			"organizer": {
+				"email": "dmail.dixie.edu_o8rcipn2b5um5tc9b1ssjuo0mo@group.calendar.google.com",
+				"displayName": "Intern Schedule",
+				"self": true
+			},
+			"start": {
+				"dateTime": "2016-12-01T14:00:00-07:00",
+				"timeZone": "America/Denver"
+			},
+			"end": {
+				"dateTime": "2016-12-01T15:00:00-07:00",
+				"timeZone": "America/Denver"
+			},
+			"recurringEventId": "kmftp21tkoaid48dskvvq1ce5s_R20160906T200000",
+			"originalStartTime": {
+				"dateTime": "2016-12-01T14:00:00-07:00",
+				"timeZone": "America/Denver"
+			},
+			"iCalUID": "kmftp21tkoaid48dskvvq1ce5s_R20160906T200000@google.com",
+			"sequence": 1,
+			"hangoutLink": "https://plus.google.com/hangouts/_/dmail.dixie.edu/matt?hceid=ZG1haWwuZGl4aWUuZWR1X284cmNpcG4yYjV1bTV0YzliMXNzanVvMG1vQGdyb3VwLmNhbGVuZGFyLmdvb2dsZS5jb20.kmftp21tkoaid48dskvvq1ce5s",
+			"reminders": {
+				"useDefault": true
+			}
+		},
+		{
+			"kind": "calendar#event",
+			"etag": "\"2943082845634000\"",
+			"id": "8e791908knbg8dqfsd9ch06hj0_20161201T220000Z",
+			"status": "confirmed",
+			"htmlLink": "https://www.google.com/calendar/event?eid=OGU3OTE5MDhrbmJnOGRxZnNkOWNoMDZoajBfMjAxNjEyMDFUMjIwMDAwWiBkbWFpbC5kaXhpZS5lZHVfbzhyY2lwbjJiNXVtNXRjOWIxc3NqdW8wbW9AZw",
+			"created": "2016-08-17T17:51:42.000Z",
+			"updated": "2016-08-18T17:30:22.817Z",
+			"summary": "Nick",
+			"colorId": "9",
+			"creator": {
+				"email": "d00310169@dmail.dixie.edu",
+				"displayName": "D00310169@dmail.dixie.edu"
+			},
+			"organizer": {
+				"email": "dmail.dixie.edu_o8rcipn2b5um5tc9b1ssjuo0mo@group.calendar.google.com",
+				"displayName": "Intern Schedule",
+				"self": true
+			},
+			"start": {
+				"dateTime": "2016-12-01T15:00:00-07:00",
+				"timeZone": "America/Denver"
+			},
+			"end": {
+				"dateTime": "2016-12-01T17:00:00-07:00",
+				"timeZone": "America/Denver"
+			},
+			"recurringEventId": "8e791908knbg8dqfsd9ch06hj0",
+			"originalStartTime": {
+				"dateTime": "2016-12-01T15:00:00-07:00",
+				"timeZone": "America/Denver"
+			},
+			"iCalUID": "8e791908knbg8dqfsd9ch06hj0@google.com",
+			"sequence": 3,
+			"hangoutLink": "https://plus.google.com/hangouts/_/dmail.dixie.edu/nick?hceid=ZG1haWwuZGl4aWUuZWR1X284cmNpcG4yYjV1bTV0YzliMXNzanVvMG1vQGdyb3VwLmNhbGVuZGFyLmdvb2dsZS5jb20.8e791908knbg8dqfsd9ch06hj0",
+			"reminders": {
+				"useDefault": true
+			}
+		},
+		{
+			"kind": "calendar#event",
+			"etag": "\"2942912975156000\"",
+			"id": "g6n67nh04cbbojskqjkaei241o_20161201T230000Z",
+			"status": "confirmed",
+			"htmlLink": "https://www.google.com/calendar/event?eid=ZzZuNjduaDA0Y2Jib2pza3Fqa2FlaTI0MW9fMjAxNjEyMDFUMjMwMDAwWiBkbWFpbC5kaXhpZS5lZHVfbzhyY2lwbjJiNXVtNXRjOWIxc3NqdW8wbW9AZw",
+			"created": "2016-08-17T17:54:29.000Z",
+			"updated": "2016-08-17T17:54:47.578Z",
+			"summary": "Denise",
+			"colorId": "3",
+			"creator": {
+				"email": "d00310169@dmail.dixie.edu",
+				"displayName": "D00310169@dmail.dixie.edu"
+			},
+			"organizer": {
+				"email": "dmail.dixie.edu_o8rcipn2b5um5tc9b1ssjuo0mo@group.calendar.google.com",
+				"displayName": "Intern Schedule",
+				"self": true
+			},
+			"start": {
+				"dateTime": "2016-12-01T16:00:00-07:00",
+				"timeZone": "America/Denver"
+			},
+			"end": {
+				"dateTime": "2016-12-01T17:00:00-07:00",
+				"timeZone": "America/Denver"
+			},
+			"recurringEventId": "g6n67nh04cbbojskqjkaei241o",
+			"originalStartTime": {
+				"dateTime": "2016-12-01T16:00:00-07:00",
+				"timeZone": "America/Denver"
+			},
+			"iCalUID": "g6n67nh04cbbojskqjkaei241o@google.com",
+			"sequence": 1,
+			"hangoutLink": "https://plus.google.com/hangouts/_/dmail.dixie.edu/denise?hceid=ZG1haWwuZGl4aWUuZWR1X284cmNpcG4yYjV1bTV0YzliMXNzanVvMG1vQGdyb3VwLmNhbGVuZGFyLmdvb2dsZS5jb20.g6n67nh04cbbojskqjkaei241o",
+			"reminders": {
+				"useDefault": true
+			}
+		},
+		{
+			"kind": "calendar#event",
+			"etag": "\"2943082180326000\"",
+			"id": "d26l1tf0vjatr0l4hks8mmnh7s_20161202T170000Z",
+			"status": "confirmed",
+			"htmlLink": "https://www.google.com/calendar/event?eid=ZDI2bDF0ZjB2amF0cjBsNGhrczhtbW5oN3NfMjAxNjEyMDJUMTcwMDAwWiBkbWFpbC5kaXhpZS5lZHVfbzhyY2lwbjJiNXVtNXRjOWIxc3NqdW8wbW9AZw",
+			"created": "2016-08-17T17:53:08.000Z",
+			"updated": "2016-08-18T17:24:50.163Z",
+			"summary": "Nick",
+			"colorId": "9",
+			"creator": {
+				"email": "d00310169@dmail.dixie.edu",
+				"displayName": "D00310169@dmail.dixie.edu"
+			},
+			"organizer": {
+				"email": "dmail.dixie.edu_o8rcipn2b5um5tc9b1ssjuo0mo@group.calendar.google.com",
+				"displayName": "Intern Schedule",
+				"self": true
+			},
+			"start": {
+				"dateTime": "2016-12-02T10:00:00-07:00",
+				"timeZone": "America/Denver"
+			},
+			"end": {
+				"dateTime": "2016-12-02T12:00:00-07:00",
+				"timeZone": "America/Denver"
+			},
+			"recurringEventId": "d26l1tf0vjatr0l4hks8mmnh7s",
+			"originalStartTime": {
+				"dateTime": "2016-12-02T10:00:00-07:00",
+				"timeZone": "America/Denver"
+			},
+			"iCalUID": "d26l1tf0vjatr0l4hks8mmnh7s@google.com",
+			"sequence": 1,
+			"hangoutLink": "https://plus.google.com/hangouts/_/dmail.dixie.edu/nick?hceid=ZG1haWwuZGl4aWUuZWR1X284cmNpcG4yYjV1bTV0YzliMXNzanVvMG1vQGdyb3VwLmNhbGVuZGFyLmdvb2dsZS5jb20.d26l1tf0vjatr0l4hks8mmnh7s",
+			"reminders": {
+				"useDefault": true
+			}
+		},
+		{
+			"kind": "calendar#event",
+			"etag": "\"2942912263798000\"",
+			"id": "k5dneqlts0b29rlkfu9a8504ss_20161202T170000Z",
+			"status": "confirmed",
+			"htmlLink": "https://www.google.com/calendar/event?eid=azVkbmVxbHRzMGIyOXJsa2Z1OWE4NTA0c3NfMjAxNjEyMDJUMTcwMDAwWiBkbWFpbC5kaXhpZS5lZHVfbzhyY2lwbjJiNXVtNXRjOWIxc3NqdW8wbW9AZw",
+			"created": "2016-06-13T17:20:07.000Z",
+			"updated": "2016-08-17T17:48:51.899Z",
+			"summary": "Denise",
+			"colorId": "3",
+			"creator": {
+				"email": "d00310169@dmail.dixie.edu",
+				"displayName": "D00310169@dmail.dixie.edu"
+			},
+			"organizer": {
+				"email": "dmail.dixie.edu_o8rcipn2b5um5tc9b1ssjuo0mo@group.calendar.google.com",
+				"displayName": "Intern Schedule",
+				"self": true
+			},
+			"start": {
+				"dateTime": "2016-12-02T10:00:00-07:00",
+				"timeZone": "America/Denver"
+			},
+			"end": {
+				"dateTime": "2016-12-02T11:00:00-07:00",
+				"timeZone": "America/Denver"
+			},
+			"recurringEventId": "k5dneqlts0b29rlkfu9a8504ss",
+			"originalStartTime": {
+				"dateTime": "2016-12-02T10:00:00-07:00",
+				"timeZone": "America/Denver"
+			},
+			"iCalUID": "k5dneqlts0b29rlkfu9a8504ss@google.com",
+			"sequence": 2,
+			"hangoutLink": "https://plus.google.com/hangouts/_/dmail.dixie.edu/denise?hceid=ZG1haWwuZGl4aWUuZWR1X284cmNpcG4yYjV1bTV0YzliMXNzanVvMG1vQGdyb3VwLmNhbGVuZGFyLmdvb2dsZS5jb20.s2fthgdbu59n20vq0csd4fq6ss",
+			"reminders": {
+				"useDefault": true
+			}
+		},
+		{
+			"kind": "calendar#event",
+			"etag": "\"2954011345452000\"",
+			"id": "mdkvt0egqbkjb02clnhegbrsks_20161202T170000Z",
+			"status": "confirmed",
+			"htmlLink": "https://www.google.com/calendar/event?eid=bWRrdnQwZWdxYmtqYjAyY2xuaGVnYnJza3NfMjAxNjEyMDJUMTcwMDAwWiBkbWFpbC5kaXhpZS5lZHVfbzhyY2lwbjJiNXVtNXRjOWIxc3NqdW8wbW9AZw",
+			"created": "2016-09-06T22:13:10.000Z",
+			"updated": "2016-10-20T23:21:12.726Z",
+			"summary": "Ross",
+			"colorId": "10",
+			"creator": {
+				"email": "d00310169@dmail.dixie.edu",
+				"displayName": "D00310169@dmail.dixie.edu"
+			},
+			"organizer": {
+				"email": "dmail.dixie.edu_o8rcipn2b5um5tc9b1ssjuo0mo@group.calendar.google.com",
+				"displayName": "Intern Schedule",
+				"self": true
+			},
+			"start": {
+				"dateTime": "2016-12-02T10:00:00-07:00",
+				"timeZone": "America/Denver"
+			},
+			"end": {
+				"dateTime": "2016-12-02T12:00:00-07:00",
+				"timeZone": "America/Denver"
+			},
+			"recurringEventId": "mdkvt0egqbkjb02clnhegbrsks",
+			"originalStartTime": {
+				"dateTime": "2016-12-02T10:00:00-07:00",
+				"timeZone": "America/Denver"
+			},
+			"iCalUID": "mdkvt0egqbkjb02clnhegbrsks@google.com",
+			"sequence": 1,
+			"hangoutLink": "https://plus.google.com/hangouts/_/dmail.dixie.edu/ross?hceid=ZG1haWwuZGl4aWUuZWR1X284cmNpcG4yYjV1bTV0YzliMXNzanVvMG1vQGdyb3VwLmNhbGVuZGFyLmdvb2dsZS5jb20.i14ucr2joqc48ogqanrsnipquk",
+			"reminders": {
+				"useDefault": true
+			}
+		},
+		{
+			"kind": "calendar#event",
+			"etag": "\"2946398226504000\"",
+			"id": "on0c3tgj3k00psfb891fo3tk1g_20161202T170000Z",
+			"status": "confirmed",
+			"htmlLink": "https://www.google.com/calendar/event?eid=b24wYzN0Z2ozazAwcHNmYjg5MWZvM3RrMWdfMjAxNjEyMDJUMTcwMDAwWiBkbWFpbC5kaXhpZS5lZHVfbzhyY2lwbjJiNXVtNXRjOWIxc3NqdW8wbW9AZw",
+			"created": "2016-08-19T18:39:46.000Z",
+			"updated": "2016-09-06T21:58:33.252Z",
+			"summary": "Matt",
+			"colorId": "11",
+			"creator": {
+				"email": "d00310169@dmail.dixie.edu",
+				"displayName": "D00310169@dmail.dixie.edu"
+			},
+			"organizer": {
+				"email": "dmail.dixie.edu_o8rcipn2b5um5tc9b1ssjuo0mo@group.calendar.google.com",
+				"displayName": "Intern Schedule",
+				"self": true
+			},
+			"start": {
+				"dateTime": "2016-12-02T10:00:00-07:00",
+				"timeZone": "America/Denver"
+			},
+			"end": {
+				"dateTime": "2016-12-02T15:00:00-07:00",
+				"timeZone": "America/Denver"
+			},
+			"recurringEventId": "on0c3tgj3k00psfb891fo3tk1g_R20160909T160000",
+			"originalStartTime": {
+				"dateTime": "2016-12-02T10:00:00-07:00",
+				"timeZone": "America/Denver"
+			},
+			"iCalUID": "on0c3tgj3k00psfb891fo3tk1g_R20160909T160000@google.com",
+			"sequence": 1,
+			"hangoutLink": "https://plus.google.com/hangouts/_/dmail.dixie.edu/matt?hceid=ZG1haWwuZGl4aWUuZWR1X284cmNpcG4yYjV1bTV0YzliMXNzanVvMG1vQGdyb3VwLmNhbGVuZGFyLmdvb2dsZS5jb20.on0c3tgj3k00psfb891fo3tk1g",
+			"reminders": {
+				"useDefault": true
+			}
+		},
+		{
+			"kind": "calendar#event",
+			"etag": "\"2947907539466000\"",
+			"id": "klq69d5mfr878qeoj9eqkol698_20161202T200000Z",
+			"status": "confirmed",
+			"htmlLink": "https://www.google.com/calendar/event?eid=a2xxNjlkNW1mcjg3OHFlb2o5ZXFrb2w2OThfMjAxNjEyMDJUMjAwMDAwWiBkbWFpbC5kaXhpZS5lZHVfbzhyY2lwbjJiNXVtNXRjOWIxc3NqdW8wbW9AZw",
+			"created": "2016-09-15T15:36:00.000Z",
+			"updated": "2016-09-15T15:36:09.733Z",
+			"summary": "Victoria",
+			"colorId": "5",
+			"creator": {
+				"email": "d00310169@dmail.dixie.edu",
+				"displayName": "D00310169@dmail.dixie.edu"
+			},
+			"organizer": {
+				"email": "dmail.dixie.edu_o8rcipn2b5um5tc9b1ssjuo0mo@group.calendar.google.com",
+				"displayName": "Intern Schedule",
+				"self": true
+			},
+			"start": {
+				"dateTime": "2016-12-02T13:00:00-07:00",
+				"timeZone": "America/Denver"
+			},
+			"end": {
+				"dateTime": "2016-12-02T15:00:00-07:00",
+				"timeZone": "America/Denver"
+			},
+			"recurringEventId": "klq69d5mfr878qeoj9eqkol698",
+			"originalStartTime": {
+				"dateTime": "2016-12-02T13:00:00-07:00",
+				"timeZone": "America/Denver"
+			},
+			"iCalUID": "klq69d5mfr878qeoj9eqkol698@google.com",
+			"sequence": 0,
+			"hangoutLink": "https://plus.google.com/hangouts/_/dmail.dixie.edu/victoria?hceid=ZG1haWwuZGl4aWUuZWR1X284cmNpcG4yYjV1bTV0YzliMXNzanVvMG1vQGdyb3VwLmNhbGVuZGFyLmdvb2dsZS5jb20.klq69d5mfr878qeoj9eqkol698",
+			"reminders": {
+				"useDefault": true
+			}
+		},
+		{
+			"kind": "calendar#event",
+			"etag": "\"2946400200490000\"",
+			"id": "n5scpniu14nliff8dr5qvd1p7c_20161202T200000Z",
+			"status": "confirmed",
+			"htmlLink": "https://www.google.com/calendar/event?eid=bjVzY3BuaXUxNG5saWZmOGRyNXF2ZDFwN2NfMjAxNjEyMDJUMjAwMDAwWiBkbWFpbC5kaXhpZS5lZHVfbzhyY2lwbjJiNXVtNXRjOWIxc3NqdW8wbW9AZw",
+			"created": "2016-09-06T22:14:45.000Z",
+			"updated": "2016-09-06T22:15:00.245Z",
+			"summary": "Ross",
+			"colorId": "10",
+			"creator": {
+				"email": "d00310169@dmail.dixie.edu",
+				"displayName": "D00310169@dmail.dixie.edu"
+			},
+			"organizer": {
+				"email": "dmail.dixie.edu_o8rcipn2b5um5tc9b1ssjuo0mo@group.calendar.google.com",
+				"displayName": "Intern Schedule",
+				"self": true
+			},
+			"start": {
+				"dateTime": "2016-12-02T13:00:00-07:00",
+				"timeZone": "America/Denver"
+			},
+			"end": {
+				"dateTime": "2016-12-02T14:00:00-07:00",
+				"timeZone": "America/Denver"
+			},
+			"recurringEventId": "n5scpniu14nliff8dr5qvd1p7c",
+			"originalStartTime": {
+				"dateTime": "2016-12-02T13:00:00-07:00",
+				"timeZone": "America/Denver"
+			},
+			"iCalUID": "n5scpniu14nliff8dr5qvd1p7c@google.com",
+			"sequence": 0,
+			"hangoutLink": "https://plus.google.com/hangouts/_/dmail.dixie.edu/ross?hceid=ZG1haWwuZGl4aWUuZWR1X284cmNpcG4yYjV1bTV0YzliMXNzanVvMG1vQGdyb3VwLmNhbGVuZGFyLmdvb2dsZS5jb20.n5scpniu14nliff8dr5qvd1p7c",
+			"reminders": {
+				"useDefault": true
+			}
+		},
+		{
+			"kind": "calendar#event",
+			"etag": "\"2943082991510000\"",
+			"id": "irs1pt3uj3janh90hpj5il5h2s_20161202T220000Z",
+			"status": "confirmed",
+			"htmlLink": "https://www.google.com/calendar/event?eid=aXJzMXB0M3VqM2phbmg5MGhwajVpbDVoMnNfMjAxNjEyMDJUMjIwMDAwWiBkbWFpbC5kaXhpZS5lZHVfbzhyY2lwbjJiNXVtNXRjOWIxc3NqdW8wbW9AZw",
+			"created": "2016-08-18T17:31:35.000Z",
+			"updated": "2016-08-18T17:31:35.755Z",
+			"summary": "Nick",
+			"colorId": "9",
+			"creator": {
+				"email": "d00310169@dmail.dixie.edu",
+				"displayName": "D00310169@dmail.dixie.edu"
+			},
+			"organizer": {
+				"email": "dmail.dixie.edu_o8rcipn2b5um5tc9b1ssjuo0mo@group.calendar.google.com",
+				"displayName": "Intern Schedule",
+				"self": true
+			},
+			"start": {
+				"dateTime": "2016-12-02T15:00:00-07:00",
+				"timeZone": "America/Denver"
+			},
+			"end": {
+				"dateTime": "2016-12-02T16:00:00-07:00",
+				"timeZone": "America/Denver"
+			},
+			"recurringEventId": "irs1pt3uj3janh90hpj5il5h2s",
+			"originalStartTime": {
+				"dateTime": "2016-12-02T15:00:00-07:00",
+				"timeZone": "America/Denver"
+			},
+			"iCalUID": "irs1pt3uj3janh90hpj5il5h2s@google.com",
+			"sequence": 0,
+			"hangoutLink": "https://plus.google.com/hangouts/_/dmail.dixie.edu/nick?hceid=ZG1haWwuZGl4aWUuZWR1X284cmNpcG4yYjV1bTV0YzliMXNzanVvMG1vQGdyb3VwLmNhbGVuZGFyLmdvb2dsZS5jb20.irs1pt3uj3janh90hpj5il5h2s",
+			"reminders": {
+				"useDefault": true
+			}
+		},
+		{
+			"kind": "calendar#event",
+			"etag": "\"2942912302536000\"",
+			"id": "no2djcm9667s34c30kdkp242go_20161202T220000Z",
+			"status": "confirmed",
+			"htmlLink": "https://www.google.com/calendar/event?eid=bm8yZGpjbTk2NjdzMzRjMzBrZGtwMjQyZ29fMjAxNjEyMDJUMjIwMDAwWiBkbWFpbC5kaXhpZS5lZHVfbzhyY2lwbjJiNXVtNXRjOWIxc3NqdW8wbW9AZw",
+			"created": "2016-08-17T17:45:02.000Z",
+			"updated": "2016-08-17T17:49:11.268Z",
+			"summary": "Denise",
+			"colorId": "3",
+			"creator": {
+				"email": "d00310169@dmail.dixie.edu",
+				"displayName": "D00310169@dmail.dixie.edu"
+			},
+			"organizer": {
+				"email": "dmail.dixie.edu_o8rcipn2b5um5tc9b1ssjuo0mo@group.calendar.google.com",
+				"displayName": "Intern Schedule",
+				"self": true
+			},
+			"start": {
+				"dateTime": "2016-12-02T15:00:00-07:00",
+				"timeZone": "America/Denver"
+			},
+			"end": {
+				"dateTime": "2016-12-02T17:00:00-07:00",
+				"timeZone": "America/Denver"
+			},
+			"recurringEventId": "no2djcm9667s34c30kdkp242go",
+			"originalStartTime": {
+				"dateTime": "2016-12-02T15:00:00-07:00",
+				"timeZone": "America/Denver"
+			},
+			"iCalUID": "no2djcm9667s34c30kdkp242go@google.com",
+			"sequence": 0,
+			"hangoutLink": "https://plus.google.com/hangouts/_/dmail.dixie.edu/denise?hceid=ZG1haWwuZGl4aWUuZWR1X284cmNpcG4yYjV1bTV0YzliMXNzanVvMG1vQGdyb3VwLmNhbGVuZGFyLmdvb2dsZS5jb20.no2djcm9667s34c30kdkp242go",
+			"reminders": {
+				"useDefault": true
+			}
+		},
+		{
+			"kind": "calendar#event",
+			"etag": "\"2943082180326000\"",
+			"id": "d26l1tf0vjatr0l4hks8mmnh7s_20161205T170000Z",
+			"status": "confirmed",
+			"htmlLink": "https://www.google.com/calendar/event?eid=ZDI2bDF0ZjB2amF0cjBsNGhrczhtbW5oN3NfMjAxNjEyMDVUMTcwMDAwWiBkbWFpbC5kaXhpZS5lZHVfbzhyY2lwbjJiNXVtNXRjOWIxc3NqdW8wbW9AZw",
+			"created": "2016-08-17T17:53:08.000Z",
+			"updated": "2016-08-18T17:24:50.163Z",
+			"summary": "Nick",
+			"colorId": "9",
+			"creator": {
+				"email": "d00310169@dmail.dixie.edu",
+				"displayName": "D00310169@dmail.dixie.edu"
+			},
+			"organizer": {
+				"email": "dmail.dixie.edu_o8rcipn2b5um5tc9b1ssjuo0mo@group.calendar.google.com",
+				"displayName": "Intern Schedule",
+				"self": true
+			},
+			"start": {
+				"dateTime": "2016-12-05T10:00:00-07:00",
+				"timeZone": "America/Denver"
+			},
+			"end": {
+				"dateTime": "2016-12-05T12:00:00-07:00",
+				"timeZone": "America/Denver"
+			},
+			"recurringEventId": "d26l1tf0vjatr0l4hks8mmnh7s",
+			"originalStartTime": {
+				"dateTime": "2016-12-05T10:00:00-07:00",
+				"timeZone": "America/Denver"
+			},
+			"iCalUID": "d26l1tf0vjatr0l4hks8mmnh7s@google.com",
+			"sequence": 1,
+			"hangoutLink": "https://plus.google.com/hangouts/_/dmail.dixie.edu/nick?hceid=ZG1haWwuZGl4aWUuZWR1X284cmNpcG4yYjV1bTV0YzliMXNzanVvMG1vQGdyb3VwLmNhbGVuZGFyLmdvb2dsZS5jb20.d26l1tf0vjatr0l4hks8mmnh7s",
+			"reminders": {
+				"useDefault": true
+			}
+		},
+		{
+			"kind": "calendar#event",
+			"etag": "\"2942912263798000\"",
+			"id": "k5dneqlts0b29rlkfu9a8504ss_20161205T170000Z",
+			"status": "confirmed",
+			"htmlLink": "https://www.google.com/calendar/event?eid=azVkbmVxbHRzMGIyOXJsa2Z1OWE4NTA0c3NfMjAxNjEyMDVUMTcwMDAwWiBkbWFpbC5kaXhpZS5lZHVfbzhyY2lwbjJiNXVtNXRjOWIxc3NqdW8wbW9AZw",
+			"created": "2016-06-13T17:20:07.000Z",
+			"updated": "2016-08-17T17:48:51.899Z",
+			"summary": "Denise",
+			"colorId": "3",
+			"creator": {
+				"email": "d00310169@dmail.dixie.edu",
+				"displayName": "D00310169@dmail.dixie.edu"
+			},
+			"organizer": {
+				"email": "dmail.dixie.edu_o8rcipn2b5um5tc9b1ssjuo0mo@group.calendar.google.com",
+				"displayName": "Intern Schedule",
+				"self": true
+			},
+			"start": {
+				"dateTime": "2016-12-05T10:00:00-07:00",
+				"timeZone": "America/Denver"
+			},
+			"end": {
+				"dateTime": "2016-12-05T11:00:00-07:00",
+				"timeZone": "America/Denver"
+			},
+			"recurringEventId": "k5dneqlts0b29rlkfu9a8504ss",
+			"originalStartTime": {
+				"dateTime": "2016-12-05T10:00:00-07:00",
+				"timeZone": "America/Denver"
+			},
+			"iCalUID": "k5dneqlts0b29rlkfu9a8504ss@google.com",
+			"sequence": 2,
+			"hangoutLink": "https://plus.google.com/hangouts/_/dmail.dixie.edu/denise?hceid=ZG1haWwuZGl4aWUuZWR1X284cmNpcG4yYjV1bTV0YzliMXNzanVvMG1vQGdyb3VwLmNhbGVuZGFyLmdvb2dsZS5jb20.s2fthgdbu59n20vq0csd4fq6ss",
+			"reminders": {
+				"useDefault": true
+			}
+		},
+		{
+			"kind": "calendar#event",
+			"etag": "\"2954011345452000\"",
+			"id": "mdkvt0egqbkjb02clnhegbrsks_20161205T170000Z",
+			"status": "confirmed",
+			"htmlLink": "https://www.google.com/calendar/event?eid=bWRrdnQwZWdxYmtqYjAyY2xuaGVnYnJza3NfMjAxNjEyMDVUMTcwMDAwWiBkbWFpbC5kaXhpZS5lZHVfbzhyY2lwbjJiNXVtNXRjOWIxc3NqdW8wbW9AZw",
+			"created": "2016-09-06T22:13:10.000Z",
+			"updated": "2016-10-20T23:21:12.726Z",
+			"summary": "Ross",
+			"colorId": "10",
+			"creator": {
+				"email": "d00310169@dmail.dixie.edu",
+				"displayName": "D00310169@dmail.dixie.edu"
+			},
+			"organizer": {
+				"email": "dmail.dixie.edu_o8rcipn2b5um5tc9b1ssjuo0mo@group.calendar.google.com",
+				"displayName": "Intern Schedule",
+				"self": true
+			},
+			"start": {
+				"dateTime": "2016-12-05T10:00:00-07:00",
+				"timeZone": "America/Denver"
+			},
+			"end": {
+				"dateTime": "2016-12-05T12:00:00-07:00",
+				"timeZone": "America/Denver"
+			},
+			"recurringEventId": "mdkvt0egqbkjb02clnhegbrsks",
+			"originalStartTime": {
+				"dateTime": "2016-12-05T10:00:00-07:00",
+				"timeZone": "America/Denver"
+			},
+			"iCalUID": "mdkvt0egqbkjb02clnhegbrsks@google.com",
+			"sequence": 1,
+			"hangoutLink": "https://plus.google.com/hangouts/_/dmail.dixie.edu/ross?hceid=ZG1haWwuZGl4aWUuZWR1X284cmNpcG4yYjV1bTV0YzliMXNzanVvMG1vQGdyb3VwLmNhbGVuZGFyLmdvb2dsZS5jb20.i14ucr2joqc48ogqanrsnipquk",
+			"reminders": {
+				"useDefault": true
+			}
+		},
+		{
+			"kind": "calendar#event",
+			"etag": "\"2943263847578000\"",
+			"id": "sna522dt2c8k1bhm9dntj4r1so_20161205T170000Z",
+			"status": "confirmed",
+			"htmlLink": "https://www.google.com/calendar/event?eid=c25hNTIyZHQyYzhrMWJobTlkbnRqNHIxc29fMjAxNjEyMDVUMTcwMDAwWiBkbWFpbC5kaXhpZS5lZHVfbzhyY2lwbjJiNXVtNXRjOWIxc3NqdW8wbW9AZw",
+			"created": "2016-08-19T18:38:43.000Z",
+			"updated": "2016-08-19T18:38:43.789Z",
+			"summary": "Matt",
+			"colorId": "11",
+			"creator": {
+				"email": "d00310169@dmail.dixie.edu",
+				"displayName": "D00310169@dmail.dixie.edu"
+			},
+			"organizer": {
+				"email": "dmail.dixie.edu_o8rcipn2b5um5tc9b1ssjuo0mo@group.calendar.google.com",
+				"displayName": "Intern Schedule",
+				"self": true
+			},
+			"start": {
+				"dateTime": "2016-12-05T10:00:00-07:00",
+				"timeZone": "America/Denver"
+			},
+			"end": {
+				"dateTime": "2016-12-05T12:00:00-07:00",
+				"timeZone": "America/Denver"
+			},
+			"recurringEventId": "sna522dt2c8k1bhm9dntj4r1so",
+			"originalStartTime": {
+				"dateTime": "2016-12-05T10:00:00-07:00",
+				"timeZone": "America/Denver"
+			},
+			"iCalUID": "sna522dt2c8k1bhm9dntj4r1so@google.com",
+			"sequence": 0,
+			"hangoutLink": "https://plus.google.com/hangouts/_/dmail.dixie.edu/matt?hceid=ZG1haWwuZGl4aWUuZWR1X284cmNpcG4yYjV1bTV0YzliMXNzanVvMG1vQGdyb3VwLmNhbGVuZGFyLmdvb2dsZS5jb20.sna522dt2c8k1bhm9dntj4r1so",
+			"reminders": {
+				"useDefault": true
+			}
+		},
+		{
+			"kind": "calendar#event",
+			"etag": "\"2947907539466000\"",
+			"id": "klq69d5mfr878qeoj9eqkol698_20161205T200000Z",
+			"status": "confirmed",
+			"htmlLink": "https://www.google.com/calendar/event?eid=a2xxNjlkNW1mcjg3OHFlb2o5ZXFrb2w2OThfMjAxNjEyMDVUMjAwMDAwWiBkbWFpbC5kaXhpZS5lZHVfbzhyY2lwbjJiNXVtNXRjOWIxc3NqdW8wbW9AZw",
+			"created": "2016-09-15T15:36:00.000Z",
+			"updated": "2016-09-15T15:36:09.733Z",
+			"summary": "Victoria",
+			"colorId": "5",
+			"creator": {
+				"email": "d00310169@dmail.dixie.edu",
+				"displayName": "D00310169@dmail.dixie.edu"
+			},
+			"organizer": {
+				"email": "dmail.dixie.edu_o8rcipn2b5um5tc9b1ssjuo0mo@group.calendar.google.com",
+				"displayName": "Intern Schedule",
+				"self": true
+			},
+			"start": {
+				"dateTime": "2016-12-05T13:00:00-07:00",
+				"timeZone": "America/Denver"
+			},
+			"end": {
+				"dateTime": "2016-12-05T15:00:00-07:00",
+				"timeZone": "America/Denver"
+			},
+			"recurringEventId": "klq69d5mfr878qeoj9eqkol698",
+			"originalStartTime": {
+				"dateTime": "2016-12-05T13:00:00-07:00",
+				"timeZone": "America/Denver"
+			},
+			"iCalUID": "klq69d5mfr878qeoj9eqkol698@google.com",
+			"sequence": 0,
+			"hangoutLink": "https://plus.google.com/hangouts/_/dmail.dixie.edu/victoria?hceid=ZG1haWwuZGl4aWUuZWR1X284cmNpcG4yYjV1bTV0YzliMXNzanVvMG1vQGdyb3VwLmNhbGVuZGFyLmdvb2dsZS5jb20.klq69d5mfr878qeoj9eqkol698",
+			"reminders": {
+				"useDefault": true
+			}
+		},
+		{
+			"kind": "calendar#event",
+			"etag": "\"2946400200490000\"",
+			"id": "n5scpniu14nliff8dr5qvd1p7c_20161205T200000Z",
+			"status": "confirmed",
+			"htmlLink": "https://www.google.com/calendar/event?eid=bjVzY3BuaXUxNG5saWZmOGRyNXF2ZDFwN2NfMjAxNjEyMDVUMjAwMDAwWiBkbWFpbC5kaXhpZS5lZHVfbzhyY2lwbjJiNXVtNXRjOWIxc3NqdW8wbW9AZw",
+			"created": "2016-09-06T22:14:45.000Z",
+			"updated": "2016-09-06T22:15:00.245Z",
+			"summary": "Ross",
+			"colorId": "10",
+			"creator": {
+				"email": "d00310169@dmail.dixie.edu",
+				"displayName": "D00310169@dmail.dixie.edu"
+			},
+			"organizer": {
+				"email": "dmail.dixie.edu_o8rcipn2b5um5tc9b1ssjuo0mo@group.calendar.google.com",
+				"displayName": "Intern Schedule",
+				"self": true
+			},
+			"start": {
+				"dateTime": "2016-12-05T13:00:00-07:00",
+				"timeZone": "America/Denver"
+			},
+			"end": {
+				"dateTime": "2016-12-05T14:00:00-07:00",
+				"timeZone": "America/Denver"
+			},
+			"recurringEventId": "n5scpniu14nliff8dr5qvd1p7c",
+			"originalStartTime": {
+				"dateTime": "2016-12-05T13:00:00-07:00",
+				"timeZone": "America/Denver"
+			},
+			"iCalUID": "n5scpniu14nliff8dr5qvd1p7c@google.com",
+			"sequence": 0,
+			"hangoutLink": "https://plus.google.com/hangouts/_/dmail.dixie.edu/ross?hceid=ZG1haWwuZGl4aWUuZWR1X284cmNpcG4yYjV1bTV0YzliMXNzanVvMG1vQGdyb3VwLmNhbGVuZGFyLmdvb2dsZS5jb20.n5scpniu14nliff8dr5qvd1p7c",
+			"reminders": {
+				"useDefault": true
+			}
+		},
+		{
+			"kind": "calendar#event",
+			"etag": "\"2946398333450000\"",
+			"id": "gt6qp5hs2gscitsbmbutdkh7ms_20161205T210000Z",
+			"status": "confirmed",
+			"htmlLink": "https://www.google.com/calendar/event?eid=Z3Q2cXA1aHMyZ3NjaXRzYm1idXRka2g3bXNfMjAxNjEyMDVUMjEwMDAwWiBkbWFpbC5kaXhpZS5lZHVfbzhyY2lwbjJiNXVtNXRjOWIxc3NqdW8wbW9AZw",
+			"created": "2016-08-19T18:39:11.000Z",
+			"updated": "2016-09-06T21:59:26.725Z",
+			"summary": "Matt",
+			"colorId": "11",
+			"creator": {
+				"email": "d00310169@dmail.dixie.edu",
+				"displayName": "D00310169@dmail.dixie.edu"
+			},
+			"organizer": {
+				"email": "dmail.dixie.edu_o8rcipn2b5um5tc9b1ssjuo0mo@group.calendar.google.com",
+				"displayName": "Intern Schedule",
+				"self": true
+			},
+			"start": {
+				"dateTime": "2016-12-05T14:00:00-07:00",
+				"timeZone": "America/Denver"
+			},
+			"end": {
+				"dateTime": "2016-12-05T15:00:00-07:00",
+				"timeZone": "America/Denver"
+			},
+			"recurringEventId": "gt6qp5hs2gscitsbmbutdkh7ms",
+			"originalStartTime": {
+				"dateTime": "2016-12-05T14:00:00-07:00",
+				"timeZone": "America/Denver"
+			},
+			"iCalUID": "gt6qp5hs2gscitsbmbutdkh7ms@google.com",
+			"sequence": 1,
+			"hangoutLink": "https://plus.google.com/hangouts/_/dmail.dixie.edu/matt?hceid=ZG1haWwuZGl4aWUuZWR1X284cmNpcG4yYjV1bTV0YzliMXNzanVvMG1vQGdyb3VwLmNhbGVuZGFyLmdvb2dsZS5jb20.nkk0phkl30q2ocepqa7sdta58o",
+			"reminders": {
+				"useDefault": true
+			}
+		},
+		{
+			"kind": "calendar#event",
+			"etag": "\"2943082845634000\"",
+			"id": "8e791908knbg8dqfsd9ch06hj0_20161205T220000Z",
+			"status": "confirmed",
+			"htmlLink": "https://www.google.com/calendar/event?eid=OGU3OTE5MDhrbmJnOGRxZnNkOWNoMDZoajBfMjAxNjEyMDVUMjIwMDAwWiBkbWFpbC5kaXhpZS5lZHVfbzhyY2lwbjJiNXVtNXRjOWIxc3NqdW8wbW9AZw",
+			"created": "2016-08-17T17:51:42.000Z",
+			"updated": "2016-08-18T17:30:22.817Z",
+			"summary": "Nick",
+			"colorId": "9",
+			"creator": {
+				"email": "d00310169@dmail.dixie.edu",
+				"displayName": "D00310169@dmail.dixie.edu"
+			},
+			"organizer": {
+				"email": "dmail.dixie.edu_o8rcipn2b5um5tc9b1ssjuo0mo@group.calendar.google.com",
+				"displayName": "Intern Schedule",
+				"self": true
+			},
+			"start": {
+				"dateTime": "2016-12-05T15:00:00-07:00",
+				"timeZone": "America/Denver"
+			},
+			"end": {
+				"dateTime": "2016-12-05T17:00:00-07:00",
+				"timeZone": "America/Denver"
+			},
+			"recurringEventId": "8e791908knbg8dqfsd9ch06hj0",
+			"originalStartTime": {
+				"dateTime": "2016-12-05T15:00:00-07:00",
+				"timeZone": "America/Denver"
+			},
+			"iCalUID": "8e791908knbg8dqfsd9ch06hj0@google.com",
+			"sequence": 3,
+			"hangoutLink": "https://plus.google.com/hangouts/_/dmail.dixie.edu/nick?hceid=ZG1haWwuZGl4aWUuZWR1X284cmNpcG4yYjV1bTV0YzliMXNzanVvMG1vQGdyb3VwLmNhbGVuZGFyLmdvb2dsZS5jb20.8e791908knbg8dqfsd9ch06hj0",
+			"reminders": {
+				"useDefault": true
+			}
+		},
+		{
+			"kind": "calendar#event",
+			"etag": "\"2942912302536000\"",
+			"id": "no2djcm9667s34c30kdkp242go_20161205T220000Z",
+			"status": "confirmed",
+			"htmlLink": "https://www.google.com/calendar/event?eid=bm8yZGpjbTk2NjdzMzRjMzBrZGtwMjQyZ29fMjAxNjEyMDVUMjIwMDAwWiBkbWFpbC5kaXhpZS5lZHVfbzhyY2lwbjJiNXVtNXRjOWIxc3NqdW8wbW9AZw",
+			"created": "2016-08-17T17:45:02.000Z",
+			"updated": "2016-08-17T17:49:11.268Z",
+			"summary": "Denise",
+			"colorId": "3",
+			"creator": {
+				"email": "d00310169@dmail.dixie.edu",
+				"displayName": "D00310169@dmail.dixie.edu"
+			},
+			"organizer": {
+				"email": "dmail.dixie.edu_o8rcipn2b5um5tc9b1ssjuo0mo@group.calendar.google.com",
+				"displayName": "Intern Schedule",
+				"self": true
+			},
+			"start": {
+				"dateTime": "2016-12-05T15:00:00-07:00",
+				"timeZone": "America/Denver"
+			},
+			"end": {
+				"dateTime": "2016-12-05T17:00:00-07:00",
+				"timeZone": "America/Denver"
+			},
+			"recurringEventId": "no2djcm9667s34c30kdkp242go",
+			"originalStartTime": {
+				"dateTime": "2016-12-05T15:00:00-07:00",
+				"timeZone": "America/Denver"
+			},
+			"iCalUID": "no2djcm9667s34c30kdkp242go@google.com",
+			"sequence": 0,
+			"hangoutLink": "https://plus.google.com/hangouts/_/dmail.dixie.edu/denise?hceid=ZG1haWwuZGl4aWUuZWR1X284cmNpcG4yYjV1bTV0YzliMXNzanVvMG1vQGdyb3VwLmNhbGVuZGFyLmdvb2dsZS5jb20.no2djcm9667s34c30kdkp242go",
+			"reminders": {
+				"useDefault": true
+			}
+		},
+		{
+			"kind": "calendar#event",
+			"etag": "\"2945682170784000\"",
+			"id": "d25jvhvfmdp5m97tsdlprs538c_20161206T170000Z",
+			"status": "confirmed",
+			"htmlLink": "https://www.google.com/calendar/event?eid=ZDI1anZodmZtZHA1bTk3dHNkbHByczUzOGNfMjAxNjEyMDZUMTcwMDAwWiBkbWFpbC5kaXhpZS5lZHVfbzhyY2lwbjJiNXVtNXRjOWIxc3NqdW8wbW9AZw",
+			"created": "2016-08-17T17:53:51.000Z",
+			"updated": "2016-09-02T18:31:25.392Z",
+			"summary": "Denise",
+			"colorId": "3",
+			"creator": {
+				"email": "d00310169@dmail.dixie.edu",
+				"displayName": "D00310169@dmail.dixie.edu"
+			},
+			"organizer": {
+				"email": "dmail.dixie.edu_o8rcipn2b5um5tc9b1ssjuo0mo@group.calendar.google.com",
+				"displayName": "Intern Schedule",
+				"self": true
+			},
+			"start": {
+				"dateTime": "2016-12-06T10:00:00-07:00",
+				"timeZone": "America/Denver"
+			},
+			"end": {
+				"dateTime": "2016-12-06T12:00:00-07:00",
+				"timeZone": "America/Denver"
+			},
+			"recurringEventId": "d25jvhvfmdp5m97tsdlprs538c_R20160906T160000",
+			"originalStartTime": {
+				"dateTime": "2016-12-06T10:00:00-07:00",
+				"timeZone": "America/Denver"
+			},
+			"iCalUID": "d25jvhvfmdp5m97tsdlprs538c_R20160906T160000@google.com",
+			"sequence": 1,
+			"hangoutLink": "https://plus.google.com/hangouts/_/dmail.dixie.edu/denise?hceid=ZG1haWwuZGl4aWUuZWR1X284cmNpcG4yYjV1bTV0YzliMXNzanVvMG1vQGdyb3VwLmNhbGVuZGFyLmdvb2dsZS5jb20.7gtbv2a0095emh6jj329c1q5q0",
+			"reminders": {
+				"useDefault": true
+			}
+		},
+		{
+			"kind": "calendar#event",
+			"etag": "\"2954011452734000\"",
+			"id": "2oo0ivu65bic8jpt1r1p5um79c_20161206T190000Z",
+			"status": "confirmed",
+			"htmlLink": "https://www.google.com/calendar/event?eid=Mm9vMGl2dTY1YmljOGpwdDFyMXA1dW03OWNfMjAxNjEyMDZUMTkwMDAwWiBkbWFpbC5kaXhpZS5lZHVfbzhyY2lwbjJiNXVtNXRjOWIxc3NqdW8wbW9AZw",
+			"created": "2016-09-06T22:13:35.000Z",
+			"updated": "2016-10-20T23:22:06.367Z",
+			"summary": "Ross",
+			"colorId": "10",
+			"creator": {
+				"email": "d00310169@dmail.dixie.edu",
+				"displayName": "D00310169@dmail.dixie.edu"
+			},
+			"organizer": {
+				"email": "dmail.dixie.edu_o8rcipn2b5um5tc9b1ssjuo0mo@group.calendar.google.com",
+				"displayName": "Intern Schedule",
+				"self": true
+			},
+			"start": {
+				"dateTime": "2016-12-06T12:00:00-07:00",
+				"timeZone": "America/Denver"
+			},
+			"end": {
+				"dateTime": "2016-12-06T15:00:00-07:00",
+				"timeZone": "America/Denver"
+			},
+			"recurringEventId": "2oo0ivu65bic8jpt1r1p5um79c",
+			"originalStartTime": {
+				"dateTime": "2016-12-06T12:00:00-07:00",
+				"timeZone": "America/Denver"
+			},
+			"iCalUID": "2oo0ivu65bic8jpt1r1p5um79c@google.com",
+			"sequence": 2,
+			"hangoutLink": "https://plus.google.com/hangouts/_/dmail.dixie.edu/ross?hceid=ZG1haWwuZGl4aWUuZWR1X284cmNpcG4yYjV1bTV0YzliMXNzanVvMG1vQGdyb3VwLmNhbGVuZGFyLmdvb2dsZS5jb20.lnhrmvdi9skqus5cabmcfl2d8s",
+			"reminders": {
+				"useDefault": true
+			}
+		},
+		{
+			"kind": "calendar#event",
+			"etag": "\"2947907344080000\"",
+			"id": "dj708n6g0mnkhtdkn9jef2s4kc_20161206T210000Z",
+			"status": "confirmed",
+			"htmlLink": "https://www.google.com/calendar/event?eid=ZGo3MDhuNmcwbW5raHRka245amVmMnM0a2NfMjAxNjEyMDZUMjEwMDAwWiBkbWFpbC5kaXhpZS5lZHVfbzhyY2lwbjJiNXVtNXRjOWIxc3NqdW8wbW9AZw",
+			"created": "2016-08-24T16:34:00.000Z",
+			"updated": "2016-09-15T15:34:32.040Z",
+			"summary": "Victoria",
+			"colorId": "5",
+			"creator": {
+				"email": "d00310169@dmail.dixie.edu",
+				"displayName": "D00310169@dmail.dixie.edu"
+			},
+			"organizer": {
+				"email": "dmail.dixie.edu_o8rcipn2b5um5tc9b1ssjuo0mo@group.calendar.google.com",
+				"displayName": "Intern Schedule",
+				"self": true
+			},
+			"start": {
+				"dateTime": "2016-12-06T14:00:00-07:00",
+				"timeZone": "America/Denver"
+			},
+			"end": {
+				"dateTime": "2016-12-06T16:00:00-07:00",
+				"timeZone": "America/Denver"
+			},
+			"recurringEventId": "dj708n6g0mnkhtdkn9jef2s4kc",
+			"originalStartTime": {
+				"dateTime": "2016-12-06T14:00:00-07:00",
+				"timeZone": "America/Denver"
+			},
+			"iCalUID": "dj708n6g0mnkhtdkn9jef2s4kc@google.com",
+			"sequence": 1,
+			"hangoutLink": "https://plus.google.com/hangouts/_/dmail.dixie.edu/dmail-dixie-edu?hceid=ZG1haWwuZGl4aWUuZWR1X284cmNpcG4yYjV1bTV0YzliMXNzanVvMG1vQGdyb3VwLmNhbGVuZGFyLmdvb2dsZS5jb20.99c4q8oec01bkhqc3cipi2gjf4",
+			"reminders": {
+				"useDefault": true
+			}
+		},
+		{
+			"kind": "calendar#event",
+			"etag": "\"2946398271354000\"",
+			"id": "kmftp21tkoaid48dskvvq1ce5s_20161206T210000Z",
+			"status": "confirmed",
+			"htmlLink": "https://www.google.com/calendar/event?eid=a21mdHAyMXRrb2FpZDQ4ZHNrdnZxMWNlNXNfMjAxNjEyMDZUMjEwMDAwWiBkbWFpbC5kaXhpZS5lZHVfbzhyY2lwbjJiNXVtNXRjOWIxc3NqdW8wbW9AZw",
+			"created": "2016-08-19T18:39:31.000Z",
+			"updated": "2016-09-06T21:58:55.677Z",
+			"summary": "Matt",
+			"colorId": "11",
+			"creator": {
+				"email": "d00310169@dmail.dixie.edu",
+				"displayName": "D00310169@dmail.dixie.edu"
+			},
+			"organizer": {
+				"email": "dmail.dixie.edu_o8rcipn2b5um5tc9b1ssjuo0mo@group.calendar.google.com",
+				"displayName": "Intern Schedule",
+				"self": true
+			},
+			"start": {
+				"dateTime": "2016-12-06T14:00:00-07:00",
+				"timeZone": "America/Denver"
+			},
+			"end": {
+				"dateTime": "2016-12-06T15:00:00-07:00",
+				"timeZone": "America/Denver"
+			},
+			"recurringEventId": "kmftp21tkoaid48dskvvq1ce5s_R20160906T200000",
+			"originalStartTime": {
+				"dateTime": "2016-12-06T14:00:00-07:00",
+				"timeZone": "America/Denver"
+			},
+			"iCalUID": "kmftp21tkoaid48dskvvq1ce5s_R20160906T200000@google.com",
+			"sequence": 1,
+			"hangoutLink": "https://plus.google.com/hangouts/_/dmail.dixie.edu/matt?hceid=ZG1haWwuZGl4aWUuZWR1X284cmNpcG4yYjV1bTV0YzliMXNzanVvMG1vQGdyb3VwLmNhbGVuZGFyLmdvb2dsZS5jb20.kmftp21tkoaid48dskvvq1ce5s",
+			"reminders": {
+				"useDefault": true
+			}
+		},
+		{
+			"kind": "calendar#event",
+			"etag": "\"2943082845634000\"",
+			"id": "8e791908knbg8dqfsd9ch06hj0_20161206T220000Z",
+			"status": "confirmed",
+			"htmlLink": "https://www.google.com/calendar/event?eid=OGU3OTE5MDhrbmJnOGRxZnNkOWNoMDZoajBfMjAxNjEyMDZUMjIwMDAwWiBkbWFpbC5kaXhpZS5lZHVfbzhyY2lwbjJiNXVtNXRjOWIxc3NqdW8wbW9AZw",
+			"created": "2016-08-17T17:51:42.000Z",
+			"updated": "2016-08-18T17:30:22.817Z",
+			"summary": "Nick",
+			"colorId": "9",
+			"creator": {
+				"email": "d00310169@dmail.dixie.edu",
+				"displayName": "D00310169@dmail.dixie.edu"
+			},
+			"organizer": {
+				"email": "dmail.dixie.edu_o8rcipn2b5um5tc9b1ssjuo0mo@group.calendar.google.com",
+				"displayName": "Intern Schedule",
+				"self": true
+			},
+			"start": {
+				"dateTime": "2016-12-06T15:00:00-07:00",
+				"timeZone": "America/Denver"
+			},
+			"end": {
+				"dateTime": "2016-12-06T17:00:00-07:00",
+				"timeZone": "America/Denver"
+			},
+			"recurringEventId": "8e791908knbg8dqfsd9ch06hj0",
+			"originalStartTime": {
+				"dateTime": "2016-12-06T15:00:00-07:00",
+				"timeZone": "America/Denver"
+			},
+			"iCalUID": "8e791908knbg8dqfsd9ch06hj0@google.com",
+			"sequence": 3,
+			"hangoutLink": "https://plus.google.com/hangouts/_/dmail.dixie.edu/nick?hceid=ZG1haWwuZGl4aWUuZWR1X284cmNpcG4yYjV1bTV0YzliMXNzanVvMG1vQGdyb3VwLmNhbGVuZGFyLmdvb2dsZS5jb20.8e791908knbg8dqfsd9ch06hj0",
+			"reminders": {
+				"useDefault": true
+			}
+		},
+		{
+			"kind": "calendar#event",
+			"etag": "\"2942912975156000\"",
+			"id": "g6n67nh04cbbojskqjkaei241o_20161206T230000Z",
+			"status": "confirmed",
+			"htmlLink": "https://www.google.com/calendar/event?eid=ZzZuNjduaDA0Y2Jib2pza3Fqa2FlaTI0MW9fMjAxNjEyMDZUMjMwMDAwWiBkbWFpbC5kaXhpZS5lZHVfbzhyY2lwbjJiNXVtNXRjOWIxc3NqdW8wbW9AZw",
+			"created": "2016-08-17T17:54:29.000Z",
+			"updated": "2016-08-17T17:54:47.578Z",
+			"summary": "Denise",
+			"colorId": "3",
+			"creator": {
+				"email": "d00310169@dmail.dixie.edu",
+				"displayName": "D00310169@dmail.dixie.edu"
+			},
+			"organizer": {
+				"email": "dmail.dixie.edu_o8rcipn2b5um5tc9b1ssjuo0mo@group.calendar.google.com",
+				"displayName": "Intern Schedule",
+				"self": true
+			},
+			"start": {
+				"dateTime": "2016-12-06T16:00:00-07:00",
+				"timeZone": "America/Denver"
+			},
+			"end": {
+				"dateTime": "2016-12-06T17:00:00-07:00",
+				"timeZone": "America/Denver"
+			},
+			"recurringEventId": "g6n67nh04cbbojskqjkaei241o",
+			"originalStartTime": {
+				"dateTime": "2016-12-06T16:00:00-07:00",
+				"timeZone": "America/Denver"
+			},
+			"iCalUID": "g6n67nh04cbbojskqjkaei241o@google.com",
+			"sequence": 1,
+			"hangoutLink": "https://plus.google.com/hangouts/_/dmail.dixie.edu/denise?hceid=ZG1haWwuZGl4aWUuZWR1X284cmNpcG4yYjV1bTV0YzliMXNzanVvMG1vQGdyb3VwLmNhbGVuZGFyLmdvb2dsZS5jb20.g6n67nh04cbbojskqjkaei241o",
+			"reminders": {
+				"useDefault": true
+			}
+		},
+		{
+			"kind": "calendar#event",
+			"etag": "\"2943082180326000\"",
+			"id": "d26l1tf0vjatr0l4hks8mmnh7s_20161207T170000Z",
+			"status": "confirmed",
+			"htmlLink": "https://www.google.com/calendar/event?eid=ZDI2bDF0ZjB2amF0cjBsNGhrczhtbW5oN3NfMjAxNjEyMDdUMTcwMDAwWiBkbWFpbC5kaXhpZS5lZHVfbzhyY2lwbjJiNXVtNXRjOWIxc3NqdW8wbW9AZw",
+			"created": "2016-08-17T17:53:08.000Z",
+			"updated": "2016-08-18T17:24:50.163Z",
+			"summary": "Nick",
+			"colorId": "9",
+			"creator": {
+				"email": "d00310169@dmail.dixie.edu",
+				"displayName": "D00310169@dmail.dixie.edu"
+			},
+			"organizer": {
+				"email": "dmail.dixie.edu_o8rcipn2b5um5tc9b1ssjuo0mo@group.calendar.google.com",
+				"displayName": "Intern Schedule",
+				"self": true
+			},
+			"start": {
+				"dateTime": "2016-12-07T10:00:00-07:00",
+				"timeZone": "America/Denver"
+			},
+			"end": {
+				"dateTime": "2016-12-07T12:00:00-07:00",
+				"timeZone": "America/Denver"
+			},
+			"recurringEventId": "d26l1tf0vjatr0l4hks8mmnh7s",
+			"originalStartTime": {
+				"dateTime": "2016-12-07T10:00:00-07:00",
+				"timeZone": "America/Denver"
+			},
+			"iCalUID": "d26l1tf0vjatr0l4hks8mmnh7s@google.com",
+			"sequence": 1,
+			"hangoutLink": "https://plus.google.com/hangouts/_/dmail.dixie.edu/nick?hceid=ZG1haWwuZGl4aWUuZWR1X284cmNpcG4yYjV1bTV0YzliMXNzanVvMG1vQGdyb3VwLmNhbGVuZGFyLmdvb2dsZS5jb20.d26l1tf0vjatr0l4hks8mmnh7s",
+			"reminders": {
+				"useDefault": true
+			}
+		},
+		{
+			"kind": "calendar#event",
+			"etag": "\"2942912263798000\"",
+			"id": "k5dneqlts0b29rlkfu9a8504ss_20161207T170000Z",
+			"status": "confirmed",
+			"htmlLink": "https://www.google.com/calendar/event?eid=azVkbmVxbHRzMGIyOXJsa2Z1OWE4NTA0c3NfMjAxNjEyMDdUMTcwMDAwWiBkbWFpbC5kaXhpZS5lZHVfbzhyY2lwbjJiNXVtNXRjOWIxc3NqdW8wbW9AZw",
+			"created": "2016-06-13T17:20:07.000Z",
+			"updated": "2016-08-17T17:48:51.899Z",
+			"summary": "Denise",
+			"colorId": "3",
+			"creator": {
+				"email": "d00310169@dmail.dixie.edu",
+				"displayName": "D00310169@dmail.dixie.edu"
+			},
+			"organizer": {
+				"email": "dmail.dixie.edu_o8rcipn2b5um5tc9b1ssjuo0mo@group.calendar.google.com",
+				"displayName": "Intern Schedule",
+				"self": true
+			},
+			"start": {
+				"dateTime": "2016-12-07T10:00:00-07:00",
+				"timeZone": "America/Denver"
+			},
+			"end": {
+				"dateTime": "2016-12-07T11:00:00-07:00",
+				"timeZone": "America/Denver"
+			},
+			"recurringEventId": "k5dneqlts0b29rlkfu9a8504ss",
+			"originalStartTime": {
+				"dateTime": "2016-12-07T10:00:00-07:00",
+				"timeZone": "America/Denver"
+			},
+			"iCalUID": "k5dneqlts0b29rlkfu9a8504ss@google.com",
+			"sequence": 2,
+			"hangoutLink": "https://plus.google.com/hangouts/_/dmail.dixie.edu/denise?hceid=ZG1haWwuZGl4aWUuZWR1X284cmNpcG4yYjV1bTV0YzliMXNzanVvMG1vQGdyb3VwLmNhbGVuZGFyLmdvb2dsZS5jb20.s2fthgdbu59n20vq0csd4fq6ss",
+			"reminders": {
+				"useDefault": true
+			}
+		},
+		{
+			"kind": "calendar#event",
+			"etag": "\"2954011345452000\"",
+			"id": "mdkvt0egqbkjb02clnhegbrsks_20161207T170000Z",
+			"status": "confirmed",
+			"htmlLink": "https://www.google.com/calendar/event?eid=bWRrdnQwZWdxYmtqYjAyY2xuaGVnYnJza3NfMjAxNjEyMDdUMTcwMDAwWiBkbWFpbC5kaXhpZS5lZHVfbzhyY2lwbjJiNXVtNXRjOWIxc3NqdW8wbW9AZw",
+			"created": "2016-09-06T22:13:10.000Z",
+			"updated": "2016-10-20T23:21:12.726Z",
+			"summary": "Ross",
+			"colorId": "10",
+			"creator": {
+				"email": "d00310169@dmail.dixie.edu",
+				"displayName": "D00310169@dmail.dixie.edu"
+			},
+			"organizer": {
+				"email": "dmail.dixie.edu_o8rcipn2b5um5tc9b1ssjuo0mo@group.calendar.google.com",
+				"displayName": "Intern Schedule",
+				"self": true
+			},
+			"start": {
+				"dateTime": "2016-12-07T10:00:00-07:00",
+				"timeZone": "America/Denver"
+			},
+			"end": {
+				"dateTime": "2016-12-07T12:00:00-07:00",
+				"timeZone": "America/Denver"
+			},
+			"recurringEventId": "mdkvt0egqbkjb02clnhegbrsks",
+			"originalStartTime": {
+				"dateTime": "2016-12-07T10:00:00-07:00",
+				"timeZone": "America/Denver"
+			},
+			"iCalUID": "mdkvt0egqbkjb02clnhegbrsks@google.com",
+			"sequence": 1,
+			"hangoutLink": "https://plus.google.com/hangouts/_/dmail.dixie.edu/ross?hceid=ZG1haWwuZGl4aWUuZWR1X284cmNpcG4yYjV1bTV0YzliMXNzanVvMG1vQGdyb3VwLmNhbGVuZGFyLmdvb2dsZS5jb20.i14ucr2joqc48ogqanrsnipquk",
+			"reminders": {
+				"useDefault": true
+			}
+		},
+		{
+			"kind": "calendar#event",
+			"etag": "\"2943263847578000\"",
+			"id": "sna522dt2c8k1bhm9dntj4r1so_20161207T170000Z",
+			"status": "confirmed",
+			"htmlLink": "https://www.google.com/calendar/event?eid=c25hNTIyZHQyYzhrMWJobTlkbnRqNHIxc29fMjAxNjEyMDdUMTcwMDAwWiBkbWFpbC5kaXhpZS5lZHVfbzhyY2lwbjJiNXVtNXRjOWIxc3NqdW8wbW9AZw",
+			"created": "2016-08-19T18:38:43.000Z",
+			"updated": "2016-08-19T18:38:43.789Z",
+			"summary": "Matt",
+			"colorId": "11",
+			"creator": {
+				"email": "d00310169@dmail.dixie.edu",
+				"displayName": "D00310169@dmail.dixie.edu"
+			},
+			"organizer": {
+				"email": "dmail.dixie.edu_o8rcipn2b5um5tc9b1ssjuo0mo@group.calendar.google.com",
+				"displayName": "Intern Schedule",
+				"self": true
+			},
+			"start": {
+				"dateTime": "2016-12-07T10:00:00-07:00",
+				"timeZone": "America/Denver"
+			},
+			"end": {
+				"dateTime": "2016-12-07T12:00:00-07:00",
+				"timeZone": "America/Denver"
+			},
+			"recurringEventId": "sna522dt2c8k1bhm9dntj4r1so",
+			"originalStartTime": {
+				"dateTime": "2016-12-07T10:00:00-07:00",
+				"timeZone": "America/Denver"
+			},
+			"iCalUID": "sna522dt2c8k1bhm9dntj4r1so@google.com",
+			"sequence": 0,
+			"hangoutLink": "https://plus.google.com/hangouts/_/dmail.dixie.edu/matt?hceid=ZG1haWwuZGl4aWUuZWR1X284cmNpcG4yYjV1bTV0YzliMXNzanVvMG1vQGdyb3VwLmNhbGVuZGFyLmdvb2dsZS5jb20.sna522dt2c8k1bhm9dntj4r1so",
+			"reminders": {
+				"useDefault": true
+			}
+		},
+		{
+			"kind": "calendar#event",
+			"etag": "\"2946400200490000\"",
+			"id": "n5scpniu14nliff8dr5qvd1p7c_20161207T200000Z",
+			"status": "confirmed",
+			"htmlLink": "https://www.google.com/calendar/event?eid=bjVzY3BuaXUxNG5saWZmOGRyNXF2ZDFwN2NfMjAxNjEyMDdUMjAwMDAwWiBkbWFpbC5kaXhpZS5lZHVfbzhyY2lwbjJiNXVtNXRjOWIxc3NqdW8wbW9AZw",
+			"created": "2016-09-06T22:14:45.000Z",
+			"updated": "2016-09-06T22:15:00.245Z",
+			"summary": "Ross",
+			"colorId": "10",
+			"creator": {
+				"email": "d00310169@dmail.dixie.edu",
+				"displayName": "D00310169@dmail.dixie.edu"
+			},
+			"organizer": {
+				"email": "dmail.dixie.edu_o8rcipn2b5um5tc9b1ssjuo0mo@group.calendar.google.com",
+				"displayName": "Intern Schedule",
+				"self": true
+			},
+			"start": {
+				"dateTime": "2016-12-07T13:00:00-07:00",
+				"timeZone": "America/Denver"
+			},
+			"end": {
+				"dateTime": "2016-12-07T14:00:00-07:00",
+				"timeZone": "America/Denver"
+			},
+			"recurringEventId": "n5scpniu14nliff8dr5qvd1p7c",
+			"originalStartTime": {
+				"dateTime": "2016-12-07T13:00:00-07:00",
+				"timeZone": "America/Denver"
+			},
+			"iCalUID": "n5scpniu14nliff8dr5qvd1p7c@google.com",
+			"sequence": 0,
+			"hangoutLink": "https://plus.google.com/hangouts/_/dmail.dixie.edu/ross?hceid=ZG1haWwuZGl4aWUuZWR1X284cmNpcG4yYjV1bTV0YzliMXNzanVvMG1vQGdyb3VwLmNhbGVuZGFyLmdvb2dsZS5jb20.n5scpniu14nliff8dr5qvd1p7c",
+			"reminders": {
+				"useDefault": true
+			}
+		},
+		{
+			"kind": "calendar#event",
+			"etag": "\"2946398333450000\"",
+			"id": "gt6qp5hs2gscitsbmbutdkh7ms_20161207T210000Z",
+			"status": "confirmed",
+			"htmlLink": "https://www.google.com/calendar/event?eid=Z3Q2cXA1aHMyZ3NjaXRzYm1idXRka2g3bXNfMjAxNjEyMDdUMjEwMDAwWiBkbWFpbC5kaXhpZS5lZHVfbzhyY2lwbjJiNXVtNXRjOWIxc3NqdW8wbW9AZw",
+			"created": "2016-08-19T18:39:11.000Z",
+			"updated": "2016-09-06T21:59:26.725Z",
+			"summary": "Matt",
+			"colorId": "11",
+			"creator": {
+				"email": "d00310169@dmail.dixie.edu",
+				"displayName": "D00310169@dmail.dixie.edu"
+			},
+			"organizer": {
+				"email": "dmail.dixie.edu_o8rcipn2b5um5tc9b1ssjuo0mo@group.calendar.google.com",
+				"displayName": "Intern Schedule",
+				"self": true
+			},
+			"start": {
+				"dateTime": "2016-12-07T14:00:00-07:00",
+				"timeZone": "America/Denver"
+			},
+			"end": {
+				"dateTime": "2016-12-07T15:00:00-07:00",
+				"timeZone": "America/Denver"
+			},
+			"recurringEventId": "gt6qp5hs2gscitsbmbutdkh7ms",
+			"originalStartTime": {
+				"dateTime": "2016-12-07T14:00:00-07:00",
+				"timeZone": "America/Denver"
+			},
+			"iCalUID": "gt6qp5hs2gscitsbmbutdkh7ms@google.com",
+			"sequence": 1,
+			"hangoutLink": "https://plus.google.com/hangouts/_/dmail.dixie.edu/matt?hceid=ZG1haWwuZGl4aWUuZWR1X284cmNpcG4yYjV1bTV0YzliMXNzanVvMG1vQGdyb3VwLmNhbGVuZGFyLmdvb2dsZS5jb20.nkk0phkl30q2ocepqa7sdta58o",
+			"reminders": {
+				"useDefault": true
+			}
+		},
+		{
+			"kind": "calendar#event",
+			"etag": "\"2943082845634000\"",
+			"id": "8e791908knbg8dqfsd9ch06hj0_20161207T220000Z",
+			"status": "confirmed",
+			"htmlLink": "https://www.google.com/calendar/event?eid=OGU3OTE5MDhrbmJnOGRxZnNkOWNoMDZoajBfMjAxNjEyMDdUMjIwMDAwWiBkbWFpbC5kaXhpZS5lZHVfbzhyY2lwbjJiNXVtNXRjOWIxc3NqdW8wbW9AZw",
+			"created": "2016-08-17T17:51:42.000Z",
+			"updated": "2016-08-18T17:30:22.817Z",
+			"summary": "Nick",
+			"colorId": "9",
+			"creator": {
+				"email": "d00310169@dmail.dixie.edu",
+				"displayName": "D00310169@dmail.dixie.edu"
+			},
+			"organizer": {
+				"email": "dmail.dixie.edu_o8rcipn2b5um5tc9b1ssjuo0mo@group.calendar.google.com",
+				"displayName": "Intern Schedule",
+				"self": true
+			},
+			"start": {
+				"dateTime": "2016-12-07T15:00:00-07:00",
+				"timeZone": "America/Denver"
+			},
+			"end": {
+				"dateTime": "2016-12-07T17:00:00-07:00",
+				"timeZone": "America/Denver"
+			},
+			"recurringEventId": "8e791908knbg8dqfsd9ch06hj0",
+			"originalStartTime": {
+				"dateTime": "2016-12-07T15:00:00-07:00",
+				"timeZone": "America/Denver"
+			},
+			"iCalUID": "8e791908knbg8dqfsd9ch06hj0@google.com",
+			"sequence": 3,
+			"hangoutLink": "https://plus.google.com/hangouts/_/dmail.dixie.edu/nick?hceid=ZG1haWwuZGl4aWUuZWR1X284cmNpcG4yYjV1bTV0YzliMXNzanVvMG1vQGdyb3VwLmNhbGVuZGFyLmdvb2dsZS5jb20.8e791908knbg8dqfsd9ch06hj0",
+			"reminders": {
+				"useDefault": true
+			}
+		},
+		{
+			"kind": "calendar#event",
+			"etag": "\"2942912302536000\"",
+			"id": "no2djcm9667s34c30kdkp242go_20161207T220000Z",
+			"status": "confirmed",
+			"htmlLink": "https://www.google.com/calendar/event?eid=bm8yZGpjbTk2NjdzMzRjMzBrZGtwMjQyZ29fMjAxNjEyMDdUMjIwMDAwWiBkbWFpbC5kaXhpZS5lZHVfbzhyY2lwbjJiNXVtNXRjOWIxc3NqdW8wbW9AZw",
+			"created": "2016-08-17T17:45:02.000Z",
+			"updated": "2016-08-17T17:49:11.268Z",
+			"summary": "Denise",
+			"colorId": "3",
+			"creator": {
+				"email": "d00310169@dmail.dixie.edu",
+				"displayName": "D00310169@dmail.dixie.edu"
+			},
+			"organizer": {
+				"email": "dmail.dixie.edu_o8rcipn2b5um5tc9b1ssjuo0mo@group.calendar.google.com",
+				"displayName": "Intern Schedule",
+				"self": true
+			},
+			"start": {
+				"dateTime": "2016-12-07T15:00:00-07:00",
+				"timeZone": "America/Denver"
+			},
+			"end": {
+				"dateTime": "2016-12-07T17:00:00-07:00",
+				"timeZone": "America/Denver"
+			},
+			"recurringEventId": "no2djcm9667s34c30kdkp242go",
+			"originalStartTime": {
+				"dateTime": "2016-12-07T15:00:00-07:00",
+				"timeZone": "America/Denver"
+			},
+			"iCalUID": "no2djcm9667s34c30kdkp242go@google.com",
+			"sequence": 0,
+			"hangoutLink": "https://plus.google.com/hangouts/_/dmail.dixie.edu/denise?hceid=ZG1haWwuZGl4aWUuZWR1X284cmNpcG4yYjV1bTV0YzliMXNzanVvMG1vQGdyb3VwLmNhbGVuZGFyLmdvb2dsZS5jb20.no2djcm9667s34c30kdkp242go",
+			"reminders": {
+				"useDefault": true
+			}
+		},
+		{
+			"kind": "calendar#event",
+			"etag": "\"2945682170784000\"",
+			"id": "d25jvhvfmdp5m97tsdlprs538c_20161208T170000Z",
+			"status": "confirmed",
+			"htmlLink": "https://www.google.com/calendar/event?eid=ZDI1anZodmZtZHA1bTk3dHNkbHByczUzOGNfMjAxNjEyMDhUMTcwMDAwWiBkbWFpbC5kaXhpZS5lZHVfbzhyY2lwbjJiNXVtNXRjOWIxc3NqdW8wbW9AZw",
+			"created": "2016-08-17T17:53:51.000Z",
+			"updated": "2016-09-02T18:31:25.392Z",
+			"summary": "Denise",
+			"colorId": "3",
+			"creator": {
+				"email": "d00310169@dmail.dixie.edu",
+				"displayName": "D00310169@dmail.dixie.edu"
+			},
+			"organizer": {
+				"email": "dmail.dixie.edu_o8rcipn2b5um5tc9b1ssjuo0mo@group.calendar.google.com",
+				"displayName": "Intern Schedule",
+				"self": true
+			},
+			"start": {
+				"dateTime": "2016-12-08T10:00:00-07:00",
+				"timeZone": "America/Denver"
+			},
+			"end": {
+				"dateTime": "2016-12-08T12:00:00-07:00",
+				"timeZone": "America/Denver"
+			},
+			"recurringEventId": "d25jvhvfmdp5m97tsdlprs538c_R20160906T160000",
+			"originalStartTime": {
+				"dateTime": "2016-12-08T10:00:00-07:00",
+				"timeZone": "America/Denver"
+			},
+			"iCalUID": "d25jvhvfmdp5m97tsdlprs538c_R20160906T160000@google.com",
+			"sequence": 1,
+			"hangoutLink": "https://plus.google.com/hangouts/_/dmail.dixie.edu/denise?hceid=ZG1haWwuZGl4aWUuZWR1X284cmNpcG4yYjV1bTV0YzliMXNzanVvMG1vQGdyb3VwLmNhbGVuZGFyLmdvb2dsZS5jb20.7gtbv2a0095emh6jj329c1q5q0",
+			"reminders": {
+				"useDefault": true
+			}
+		},
+		{
+			"kind": "calendar#event",
+			"etag": "\"2954011452734000\"",
+			"id": "2oo0ivu65bic8jpt1r1p5um79c_20161208T190000Z",
+			"status": "confirmed",
+			"htmlLink": "https://www.google.com/calendar/event?eid=Mm9vMGl2dTY1YmljOGpwdDFyMXA1dW03OWNfMjAxNjEyMDhUMTkwMDAwWiBkbWFpbC5kaXhpZS5lZHVfbzhyY2lwbjJiNXVtNXRjOWIxc3NqdW8wbW9AZw",
+			"created": "2016-09-06T22:13:35.000Z",
+			"updated": "2016-10-20T23:22:06.367Z",
+			"summary": "Ross",
+			"colorId": "10",
+			"creator": {
+				"email": "d00310169@dmail.dixie.edu",
+				"displayName": "D00310169@dmail.dixie.edu"
+			},
+			"organizer": {
+				"email": "dmail.dixie.edu_o8rcipn2b5um5tc9b1ssjuo0mo@group.calendar.google.com",
+				"displayName": "Intern Schedule",
+				"self": true
+			},
+			"start": {
+				"dateTime": "2016-12-08T12:00:00-07:00",
+				"timeZone": "America/Denver"
+			},
+			"end": {
+				"dateTime": "2016-12-08T15:00:00-07:00",
+				"timeZone": "America/Denver"
+			},
+			"recurringEventId": "2oo0ivu65bic8jpt1r1p5um79c",
+			"originalStartTime": {
+				"dateTime": "2016-12-08T12:00:00-07:00",
+				"timeZone": "America/Denver"
+			},
+			"iCalUID": "2oo0ivu65bic8jpt1r1p5um79c@google.com",
+			"sequence": 2,
+			"hangoutLink": "https://plus.google.com/hangouts/_/dmail.dixie.edu/ross?hceid=ZG1haWwuZGl4aWUuZWR1X284cmNpcG4yYjV1bTV0YzliMXNzanVvMG1vQGdyb3VwLmNhbGVuZGFyLmdvb2dsZS5jb20.lnhrmvdi9skqus5cabmcfl2d8s",
+			"reminders": {
+				"useDefault": true
+			}
+		},
+		{
+			"kind": "calendar#event",
+			"etag": "\"2947907344080000\"",
+			"id": "dj708n6g0mnkhtdkn9jef2s4kc_20161208T210000Z",
+			"status": "confirmed",
+			"htmlLink": "https://www.google.com/calendar/event?eid=ZGo3MDhuNmcwbW5raHRka245amVmMnM0a2NfMjAxNjEyMDhUMjEwMDAwWiBkbWFpbC5kaXhpZS5lZHVfbzhyY2lwbjJiNXVtNXRjOWIxc3NqdW8wbW9AZw",
+			"created": "2016-08-24T16:34:00.000Z",
+			"updated": "2016-09-15T15:34:32.040Z",
+			"summary": "Victoria",
+			"colorId": "5",
+			"creator": {
+				"email": "d00310169@dmail.dixie.edu",
+				"displayName": "D00310169@dmail.dixie.edu"
+			},
+			"organizer": {
+				"email": "dmail.dixie.edu_o8rcipn2b5um5tc9b1ssjuo0mo@group.calendar.google.com",
+				"displayName": "Intern Schedule",
+				"self": true
+			},
+			"start": {
+				"dateTime": "2016-12-08T14:00:00-07:00",
+				"timeZone": "America/Denver"
+			},
+			"end": {
+				"dateTime": "2016-12-08T16:00:00-07:00",
+				"timeZone": "America/Denver"
+			},
+			"recurringEventId": "dj708n6g0mnkhtdkn9jef2s4kc",
+			"originalStartTime": {
+				"dateTime": "2016-12-08T14:00:00-07:00",
+				"timeZone": "America/Denver"
+			},
+			"iCalUID": "dj708n6g0mnkhtdkn9jef2s4kc@google.com",
+			"sequence": 1,
+			"hangoutLink": "https://plus.google.com/hangouts/_/dmail.dixie.edu/dmail-dixie-edu?hceid=ZG1haWwuZGl4aWUuZWR1X284cmNpcG4yYjV1bTV0YzliMXNzanVvMG1vQGdyb3VwLmNhbGVuZGFyLmdvb2dsZS5jb20.99c4q8oec01bkhqc3cipi2gjf4",
+			"reminders": {
+				"useDefault": true
+			}
+		},
+		{
+			"kind": "calendar#event",
+			"etag": "\"2946398271354000\"",
+			"id": "kmftp21tkoaid48dskvvq1ce5s_20161208T210000Z",
+			"status": "confirmed",
+			"htmlLink": "https://www.google.com/calendar/event?eid=a21mdHAyMXRrb2FpZDQ4ZHNrdnZxMWNlNXNfMjAxNjEyMDhUMjEwMDAwWiBkbWFpbC5kaXhpZS5lZHVfbzhyY2lwbjJiNXVtNXRjOWIxc3NqdW8wbW9AZw",
+			"created": "2016-08-19T18:39:31.000Z",
+			"updated": "2016-09-06T21:58:55.677Z",
+			"summary": "Matt",
+			"colorId": "11",
+			"creator": {
+				"email": "d00310169@dmail.dixie.edu",
+				"displayName": "D00310169@dmail.dixie.edu"
+			},
+			"organizer": {
+				"email": "dmail.dixie.edu_o8rcipn2b5um5tc9b1ssjuo0mo@group.calendar.google.com",
+				"displayName": "Intern Schedule",
+				"self": true
+			},
+			"start": {
+				"dateTime": "2016-12-08T14:00:00-07:00",
+				"timeZone": "America/Denver"
+			},
+			"end": {
+				"dateTime": "2016-12-08T15:00:00-07:00",
+				"timeZone": "America/Denver"
+			},
+			"recurringEventId": "kmftp21tkoaid48dskvvq1ce5s_R20160906T200000",
+			"originalStartTime": {
+				"dateTime": "2016-12-08T14:00:00-07:00",
+				"timeZone": "America/Denver"
+			},
+			"iCalUID": "kmftp21tkoaid48dskvvq1ce5s_R20160906T200000@google.com",
+			"sequence": 1,
+			"hangoutLink": "https://plus.google.com/hangouts/_/dmail.dixie.edu/matt?hceid=ZG1haWwuZGl4aWUuZWR1X284cmNpcG4yYjV1bTV0YzliMXNzanVvMG1vQGdyb3VwLmNhbGVuZGFyLmdvb2dsZS5jb20.kmftp21tkoaid48dskvvq1ce5s",
+			"reminders": {
+				"useDefault": true
+			}
+		},
+		{
+			"kind": "calendar#event",
+			"etag": "\"2943082845634000\"",
+			"id": "8e791908knbg8dqfsd9ch06hj0_20161208T220000Z",
+			"status": "confirmed",
+			"htmlLink": "https://www.google.com/calendar/event?eid=OGU3OTE5MDhrbmJnOGRxZnNkOWNoMDZoajBfMjAxNjEyMDhUMjIwMDAwWiBkbWFpbC5kaXhpZS5lZHVfbzhyY2lwbjJiNXVtNXRjOWIxc3NqdW8wbW9AZw",
+			"created": "2016-08-17T17:51:42.000Z",
+			"updated": "2016-08-18T17:30:22.817Z",
+			"summary": "Nick",
+			"colorId": "9",
+			"creator": {
+				"email": "d00310169@dmail.dixie.edu",
+				"displayName": "D00310169@dmail.dixie.edu"
+			},
+			"organizer": {
+				"email": "dmail.dixie.edu_o8rcipn2b5um5tc9b1ssjuo0mo@group.calendar.google.com",
+				"displayName": "Intern Schedule",
+				"self": true
+			},
+			"start": {
+				"dateTime": "2016-12-08T15:00:00-07:00",
+				"timeZone": "America/Denver"
+			},
+			"end": {
+				"dateTime": "2016-12-08T17:00:00-07:00",
+				"timeZone": "America/Denver"
+			},
+			"recurringEventId": "8e791908knbg8dqfsd9ch06hj0",
+			"originalStartTime": {
+				"dateTime": "2016-12-08T15:00:00-07:00",
+				"timeZone": "America/Denver"
+			},
+			"iCalUID": "8e791908knbg8dqfsd9ch06hj0@google.com",
+			"sequence": 3,
+			"hangoutLink": "https://plus.google.com/hangouts/_/dmail.dixie.edu/nick?hceid=ZG1haWwuZGl4aWUuZWR1X284cmNpcG4yYjV1bTV0YzliMXNzanVvMG1vQGdyb3VwLmNhbGVuZGFyLmdvb2dsZS5jb20.8e791908knbg8dqfsd9ch06hj0",
+			"reminders": {
+				"useDefault": true
+			}
+		},
+		{
+			"kind": "calendar#event",
+			"etag": "\"2942912975156000\"",
+			"id": "g6n67nh04cbbojskqjkaei241o_20161208T230000Z",
+			"status": "confirmed",
+			"htmlLink": "https://www.google.com/calendar/event?eid=ZzZuNjduaDA0Y2Jib2pza3Fqa2FlaTI0MW9fMjAxNjEyMDhUMjMwMDAwWiBkbWFpbC5kaXhpZS5lZHVfbzhyY2lwbjJiNXVtNXRjOWIxc3NqdW8wbW9AZw",
+			"created": "2016-08-17T17:54:29.000Z",
+			"updated": "2016-08-17T17:54:47.578Z",
+			"summary": "Denise",
+			"colorId": "3",
+			"creator": {
+				"email": "d00310169@dmail.dixie.edu",
+				"displayName": "D00310169@dmail.dixie.edu"
+			},
+			"organizer": {
+				"email": "dmail.dixie.edu_o8rcipn2b5um5tc9b1ssjuo0mo@group.calendar.google.com",
+				"displayName": "Intern Schedule",
+				"self": true
+			},
+			"start": {
+				"dateTime": "2016-12-08T16:00:00-07:00",
+				"timeZone": "America/Denver"
+			},
+			"end": {
+				"dateTime": "2016-12-08T17:00:00-07:00",
+				"timeZone": "America/Denver"
+			},
+			"recurringEventId": "g6n67nh04cbbojskqjkaei241o",
+			"originalStartTime": {
+				"dateTime": "2016-12-08T16:00:00-07:00",
+				"timeZone": "America/Denver"
+			},
+			"iCalUID": "g6n67nh04cbbojskqjkaei241o@google.com",
+			"sequence": 1,
+			"hangoutLink": "https://plus.google.com/hangouts/_/dmail.dixie.edu/denise?hceid=ZG1haWwuZGl4aWUuZWR1X284cmNpcG4yYjV1bTV0YzliMXNzanVvMG1vQGdyb3VwLmNhbGVuZGFyLmdvb2dsZS5jb20.g6n67nh04cbbojskqjkaei241o",
+			"reminders": {
+				"useDefault": true
+			}
+		},
+		{
+			"kind": "calendar#event",
+			"etag": "\"2943082180326000\"",
+			"id": "d26l1tf0vjatr0l4hks8mmnh7s_20161209T170000Z",
+			"status": "confirmed",
+			"htmlLink": "https://www.google.com/calendar/event?eid=ZDI2bDF0ZjB2amF0cjBsNGhrczhtbW5oN3NfMjAxNjEyMDlUMTcwMDAwWiBkbWFpbC5kaXhpZS5lZHVfbzhyY2lwbjJiNXVtNXRjOWIxc3NqdW8wbW9AZw",
+			"created": "2016-08-17T17:53:08.000Z",
+			"updated": "2016-08-18T17:24:50.163Z",
+			"summary": "Nick",
+			"colorId": "9",
+			"creator": {
+				"email": "d00310169@dmail.dixie.edu",
+				"displayName": "D00310169@dmail.dixie.edu"
+			},
+			"organizer": {
+				"email": "dmail.dixie.edu_o8rcipn2b5um5tc9b1ssjuo0mo@group.calendar.google.com",
+				"displayName": "Intern Schedule",
+				"self": true
+			},
+			"start": {
+				"dateTime": "2016-12-09T10:00:00-07:00",
+				"timeZone": "America/Denver"
+			},
+			"end": {
+				"dateTime": "2016-12-09T12:00:00-07:00",
+				"timeZone": "America/Denver"
+			},
+			"recurringEventId": "d26l1tf0vjatr0l4hks8mmnh7s",
+			"originalStartTime": {
+				"dateTime": "2016-12-09T10:00:00-07:00",
+				"timeZone": "America/Denver"
+			},
+			"iCalUID": "d26l1tf0vjatr0l4hks8mmnh7s@google.com",
+			"sequence": 1,
+			"hangoutLink": "https://plus.google.com/hangouts/_/dmail.dixie.edu/nick?hceid=ZG1haWwuZGl4aWUuZWR1X284cmNpcG4yYjV1bTV0YzliMXNzanVvMG1vQGdyb3VwLmNhbGVuZGFyLmdvb2dsZS5jb20.d26l1tf0vjatr0l4hks8mmnh7s",
+			"reminders": {
+				"useDefault": true
+			}
+		},
+		{
+			"kind": "calendar#event",
+			"etag": "\"2942912263798000\"",
+			"id": "k5dneqlts0b29rlkfu9a8504ss_20161209T170000Z",
+			"status": "confirmed",
+			"htmlLink": "https://www.google.com/calendar/event?eid=azVkbmVxbHRzMGIyOXJsa2Z1OWE4NTA0c3NfMjAxNjEyMDlUMTcwMDAwWiBkbWFpbC5kaXhpZS5lZHVfbzhyY2lwbjJiNXVtNXRjOWIxc3NqdW8wbW9AZw",
+			"created": "2016-06-13T17:20:07.000Z",
+			"updated": "2016-08-17T17:48:51.899Z",
+			"summary": "Denise",
+			"colorId": "3",
+			"creator": {
+				"email": "d00310169@dmail.dixie.edu",
+				"displayName": "D00310169@dmail.dixie.edu"
+			},
+			"organizer": {
+				"email": "dmail.dixie.edu_o8rcipn2b5um5tc9b1ssjuo0mo@group.calendar.google.com",
+				"displayName": "Intern Schedule",
+				"self": true
+			},
+			"start": {
+				"dateTime": "2016-12-09T10:00:00-07:00",
+				"timeZone": "America/Denver"
+			},
+			"end": {
+				"dateTime": "2016-12-09T11:00:00-07:00",
+				"timeZone": "America/Denver"
+			},
+			"recurringEventId": "k5dneqlts0b29rlkfu9a8504ss",
+			"originalStartTime": {
+				"dateTime": "2016-12-09T10:00:00-07:00",
+				"timeZone": "America/Denver"
+			},
+			"iCalUID": "k5dneqlts0b29rlkfu9a8504ss@google.com",
+			"sequence": 2,
+			"hangoutLink": "https://plus.google.com/hangouts/_/dmail.dixie.edu/denise?hceid=ZG1haWwuZGl4aWUuZWR1X284cmNpcG4yYjV1bTV0YzliMXNzanVvMG1vQGdyb3VwLmNhbGVuZGFyLmdvb2dsZS5jb20.s2fthgdbu59n20vq0csd4fq6ss",
+			"reminders": {
+				"useDefault": true
+			}
+		},
+		{
+			"kind": "calendar#event",
+			"etag": "\"2954011345452000\"",
+			"id": "mdkvt0egqbkjb02clnhegbrsks_20161209T170000Z",
+			"status": "confirmed",
+			"htmlLink": "https://www.google.com/calendar/event?eid=bWRrdnQwZWdxYmtqYjAyY2xuaGVnYnJza3NfMjAxNjEyMDlUMTcwMDAwWiBkbWFpbC5kaXhpZS5lZHVfbzhyY2lwbjJiNXVtNXRjOWIxc3NqdW8wbW9AZw",
+			"created": "2016-09-06T22:13:10.000Z",
+			"updated": "2016-10-20T23:21:12.726Z",
+			"summary": "Ross",
+			"colorId": "10",
+			"creator": {
+				"email": "d00310169@dmail.dixie.edu",
+				"displayName": "D00310169@dmail.dixie.edu"
+			},
+			"organizer": {
+				"email": "dmail.dixie.edu_o8rcipn2b5um5tc9b1ssjuo0mo@group.calendar.google.com",
+				"displayName": "Intern Schedule",
+				"self": true
+			},
+			"start": {
+				"dateTime": "2016-12-09T10:00:00-07:00",
+				"timeZone": "America/Denver"
+			},
+			"end": {
+				"dateTime": "2016-12-09T12:00:00-07:00",
+				"timeZone": "America/Denver"
+			},
+			"recurringEventId": "mdkvt0egqbkjb02clnhegbrsks",
+			"originalStartTime": {
+				"dateTime": "2016-12-09T10:00:00-07:00",
+				"timeZone": "America/Denver"
+			},
+			"iCalUID": "mdkvt0egqbkjb02clnhegbrsks@google.com",
+			"sequence": 1,
+			"hangoutLink": "https://plus.google.com/hangouts/_/dmail.dixie.edu/ross?hceid=ZG1haWwuZGl4aWUuZWR1X284cmNpcG4yYjV1bTV0YzliMXNzanVvMG1vQGdyb3VwLmNhbGVuZGFyLmdvb2dsZS5jb20.i14ucr2joqc48ogqanrsnipquk",
+			"reminders": {
+				"useDefault": true
+			}
+		},
+		{
+			"kind": "calendar#event",
+			"etag": "\"2946398226504000\"",
+			"id": "on0c3tgj3k00psfb891fo3tk1g_20161209T170000Z",
+			"status": "confirmed",
+			"htmlLink": "https://www.google.com/calendar/event?eid=b24wYzN0Z2ozazAwcHNmYjg5MWZvM3RrMWdfMjAxNjEyMDlUMTcwMDAwWiBkbWFpbC5kaXhpZS5lZHVfbzhyY2lwbjJiNXVtNXRjOWIxc3NqdW8wbW9AZw",
+			"created": "2016-08-19T18:39:46.000Z",
+			"updated": "2016-09-06T21:58:33.252Z",
+			"summary": "Matt",
+			"colorId": "11",
+			"creator": {
+				"email": "d00310169@dmail.dixie.edu",
+				"displayName": "D00310169@dmail.dixie.edu"
+			},
+			"organizer": {
+				"email": "dmail.dixie.edu_o8rcipn2b5um5tc9b1ssjuo0mo@group.calendar.google.com",
+				"displayName": "Intern Schedule",
+				"self": true
+			},
+			"start": {
+				"dateTime": "2016-12-09T10:00:00-07:00",
+				"timeZone": "America/Denver"
+			},
+			"end": {
+				"dateTime": "2016-12-09T15:00:00-07:00",
+				"timeZone": "America/Denver"
+			},
+			"recurringEventId": "on0c3tgj3k00psfb891fo3tk1g_R20160909T160000",
+			"originalStartTime": {
+				"dateTime": "2016-12-09T10:00:00-07:00",
+				"timeZone": "America/Denver"
+			},
+			"iCalUID": "on0c3tgj3k00psfb891fo3tk1g_R20160909T160000@google.com",
+			"sequence": 1,
+			"hangoutLink": "https://plus.google.com/hangouts/_/dmail.dixie.edu/matt?hceid=ZG1haWwuZGl4aWUuZWR1X284cmNpcG4yYjV1bTV0YzliMXNzanVvMG1vQGdyb3VwLmNhbGVuZGFyLmdvb2dsZS5jb20.on0c3tgj3k00psfb891fo3tk1g",
+			"reminders": {
+				"useDefault": true
+			}
+		},
+		{
+			"kind": "calendar#event",
+			"etag": "\"2947907539466000\"",
+			"id": "klq69d5mfr878qeoj9eqkol698_20161209T200000Z",
+			"status": "confirmed",
+			"htmlLink": "https://www.google.com/calendar/event?eid=a2xxNjlkNW1mcjg3OHFlb2o5ZXFrb2w2OThfMjAxNjEyMDlUMjAwMDAwWiBkbWFpbC5kaXhpZS5lZHVfbzhyY2lwbjJiNXVtNXRjOWIxc3NqdW8wbW9AZw",
+			"created": "2016-09-15T15:36:00.000Z",
+			"updated": "2016-09-15T15:36:09.733Z",
+			"summary": "Victoria",
+			"colorId": "5",
+			"creator": {
+				"email": "d00310169@dmail.dixie.edu",
+				"displayName": "D00310169@dmail.dixie.edu"
+			},
+			"organizer": {
+				"email": "dmail.dixie.edu_o8rcipn2b5um5tc9b1ssjuo0mo@group.calendar.google.com",
+				"displayName": "Intern Schedule",
+				"self": true
+			},
+			"start": {
+				"dateTime": "2016-12-09T13:00:00-07:00",
+				"timeZone": "America/Denver"
+			},
+			"end": {
+				"dateTime": "2016-12-09T15:00:00-07:00",
+				"timeZone": "America/Denver"
+			},
+			"recurringEventId": "klq69d5mfr878qeoj9eqkol698",
+			"originalStartTime": {
+				"dateTime": "2016-12-09T13:00:00-07:00",
+				"timeZone": "America/Denver"
+			},
+			"iCalUID": "klq69d5mfr878qeoj9eqkol698@google.com",
+			"sequence": 0,
+			"hangoutLink": "https://plus.google.com/hangouts/_/dmail.dixie.edu/victoria?hceid=ZG1haWwuZGl4aWUuZWR1X284cmNpcG4yYjV1bTV0YzliMXNzanVvMG1vQGdyb3VwLmNhbGVuZGFyLmdvb2dsZS5jb20.klq69d5mfr878qeoj9eqkol698",
+			"reminders": {
+				"useDefault": true
+			}
+		},
+		{
+			"kind": "calendar#event",
+			"etag": "\"2946400200490000\"",
+			"id": "n5scpniu14nliff8dr5qvd1p7c_20161209T200000Z",
+			"status": "confirmed",
+			"htmlLink": "https://www.google.com/calendar/event?eid=bjVzY3BuaXUxNG5saWZmOGRyNXF2ZDFwN2NfMjAxNjEyMDlUMjAwMDAwWiBkbWFpbC5kaXhpZS5lZHVfbzhyY2lwbjJiNXVtNXRjOWIxc3NqdW8wbW9AZw",
+			"created": "2016-09-06T22:14:45.000Z",
+			"updated": "2016-09-06T22:15:00.245Z",
+			"summary": "Ross",
+			"colorId": "10",
+			"creator": {
+				"email": "d00310169@dmail.dixie.edu",
+				"displayName": "D00310169@dmail.dixie.edu"
+			},
+			"organizer": {
+				"email": "dmail.dixie.edu_o8rcipn2b5um5tc9b1ssjuo0mo@group.calendar.google.com",
+				"displayName": "Intern Schedule",
+				"self": true
+			},
+			"start": {
+				"dateTime": "2016-12-09T13:00:00-07:00",
+				"timeZone": "America/Denver"
+			},
+			"end": {
+				"dateTime": "2016-12-09T14:00:00-07:00",
+				"timeZone": "America/Denver"
+			},
+			"recurringEventId": "n5scpniu14nliff8dr5qvd1p7c",
+			"originalStartTime": {
+				"dateTime": "2016-12-09T13:00:00-07:00",
+				"timeZone": "America/Denver"
+			},
+			"iCalUID": "n5scpniu14nliff8dr5qvd1p7c@google.com",
+			"sequence": 0,
+			"hangoutLink": "https://plus.google.com/hangouts/_/dmail.dixie.edu/ross?hceid=ZG1haWwuZGl4aWUuZWR1X284cmNpcG4yYjV1bTV0YzliMXNzanVvMG1vQGdyb3VwLmNhbGVuZGFyLmdvb2dsZS5jb20.n5scpniu14nliff8dr5qvd1p7c",
+			"reminders": {
+				"useDefault": true
+			}
+		},
+		{
+			"kind": "calendar#event",
+			"etag": "\"2943082991510000\"",
+			"id": "irs1pt3uj3janh90hpj5il5h2s_20161209T220000Z",
+			"status": "confirmed",
+			"htmlLink": "https://www.google.com/calendar/event?eid=aXJzMXB0M3VqM2phbmg5MGhwajVpbDVoMnNfMjAxNjEyMDlUMjIwMDAwWiBkbWFpbC5kaXhpZS5lZHVfbzhyY2lwbjJiNXVtNXRjOWIxc3NqdW8wbW9AZw",
+			"created": "2016-08-18T17:31:35.000Z",
+			"updated": "2016-08-18T17:31:35.755Z",
+			"summary": "Nick",
+			"colorId": "9",
+			"creator": {
+				"email": "d00310169@dmail.dixie.edu",
+				"displayName": "D00310169@dmail.dixie.edu"
+			},
+			"organizer": {
+				"email": "dmail.dixie.edu_o8rcipn2b5um5tc9b1ssjuo0mo@group.calendar.google.com",
+				"displayName": "Intern Schedule",
+				"self": true
+			},
+			"start": {
+				"dateTime": "2016-12-09T15:00:00-07:00",
+				"timeZone": "America/Denver"
+			},
+			"end": {
+				"dateTime": "2016-12-09T16:00:00-07:00",
+				"timeZone": "America/Denver"
+			},
+			"recurringEventId": "irs1pt3uj3janh90hpj5il5h2s",
+			"originalStartTime": {
+				"dateTime": "2016-12-09T15:00:00-07:00",
+				"timeZone": "America/Denver"
+			},
+			"iCalUID": "irs1pt3uj3janh90hpj5il5h2s@google.com",
+			"sequence": 0,
+			"hangoutLink": "https://plus.google.com/hangouts/_/dmail.dixie.edu/nick?hceid=ZG1haWwuZGl4aWUuZWR1X284cmNpcG4yYjV1bTV0YzliMXNzanVvMG1vQGdyb3VwLmNhbGVuZGFyLmdvb2dsZS5jb20.irs1pt3uj3janh90hpj5il5h2s",
+			"reminders": {
+				"useDefault": true
+			}
+		},
+		{
+			"kind": "calendar#event",
+			"etag": "\"2942912302536000\"",
+			"id": "no2djcm9667s34c30kdkp242go_20161209T220000Z",
+			"status": "confirmed",
+			"htmlLink": "https://www.google.com/calendar/event?eid=bm8yZGpjbTk2NjdzMzRjMzBrZGtwMjQyZ29fMjAxNjEyMDlUMjIwMDAwWiBkbWFpbC5kaXhpZS5lZHVfbzhyY2lwbjJiNXVtNXRjOWIxc3NqdW8wbW9AZw",
+			"created": "2016-08-17T17:45:02.000Z",
+			"updated": "2016-08-17T17:49:11.268Z",
+			"summary": "Denise",
+			"colorId": "3",
+			"creator": {
+				"email": "d00310169@dmail.dixie.edu",
+				"displayName": "D00310169@dmail.dixie.edu"
+			},
+			"organizer": {
+				"email": "dmail.dixie.edu_o8rcipn2b5um5tc9b1ssjuo0mo@group.calendar.google.com",
+				"displayName": "Intern Schedule",
+				"self": true
+			},
+			"start": {
+				"dateTime": "2016-12-09T15:00:00-07:00",
+				"timeZone": "America/Denver"
+			},
+			"end": {
+				"dateTime": "2016-12-09T17:00:00-07:00",
+				"timeZone": "America/Denver"
+			},
+			"recurringEventId": "no2djcm9667s34c30kdkp242go",
+			"originalStartTime": {
+				"dateTime": "2016-12-09T15:00:00-07:00",
+				"timeZone": "America/Denver"
+			},
+			"iCalUID": "no2djcm9667s34c30kdkp242go@google.com",
+			"sequence": 0,
+			"hangoutLink": "https://plus.google.com/hangouts/_/dmail.dixie.edu/denise?hceid=ZG1haWwuZGl4aWUuZWR1X284cmNpcG4yYjV1bTV0YzliMXNzanVvMG1vQGdyb3VwLmNhbGVuZGFyLmdvb2dsZS5jb20.no2djcm9667s34c30kdkp242go",
+			"reminders": {
+				"useDefault": true
+			}
+		},
+		{
+			"kind": "calendar#event",
+			"etag": "\"2942912263798000\"",
+			"id": "k5dneqlts0b29rlkfu9a8504ss_20161212T170000Z",
+			"status": "confirmed",
+			"htmlLink": "https://www.google.com/calendar/event?eid=azVkbmVxbHRzMGIyOXJsa2Z1OWE4NTA0c3NfMjAxNjEyMTJUMTcwMDAwWiBkbWFpbC5kaXhpZS5lZHVfbzhyY2lwbjJiNXVtNXRjOWIxc3NqdW8wbW9AZw",
+			"created": "2016-06-13T17:20:07.000Z",
+			"updated": "2016-08-17T17:48:51.899Z",
+			"summary": "Denise",
+			"colorId": "3",
+			"creator": {
+				"email": "d00310169@dmail.dixie.edu",
+				"displayName": "D00310169@dmail.dixie.edu"
+			},
+			"organizer": {
+				"email": "dmail.dixie.edu_o8rcipn2b5um5tc9b1ssjuo0mo@group.calendar.google.com",
+				"displayName": "Intern Schedule",
+				"self": true
+			},
+			"start": {
+				"dateTime": "2016-12-12T10:00:00-07:00",
+				"timeZone": "America/Denver"
+			},
+			"end": {
+				"dateTime": "2016-12-12T11:00:00-07:00",
+				"timeZone": "America/Denver"
+			},
+			"recurringEventId": "k5dneqlts0b29rlkfu9a8504ss",
+			"originalStartTime": {
+				"dateTime": "2016-12-12T10:00:00-07:00",
+				"timeZone": "America/Denver"
+			},
+			"iCalUID": "k5dneqlts0b29rlkfu9a8504ss@google.com",
+			"sequence": 2,
+			"hangoutLink": "https://plus.google.com/hangouts/_/dmail.dixie.edu/denise?hceid=ZG1haWwuZGl4aWUuZWR1X284cmNpcG4yYjV1bTV0YzliMXNzanVvMG1vQGdyb3VwLmNhbGVuZGFyLmdvb2dsZS5jb20.s2fthgdbu59n20vq0csd4fq6ss",
+			"reminders": {
+				"useDefault": true
+			}
+		},
+		{
+			"kind": "calendar#event",
+			"etag": "\"2954011345452000\"",
+			"id": "mdkvt0egqbkjb02clnhegbrsks_20161212T170000Z",
+			"status": "confirmed",
+			"htmlLink": "https://www.google.com/calendar/event?eid=bWRrdnQwZWdxYmtqYjAyY2xuaGVnYnJza3NfMjAxNjEyMTJUMTcwMDAwWiBkbWFpbC5kaXhpZS5lZHVfbzhyY2lwbjJiNXVtNXRjOWIxc3NqdW8wbW9AZw",
+			"created": "2016-09-06T22:13:10.000Z",
+			"updated": "2016-10-20T23:21:12.726Z",
+			"summary": "Ross",
+			"colorId": "10",
+			"creator": {
+				"email": "d00310169@dmail.dixie.edu",
+				"displayName": "D00310169@dmail.dixie.edu"
+			},
+			"organizer": {
+				"email": "dmail.dixie.edu_o8rcipn2b5um5tc9b1ssjuo0mo@group.calendar.google.com",
+				"displayName": "Intern Schedule",
+				"self": true
+			},
+			"start": {
+				"dateTime": "2016-12-12T10:00:00-07:00",
+				"timeZone": "America/Denver"
+			},
+			"end": {
+				"dateTime": "2016-12-12T12:00:00-07:00",
+				"timeZone": "America/Denver"
+			},
+			"recurringEventId": "mdkvt0egqbkjb02clnhegbrsks",
+			"originalStartTime": {
+				"dateTime": "2016-12-12T10:00:00-07:00",
+				"timeZone": "America/Denver"
+			},
+			"iCalUID": "mdkvt0egqbkjb02clnhegbrsks@google.com",
+			"sequence": 1,
+			"hangoutLink": "https://plus.google.com/hangouts/_/dmail.dixie.edu/ross?hceid=ZG1haWwuZGl4aWUuZWR1X284cmNpcG4yYjV1bTV0YzliMXNzanVvMG1vQGdyb3VwLmNhbGVuZGFyLmdvb2dsZS5jb20.i14ucr2joqc48ogqanrsnipquk",
+			"reminders": {
+				"useDefault": true
+			}
+		},
+		{
+			"kind": "calendar#event",
+			"etag": "\"2946400200490000\"",
+			"id": "n5scpniu14nliff8dr5qvd1p7c_20161212T200000Z",
+			"status": "confirmed",
+			"htmlLink": "https://www.google.com/calendar/event?eid=bjVzY3BuaXUxNG5saWZmOGRyNXF2ZDFwN2NfMjAxNjEyMTJUMjAwMDAwWiBkbWFpbC5kaXhpZS5lZHVfbzhyY2lwbjJiNXVtNXRjOWIxc3NqdW8wbW9AZw",
+			"created": "2016-09-06T22:14:45.000Z",
+			"updated": "2016-09-06T22:15:00.245Z",
+			"summary": "Ross",
+			"colorId": "10",
+			"creator": {
+				"email": "d00310169@dmail.dixie.edu",
+				"displayName": "D00310169@dmail.dixie.edu"
+			},
+			"organizer": {
+				"email": "dmail.dixie.edu_o8rcipn2b5um5tc9b1ssjuo0mo@group.calendar.google.com",
+				"displayName": "Intern Schedule",
+				"self": true
+			},
+			"start": {
+				"dateTime": "2016-12-12T13:00:00-07:00",
+				"timeZone": "America/Denver"
+			},
+			"end": {
+				"dateTime": "2016-12-12T14:00:00-07:00",
+				"timeZone": "America/Denver"
+			},
+			"recurringEventId": "n5scpniu14nliff8dr5qvd1p7c",
+			"originalStartTime": {
+				"dateTime": "2016-12-12T13:00:00-07:00",
+				"timeZone": "America/Denver"
+			},
+			"iCalUID": "n5scpniu14nliff8dr5qvd1p7c@google.com",
+			"sequence": 0,
+			"hangoutLink": "https://plus.google.com/hangouts/_/dmail.dixie.edu/ross?hceid=ZG1haWwuZGl4aWUuZWR1X284cmNpcG4yYjV1bTV0YzliMXNzanVvMG1vQGdyb3VwLmNhbGVuZGFyLmdvb2dsZS5jb20.n5scpniu14nliff8dr5qvd1p7c",
+			"reminders": {
+				"useDefault": true
+			}
+		},
+		{
+			"kind": "calendar#event",
+			"etag": "\"2954011452734000\"",
+			"id": "2oo0ivu65bic8jpt1r1p5um79c_20161213T190000Z",
+			"status": "confirmed",
+			"htmlLink": "https://www.google.com/calendar/event?eid=Mm9vMGl2dTY1YmljOGpwdDFyMXA1dW03OWNfMjAxNjEyMTNUMTkwMDAwWiBkbWFpbC5kaXhpZS5lZHVfbzhyY2lwbjJiNXVtNXRjOWIxc3NqdW8wbW9AZw",
+			"created": "2016-09-06T22:13:35.000Z",
+			"updated": "2016-10-20T23:22:06.367Z",
+			"summary": "Ross",
+			"colorId": "10",
+			"creator": {
+				"email": "d00310169@dmail.dixie.edu",
+				"displayName": "D00310169@dmail.dixie.edu"
+			},
+			"organizer": {
+				"email": "dmail.dixie.edu_o8rcipn2b5um5tc9b1ssjuo0mo@group.calendar.google.com",
+				"displayName": "Intern Schedule",
+				"self": true
+			},
+			"start": {
+				"dateTime": "2016-12-13T12:00:00-07:00",
+				"timeZone": "America/Denver"
+			},
+			"end": {
+				"dateTime": "2016-12-13T15:00:00-07:00",
+				"timeZone": "America/Denver"
+			},
+			"recurringEventId": "2oo0ivu65bic8jpt1r1p5um79c",
+			"originalStartTime": {
+				"dateTime": "2016-12-13T12:00:00-07:00",
+				"timeZone": "America/Denver"
+			},
+			"iCalUID": "2oo0ivu65bic8jpt1r1p5um79c@google.com",
+			"sequence": 2,
+			"hangoutLink": "https://plus.google.com/hangouts/_/dmail.dixie.edu/ross?hceid=ZG1haWwuZGl4aWUuZWR1X284cmNpcG4yYjV1bTV0YzliMXNzanVvMG1vQGdyb3VwLmNhbGVuZGFyLmdvb2dsZS5jb20.lnhrmvdi9skqus5cabmcfl2d8s",
+			"reminders": {
+				"useDefault": true
+			}
+		},
+		{
+			"kind": "calendar#event",
+			"etag": "\"2942912263798000\"",
+			"id": "k5dneqlts0b29rlkfu9a8504ss_20161214T170000Z",
+			"status": "confirmed",
+			"htmlLink": "https://www.google.com/calendar/event?eid=azVkbmVxbHRzMGIyOXJsa2Z1OWE4NTA0c3NfMjAxNjEyMTRUMTcwMDAwWiBkbWFpbC5kaXhpZS5lZHVfbzhyY2lwbjJiNXVtNXRjOWIxc3NqdW8wbW9AZw",
+			"created": "2016-06-13T17:20:07.000Z",
+			"updated": "2016-08-17T17:48:51.899Z",
+			"summary": "Denise",
+			"colorId": "3",
+			"creator": {
+				"email": "d00310169@dmail.dixie.edu",
+				"displayName": "D00310169@dmail.dixie.edu"
+			},
+			"organizer": {
+				"email": "dmail.dixie.edu_o8rcipn2b5um5tc9b1ssjuo0mo@group.calendar.google.com",
+				"displayName": "Intern Schedule",
+				"self": true
+			},
+			"start": {
+				"dateTime": "2016-12-14T10:00:00-07:00",
+				"timeZone": "America/Denver"
+			},
+			"end": {
+				"dateTime": "2016-12-14T11:00:00-07:00",
+				"timeZone": "America/Denver"
+			},
+			"recurringEventId": "k5dneqlts0b29rlkfu9a8504ss",
+			"originalStartTime": {
+				"dateTime": "2016-12-14T10:00:00-07:00",
+				"timeZone": "America/Denver"
+			},
+			"iCalUID": "k5dneqlts0b29rlkfu9a8504ss@google.com",
+			"sequence": 2,
+			"hangoutLink": "https://plus.google.com/hangouts/_/dmail.dixie.edu/denise?hceid=ZG1haWwuZGl4aWUuZWR1X284cmNpcG4yYjV1bTV0YzliMXNzanVvMG1vQGdyb3VwLmNhbGVuZGFyLmdvb2dsZS5jb20.s2fthgdbu59n20vq0csd4fq6ss",
+			"reminders": {
+				"useDefault": true
+			}
+		},
+		{
+			"kind": "calendar#event",
+			"etag": "\"2954011345452000\"",
+			"id": "mdkvt0egqbkjb02clnhegbrsks_20161214T170000Z",
+			"status": "confirmed",
+			"htmlLink": "https://www.google.com/calendar/event?eid=bWRrdnQwZWdxYmtqYjAyY2xuaGVnYnJza3NfMjAxNjEyMTRUMTcwMDAwWiBkbWFpbC5kaXhpZS5lZHVfbzhyY2lwbjJiNXVtNXRjOWIxc3NqdW8wbW9AZw",
+			"created": "2016-09-06T22:13:10.000Z",
+			"updated": "2016-10-20T23:21:12.726Z",
+			"summary": "Ross",
+			"colorId": "10",
+			"creator": {
+				"email": "d00310169@dmail.dixie.edu",
+				"displayName": "D00310169@dmail.dixie.edu"
+			},
+			"organizer": {
+				"email": "dmail.dixie.edu_o8rcipn2b5um5tc9b1ssjuo0mo@group.calendar.google.com",
+				"displayName": "Intern Schedule",
+				"self": true
+			},
+			"start": {
+				"dateTime": "2016-12-14T10:00:00-07:00",
+				"timeZone": "America/Denver"
+			},
+			"end": {
+				"dateTime": "2016-12-14T12:00:00-07:00",
+				"timeZone": "America/Denver"
+			},
+			"recurringEventId": "mdkvt0egqbkjb02clnhegbrsks",
+			"originalStartTime": {
+				"dateTime": "2016-12-14T10:00:00-07:00",
+				"timeZone": "America/Denver"
+			},
+			"iCalUID": "mdkvt0egqbkjb02clnhegbrsks@google.com",
+			"sequence": 1,
+			"hangoutLink": "https://plus.google.com/hangouts/_/dmail.dixie.edu/ross?hceid=ZG1haWwuZGl4aWUuZWR1X284cmNpcG4yYjV1bTV0YzliMXNzanVvMG1vQGdyb3VwLmNhbGVuZGFyLmdvb2dsZS5jb20.i14ucr2joqc48ogqanrsnipquk",
+			"reminders": {
+				"useDefault": true
+			}
+		},
+		{
+			"kind": "calendar#event",
+			"etag": "\"2946400200490000\"",
+			"id": "n5scpniu14nliff8dr5qvd1p7c_20161214T200000Z",
+			"status": "confirmed",
+			"htmlLink": "https://www.google.com/calendar/event?eid=bjVzY3BuaXUxNG5saWZmOGRyNXF2ZDFwN2NfMjAxNjEyMTRUMjAwMDAwWiBkbWFpbC5kaXhpZS5lZHVfbzhyY2lwbjJiNXVtNXRjOWIxc3NqdW8wbW9AZw",
+			"created": "2016-09-06T22:14:45.000Z",
+			"updated": "2016-09-06T22:15:00.245Z",
+			"summary": "Ross",
+			"colorId": "10",
+			"creator": {
+				"email": "d00310169@dmail.dixie.edu",
+				"displayName": "D00310169@dmail.dixie.edu"
+			},
+			"organizer": {
+				"email": "dmail.dixie.edu_o8rcipn2b5um5tc9b1ssjuo0mo@group.calendar.google.com",
+				"displayName": "Intern Schedule",
+				"self": true
+			},
+			"start": {
+				"dateTime": "2016-12-14T13:00:00-07:00",
+				"timeZone": "America/Denver"
+			},
+			"end": {
+				"dateTime": "2016-12-14T14:00:00-07:00",
+				"timeZone": "America/Denver"
+			},
+			"recurringEventId": "n5scpniu14nliff8dr5qvd1p7c",
+			"originalStartTime": {
+				"dateTime": "2016-12-14T13:00:00-07:00",
+				"timeZone": "America/Denver"
+			},
+			"iCalUID": "n5scpniu14nliff8dr5qvd1p7c@google.com",
+			"sequence": 0,
+			"hangoutLink": "https://plus.google.com/hangouts/_/dmail.dixie.edu/ross?hceid=ZG1haWwuZGl4aWUuZWR1X284cmNpcG4yYjV1bTV0YzliMXNzanVvMG1vQGdyb3VwLmNhbGVuZGFyLmdvb2dsZS5jb20.n5scpniu14nliff8dr5qvd1p7c",
+			"reminders": {
+				"useDefault": true
+			}
+		},
+		{
+			"kind": "calendar#event",
+			"etag": "\"2954011452734000\"",
+			"id": "2oo0ivu65bic8jpt1r1p5um79c_20161215T190000Z",
+			"status": "confirmed",
+			"htmlLink": "https://www.google.com/calendar/event?eid=Mm9vMGl2dTY1YmljOGpwdDFyMXA1dW03OWNfMjAxNjEyMTVUMTkwMDAwWiBkbWFpbC5kaXhpZS5lZHVfbzhyY2lwbjJiNXVtNXRjOWIxc3NqdW8wbW9AZw",
+			"created": "2016-09-06T22:13:35.000Z",
+			"updated": "2016-10-20T23:22:06.367Z",
+			"summary": "Ross",
+			"colorId": "10",
+			"creator": {
+				"email": "d00310169@dmail.dixie.edu",
+				"displayName": "D00310169@dmail.dixie.edu"
+			},
+			"organizer": {
+				"email": "dmail.dixie.edu_o8rcipn2b5um5tc9b1ssjuo0mo@group.calendar.google.com",
+				"displayName": "Intern Schedule",
+				"self": true
+			},
+			"start": {
+				"dateTime": "2016-12-15T12:00:00-07:00",
+				"timeZone": "America/Denver"
+			},
+			"end": {
+				"dateTime": "2016-12-15T15:00:00-07:00",
+				"timeZone": "America/Denver"
+			},
+			"recurringEventId": "2oo0ivu65bic8jpt1r1p5um79c",
+			"originalStartTime": {
+				"dateTime": "2016-12-15T12:00:00-07:00",
+				"timeZone": "America/Denver"
+			},
+			"iCalUID": "2oo0ivu65bic8jpt1r1p5um79c@google.com",
+			"sequence": 2,
+			"hangoutLink": "https://plus.google.com/hangouts/_/dmail.dixie.edu/ross?hceid=ZG1haWwuZGl4aWUuZWR1X284cmNpcG4yYjV1bTV0YzliMXNzanVvMG1vQGdyb3VwLmNhbGVuZGFyLmdvb2dsZS5jb20.lnhrmvdi9skqus5cabmcfl2d8s",
+			"reminders": {
+				"useDefault": true
+			}
+		},
+		{
+			"kind": "calendar#event",
+			"etag": "\"2942912263798000\"",
+			"id": "k5dneqlts0b29rlkfu9a8504ss_20161216T170000Z",
+			"status": "confirmed",
+			"htmlLink": "https://www.google.com/calendar/event?eid=azVkbmVxbHRzMGIyOXJsa2Z1OWE4NTA0c3NfMjAxNjEyMTZUMTcwMDAwWiBkbWFpbC5kaXhpZS5lZHVfbzhyY2lwbjJiNXVtNXRjOWIxc3NqdW8wbW9AZw",
+			"created": "2016-06-13T17:20:07.000Z",
+			"updated": "2016-08-17T17:48:51.899Z",
+			"summary": "Denise",
+			"colorId": "3",
+			"creator": {
+				"email": "d00310169@dmail.dixie.edu",
+				"displayName": "D00310169@dmail.dixie.edu"
+			},
+			"organizer": {
+				"email": "dmail.dixie.edu_o8rcipn2b5um5tc9b1ssjuo0mo@group.calendar.google.com",
+				"displayName": "Intern Schedule",
+				"self": true
+			},
+			"start": {
+				"dateTime": "2016-12-16T10:00:00-07:00",
+				"timeZone": "America/Denver"
+			},
+			"end": {
+				"dateTime": "2016-12-16T11:00:00-07:00",
+				"timeZone": "America/Denver"
+			},
+			"recurringEventId": "k5dneqlts0b29rlkfu9a8504ss",
+			"originalStartTime": {
+				"dateTime": "2016-12-16T10:00:00-07:00",
+				"timeZone": "America/Denver"
+			},
+			"iCalUID": "k5dneqlts0b29rlkfu9a8504ss@google.com",
+			"sequence": 2,
+			"hangoutLink": "https://plus.google.com/hangouts/_/dmail.dixie.edu/denise?hceid=ZG1haWwuZGl4aWUuZWR1X284cmNpcG4yYjV1bTV0YzliMXNzanVvMG1vQGdyb3VwLmNhbGVuZGFyLmdvb2dsZS5jb20.s2fthgdbu59n20vq0csd4fq6ss",
+			"reminders": {
+				"useDefault": true
+			}
+		},
+		{
+			"kind": "calendar#event",
+			"etag": "\"2954011345452000\"",
+			"id": "mdkvt0egqbkjb02clnhegbrsks_20161216T170000Z",
+			"status": "confirmed",
+			"htmlLink": "https://www.google.com/calendar/event?eid=bWRrdnQwZWdxYmtqYjAyY2xuaGVnYnJza3NfMjAxNjEyMTZUMTcwMDAwWiBkbWFpbC5kaXhpZS5lZHVfbzhyY2lwbjJiNXVtNXRjOWIxc3NqdW8wbW9AZw",
+			"created": "2016-09-06T22:13:10.000Z",
+			"updated": "2016-10-20T23:21:12.726Z",
+			"summary": "Ross",
+			"colorId": "10",
+			"creator": {
+				"email": "d00310169@dmail.dixie.edu",
+				"displayName": "D00310169@dmail.dixie.edu"
+			},
+			"organizer": {
+				"email": "dmail.dixie.edu_o8rcipn2b5um5tc9b1ssjuo0mo@group.calendar.google.com",
+				"displayName": "Intern Schedule",
+				"self": true
+			},
+			"start": {
+				"dateTime": "2016-12-16T10:00:00-07:00",
+				"timeZone": "America/Denver"
+			},
+			"end": {
+				"dateTime": "2016-12-16T12:00:00-07:00",
+				"timeZone": "America/Denver"
+			},
+			"recurringEventId": "mdkvt0egqbkjb02clnhegbrsks",
+			"originalStartTime": {
+				"dateTime": "2016-12-16T10:00:00-07:00",
+				"timeZone": "America/Denver"
+			},
+			"iCalUID": "mdkvt0egqbkjb02clnhegbrsks@google.com",
+			"sequence": 1,
+			"hangoutLink": "https://plus.google.com/hangouts/_/dmail.dixie.edu/ross?hceid=ZG1haWwuZGl4aWUuZWR1X284cmNpcG4yYjV1bTV0YzliMXNzanVvMG1vQGdyb3VwLmNhbGVuZGFyLmdvb2dsZS5jb20.i14ucr2joqc48ogqanrsnipquk",
+			"reminders": {
+				"useDefault": true
+			}
+		},
+		{
+			"kind": "calendar#event",
+			"etag": "\"2946400200490000\"",
+			"id": "n5scpniu14nliff8dr5qvd1p7c_20161216T200000Z",
+			"status": "confirmed",
+			"htmlLink": "https://www.google.com/calendar/event?eid=bjVzY3BuaXUxNG5saWZmOGRyNXF2ZDFwN2NfMjAxNjEyMTZUMjAwMDAwWiBkbWFpbC5kaXhpZS5lZHVfbzhyY2lwbjJiNXVtNXRjOWIxc3NqdW8wbW9AZw",
+			"created": "2016-09-06T22:14:45.000Z",
+			"updated": "2016-09-06T22:15:00.245Z",
+			"summary": "Ross",
+			"colorId": "10",
+			"creator": {
+				"email": "d00310169@dmail.dixie.edu",
+				"displayName": "D00310169@dmail.dixie.edu"
+			},
+			"organizer": {
+				"email": "dmail.dixie.edu_o8rcipn2b5um5tc9b1ssjuo0mo@group.calendar.google.com",
+				"displayName": "Intern Schedule",
+				"self": true
+			},
+			"start": {
+				"dateTime": "2016-12-16T13:00:00-07:00",
+				"timeZone": "America/Denver"
+			},
+			"end": {
+				"dateTime": "2016-12-16T14:00:00-07:00",
+				"timeZone": "America/Denver"
+			},
+			"recurringEventId": "n5scpniu14nliff8dr5qvd1p7c",
+			"originalStartTime": {
+				"dateTime": "2016-12-16T13:00:00-07:00",
+				"timeZone": "America/Denver"
+			},
+			"iCalUID": "n5scpniu14nliff8dr5qvd1p7c@google.com",
+			"sequence": 0,
+			"hangoutLink": "https://plus.google.com/hangouts/_/dmail.dixie.edu/ross?hceid=ZG1haWwuZGl4aWUuZWR1X284cmNpcG4yYjV1bTV0YzliMXNzanVvMG1vQGdyb3VwLmNhbGVuZGFyLmdvb2dsZS5jb20.n5scpniu14nliff8dr5qvd1p7c",
+			"reminders": {
+				"useDefault": true
+			}
+		},
+		{
+			"kind": "calendar#event",
+			"etag": "\"2942912263798000\"",
+			"id": "k5dneqlts0b29rlkfu9a8504ss_20161219T170000Z",
+			"status": "confirmed",
+			"htmlLink": "https://www.google.com/calendar/event?eid=azVkbmVxbHRzMGIyOXJsa2Z1OWE4NTA0c3NfMjAxNjEyMTlUMTcwMDAwWiBkbWFpbC5kaXhpZS5lZHVfbzhyY2lwbjJiNXVtNXRjOWIxc3NqdW8wbW9AZw",
+			"created": "2016-06-13T17:20:07.000Z",
+			"updated": "2016-08-17T17:48:51.899Z",
+			"summary": "Denise",
+			"colorId": "3",
+			"creator": {
+				"email": "d00310169@dmail.dixie.edu",
+				"displayName": "D00310169@dmail.dixie.edu"
+			},
+			"organizer": {
+				"email": "dmail.dixie.edu_o8rcipn2b5um5tc9b1ssjuo0mo@group.calendar.google.com",
+				"displayName": "Intern Schedule",
+				"self": true
+			},
+			"start": {
+				"dateTime": "2016-12-19T10:00:00-07:00",
+				"timeZone": "America/Denver"
+			},
+			"end": {
+				"dateTime": "2016-12-19T11:00:00-07:00",
+				"timeZone": "America/Denver"
+			},
+			"recurringEventId": "k5dneqlts0b29rlkfu9a8504ss",
+			"originalStartTime": {
+				"dateTime": "2016-12-19T10:00:00-07:00",
+				"timeZone": "America/Denver"
+			},
+			"iCalUID": "k5dneqlts0b29rlkfu9a8504ss@google.com",
+			"sequence": 2,
+			"hangoutLink": "https://plus.google.com/hangouts/_/dmail.dixie.edu/denise?hceid=ZG1haWwuZGl4aWUuZWR1X284cmNpcG4yYjV1bTV0YzliMXNzanVvMG1vQGdyb3VwLmNhbGVuZGFyLmdvb2dsZS5jb20.s2fthgdbu59n20vq0csd4fq6ss",
+			"reminders": {
+				"useDefault": true
+			}
+		},
+		{
+			"kind": "calendar#event",
+			"etag": "\"2942912263798000\"",
+			"id": "k5dneqlts0b29rlkfu9a8504ss_20161221T170000Z",
+			"status": "confirmed",
+			"htmlLink": "https://www.google.com/calendar/event?eid=azVkbmVxbHRzMGIyOXJsa2Z1OWE4NTA0c3NfMjAxNjEyMjFUMTcwMDAwWiBkbWFpbC5kaXhpZS5lZHVfbzhyY2lwbjJiNXVtNXRjOWIxc3NqdW8wbW9AZw",
+			"created": "2016-06-13T17:20:07.000Z",
+			"updated": "2016-08-17T17:48:51.899Z",
+			"summary": "Denise",
+			"colorId": "3",
+			"creator": {
+				"email": "d00310169@dmail.dixie.edu",
+				"displayName": "D00310169@dmail.dixie.edu"
+			},
+			"organizer": {
+				"email": "dmail.dixie.edu_o8rcipn2b5um5tc9b1ssjuo0mo@group.calendar.google.com",
+				"displayName": "Intern Schedule",
+				"self": true
+			},
+			"start": {
+				"dateTime": "2016-12-21T10:00:00-07:00",
+				"timeZone": "America/Denver"
+			},
+			"end": {
+				"dateTime": "2016-12-21T11:00:00-07:00",
+				"timeZone": "America/Denver"
+			},
+			"recurringEventId": "k5dneqlts0b29rlkfu9a8504ss",
+			"originalStartTime": {
+				"dateTime": "2016-12-21T10:00:00-07:00",
+				"timeZone": "America/Denver"
+			},
+			"iCalUID": "k5dneqlts0b29rlkfu9a8504ss@google.com",
+			"sequence": 2,
+			"hangoutLink": "https://plus.google.com/hangouts/_/dmail.dixie.edu/denise?hceid=ZG1haWwuZGl4aWUuZWR1X284cmNpcG4yYjV1bTV0YzliMXNzanVvMG1vQGdyb3VwLmNhbGVuZGFyLmdvb2dsZS5jb20.s2fthgdbu59n20vq0csd4fq6ss",
+			"reminders": {
+				"useDefault": true
+			}
+		},
+		{
+			"kind": "calendar#event",
+			"etag": "\"2964555955306000\"",
+			"id": "4dhq65kldre3smb6uicnjmvre4",
+			"status": "confirmed",
+			"htmlLink": "https://www.google.com/calendar/event?eid=NGRocTY1a2xkcmUzc21iNnVpY25qbXZyZTQgZG1haWwuZGl4aWUuZWR1X284cmNpcG4yYjV1bTV0YzliMXNzanVvMG1vQGc",
+			"created": "2016-12-20T23:52:57.000Z",
+			"updated": "2016-12-20T23:52:57.653Z",
+			"summary": "anotehr test",
+			"creator": {
+				"email": "d00310169@dmail.dixie.edu",
+				"displayName": "D00310169@dmail.dixie.edu"
+			},
+			"organizer": {
+				"email": "dmail.dixie.edu_o8rcipn2b5um5tc9b1ssjuo0mo@group.calendar.google.com",
+				"displayName": "Intern Schedule",
+				"self": true
+			},
+			"start": {
+				"dateTime": "2016-12-22T07:02:00-07:00"
+			},
+			"end": {
+				"dateTime": "2016-12-22T08:02:00-07:00"
+			},
+			"iCalUID": "4dhq65kldre3smb6uicnjmvre4@google.com",
+			"sequence": 0,
+			"hangoutLink": "https://plus.google.com/hangouts/_/dmail.dixie.edu/anotehr-test?hceid=ZG1haWwuZGl4aWUuZWR1X284cmNpcG4yYjV1bTV0YzliMXNzanVvMG1vQGdyb3VwLmNhbGVuZGFyLmdvb2dsZS5jb20.4dhq65kldre3smb6uicnjmvre4",
+			"reminders": {
+				"useDefault": true
+			}
+		},
+		{
+			"kind": "calendar#event",
+			"etag": "\"2964555867820000\"",
+			"id": "ot54nfgr93eib4evqmlk5htop0",
+			"status": "confirmed",
+			"htmlLink": "https://www.google.com/calendar/event?eid=b3Q1NG5mZ3I5M2VpYjRldnFtbGs1aHRvcDAgZG1haWwuZGl4aWUuZWR1X284cmNpcG4yYjV1bTV0YzliMXNzanVvMG1vQGc",
+			"created": "2016-12-20T23:52:13.000Z",
+			"updated": "2016-12-20T23:52:13.910Z",
+			"summary": "test minutes",
+			"creator": {
+				"email": "d00310169@dmail.dixie.edu",
+				"displayName": "D00310169@dmail.dixie.edu"
+			},
+			"organizer": {
+				"email": "dmail.dixie.edu_o8rcipn2b5um5tc9b1ssjuo0mo@group.calendar.google.com",
+				"displayName": "Intern Schedule",
+				"self": true
+			},
+			"start": {
+				"dateTime": "2016-12-22T09:30:00-07:00"
+			},
+			"end": {
+				"dateTime": "2016-12-22T10:30:00-07:00"
+			},
+			"iCalUID": "ot54nfgr93eib4evqmlk5htop0@google.com",
+			"sequence": 0,
+			"hangoutLink": "https://plus.google.com/hangouts/_/dmail.dixie.edu/test-minutes?hceid=ZG1haWwuZGl4aWUuZWR1X284cmNpcG4yYjV1bTV0YzliMXNzanVvMG1vQGdyb3VwLmNhbGVuZGFyLmdvb2dsZS5jb20.ot54nfgr93eib4evqmlk5htop0",
+			"reminders": {
+				"useDefault": true
+			}
+		},
+		{
+			"kind": "calendar#event",
+			"etag": "\"2964666311508000\"",
+			"id": "vlmr1qpa1vffrbcs017pite630",
+			"status": "confirmed",
+			"htmlLink": "https://www.google.com/calendar/event?eid=dmxtcjFxcGExdmZmcmJjczAxN3BpdGU2MzAgZG1haWwuZGl4aWUuZWR1X284cmNpcG4yYjV1bTV0YzliMXNzanVvMG1vQGc",
+			"created": "2016-12-21T15:12:35.000Z",
+			"updated": "2016-12-21T15:12:35.754Z",
+			"summary": "third test",
+			"creator": {
+				"email": "d00310169@dmail.dixie.edu",
+				"displayName": "D00310169@dmail.dixie.edu"
+			},
+			"organizer": {
+				"email": "dmail.dixie.edu_o8rcipn2b5um5tc9b1ssjuo0mo@group.calendar.google.com",
+				"displayName": "Intern Schedule",
+				"self": true
+			},
+			"start": {
+				"dateTime": "2016-12-22T20:30:00-07:00"
+			},
+			"end": {
+				"dateTime": "2016-12-22T21:30:00-07:00"
+			},
+			"iCalUID": "vlmr1qpa1vffrbcs017pite630@google.com",
+			"sequence": 0,
+			"hangoutLink": "https://plus.google.com/hangouts/_/dmail.dixie.edu/third-test?hceid=ZG1haWwuZGl4aWUuZWR1X284cmNpcG4yYjV1bTV0YzliMXNzanVvMG1vQGdyb3VwLmNhbGVuZGFyLmdvb2dsZS5jb20.vlmr1qpa1vffrbcs017pite630",
+			"reminders": {
+				"useDefault": true
+			}
+		},
+		{
+			"kind": "calendar#event",
+			"etag": "\"2942912263798000\"",
+			"id": "k5dneqlts0b29rlkfu9a8504ss_20161223T170000Z",
+			"status": "confirmed",
+			"htmlLink": "https://www.google.com/calendar/event?eid=azVkbmVxbHRzMGIyOXJsa2Z1OWE4NTA0c3NfMjAxNjEyMjNUMTcwMDAwWiBkbWFpbC5kaXhpZS5lZHVfbzhyY2lwbjJiNXVtNXRjOWIxc3NqdW8wbW9AZw",
+			"created": "2016-06-13T17:20:07.000Z",
+			"updated": "2016-08-17T17:48:51.899Z",
+			"summary": "Denise",
+			"colorId": "3",
+			"creator": {
+				"email": "d00310169@dmail.dixie.edu",
+				"displayName": "D00310169@dmail.dixie.edu"
+			},
+			"organizer": {
+				"email": "dmail.dixie.edu_o8rcipn2b5um5tc9b1ssjuo0mo@group.calendar.google.com",
+				"displayName": "Intern Schedule",
+				"self": true
+			},
+			"start": {
+				"dateTime": "2016-12-23T10:00:00-07:00",
+				"timeZone": "America/Denver"
+			},
+			"end": {
+				"dateTime": "2016-12-23T11:00:00-07:00",
+				"timeZone": "America/Denver"
+			},
+			"recurringEventId": "k5dneqlts0b29rlkfu9a8504ss",
+			"originalStartTime": {
+				"dateTime": "2016-12-23T10:00:00-07:00",
+				"timeZone": "America/Denver"
+			},
+			"iCalUID": "k5dneqlts0b29rlkfu9a8504ss@google.com",
+			"sequence": 2,
+			"hangoutLink": "https://plus.google.com/hangouts/_/dmail.dixie.edu/denise?hceid=ZG1haWwuZGl4aWUuZWR1X284cmNpcG4yYjV1bTV0YzliMXNzanVvMG1vQGdyb3VwLmNhbGVuZGFyLmdvb2dsZS5jb20.s2fthgdbu59n20vq0csd4fq6ss",
+			"reminders": {
+				"useDefault": true
+			}
+		},
+		{
+			"kind": "calendar#event",
+			"etag": "\"2942912263798000\"",
+			"id": "k5dneqlts0b29rlkfu9a8504ss_20161226T170000Z",
+			"status": "confirmed",
+			"htmlLink": "https://www.google.com/calendar/event?eid=azVkbmVxbHRzMGIyOXJsa2Z1OWE4NTA0c3NfMjAxNjEyMjZUMTcwMDAwWiBkbWFpbC5kaXhpZS5lZHVfbzhyY2lwbjJiNXVtNXRjOWIxc3NqdW8wbW9AZw",
+			"created": "2016-06-13T17:20:07.000Z",
+			"updated": "2016-08-17T17:48:51.899Z",
+			"summary": "Denise",
+			"colorId": "3",
+			"creator": {
+				"email": "d00310169@dmail.dixie.edu",
+				"displayName": "D00310169@dmail.dixie.edu"
+			},
+			"organizer": {
+				"email": "dmail.dixie.edu_o8rcipn2b5um5tc9b1ssjuo0mo@group.calendar.google.com",
+				"displayName": "Intern Schedule",
+				"self": true
+			},
+			"start": {
+				"dateTime": "2016-12-26T10:00:00-07:00",
+				"timeZone": "America/Denver"
+			},
+			"end": {
+				"dateTime": "2016-12-26T11:00:00-07:00",
+				"timeZone": "America/Denver"
+			},
+			"recurringEventId": "k5dneqlts0b29rlkfu9a8504ss",
+			"originalStartTime": {
+				"dateTime": "2016-12-26T10:00:00-07:00",
+				"timeZone": "America/Denver"
+			},
+			"iCalUID": "k5dneqlts0b29rlkfu9a8504ss@google.com",
+			"sequence": 2,
+			"hangoutLink": "https://plus.google.com/hangouts/_/dmail.dixie.edu/denise?hceid=ZG1haWwuZGl4aWUuZWR1X284cmNpcG4yYjV1bTV0YzliMXNzanVvMG1vQGdyb3VwLmNhbGVuZGFyLmdvb2dsZS5jb20.s2fthgdbu59n20vq0csd4fq6ss",
+			"reminders": {
+				"useDefault": true
+			}
+		},
+		{
+			"kind": "calendar#event",
+			"etag": "\"2942912263798000\"",
+			"id": "k5dneqlts0b29rlkfu9a8504ss_20161228T170000Z",
+			"status": "confirmed",
+			"htmlLink": "https://www.google.com/calendar/event?eid=azVkbmVxbHRzMGIyOXJsa2Z1OWE4NTA0c3NfMjAxNjEyMjhUMTcwMDAwWiBkbWFpbC5kaXhpZS5lZHVfbzhyY2lwbjJiNXVtNXRjOWIxc3NqdW8wbW9AZw",
+			"created": "2016-06-13T17:20:07.000Z",
+			"updated": "2016-08-17T17:48:51.899Z",
+			"summary": "Denise",
+			"colorId": "3",
+			"creator": {
+				"email": "d00310169@dmail.dixie.edu",
+				"displayName": "D00310169@dmail.dixie.edu"
+			},
+			"organizer": {
+				"email": "dmail.dixie.edu_o8rcipn2b5um5tc9b1ssjuo0mo@group.calendar.google.com",
+				"displayName": "Intern Schedule",
+				"self": true
+			},
+			"start": {
+				"dateTime": "2016-12-28T10:00:00-07:00",
+				"timeZone": "America/Denver"
+			},
+			"end": {
+				"dateTime": "2016-12-28T11:00:00-07:00",
+				"timeZone": "America/Denver"
+			},
+			"recurringEventId": "k5dneqlts0b29rlkfu9a8504ss",
+			"originalStartTime": {
+				"dateTime": "2016-12-28T10:00:00-07:00",
+				"timeZone": "America/Denver"
+			},
+			"iCalUID": "k5dneqlts0b29rlkfu9a8504ss@google.com",
+			"sequence": 2,
+			"hangoutLink": "https://plus.google.com/hangouts/_/dmail.dixie.edu/denise?hceid=ZG1haWwuZGl4aWUuZWR1X284cmNpcG4yYjV1bTV0YzliMXNzanVvMG1vQGdyb3VwLmNhbGVuZGFyLmdvb2dsZS5jb20.s2fthgdbu59n20vq0csd4fq6ss",
+			"reminders": {
+				"useDefault": true
+			}
+		},
+		{
+			"kind": "calendar#event",
+			"etag": "\"2942912263798000\"",
+			"id": "k5dneqlts0b29rlkfu9a8504ss_20161230T170000Z",
+			"status": "confirmed",
+			"htmlLink": "https://www.google.com/calendar/event?eid=azVkbmVxbHRzMGIyOXJsa2Z1OWE4NTA0c3NfMjAxNjEyMzBUMTcwMDAwWiBkbWFpbC5kaXhpZS5lZHVfbzhyY2lwbjJiNXVtNXRjOWIxc3NqdW8wbW9AZw",
+			"created": "2016-06-13T17:20:07.000Z",
+			"updated": "2016-08-17T17:48:51.899Z",
+			"summary": "Denise",
+			"colorId": "3",
+			"creator": {
+				"email": "d00310169@dmail.dixie.edu",
+				"displayName": "D00310169@dmail.dixie.edu"
+			},
+			"organizer": {
+				"email": "dmail.dixie.edu_o8rcipn2b5um5tc9b1ssjuo0mo@group.calendar.google.com",
+				"displayName": "Intern Schedule",
+				"self": true
+			},
+			"start": {
+				"dateTime": "2016-12-30T10:00:00-07:00",
+				"timeZone": "America/Denver"
+			},
+			"end": {
+				"dateTime": "2016-12-30T11:00:00-07:00",
+				"timeZone": "America/Denver"
+			},
+			"recurringEventId": "k5dneqlts0b29rlkfu9a8504ss",
+			"originalStartTime": {
+				"dateTime": "2016-12-30T10:00:00-07:00",
+				"timeZone": "America/Denver"
+			},
+			"iCalUID": "k5dneqlts0b29rlkfu9a8504ss@google.com",
+			"sequence": 2,
+			"hangoutLink": "https://plus.google.com/hangouts/_/dmail.dixie.edu/denise?hceid=ZG1haWwuZGl4aWUuZWR1X284cmNpcG4yYjV1bTV0YzliMXNzanVvMG1vQGdyb3VwLmNhbGVuZGFyLmdvb2dsZS5jb20.s2fthgdbu59n20vq0csd4fq6ss",
+			"reminders": {
+				"useDefault": true
+			}
+		}
+	]
+}

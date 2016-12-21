@@ -75,7 +75,6 @@
           'maxResults': 10,
           'orderBy': 'startTime'
         });
-        console.log(typeof request);
 
         request.execute(function(resp) {
           var events = resp.items;
@@ -96,7 +95,7 @@
           }
 
         });
-      }
+    }//end list
 
       /**
        * Append a pre element to the body containing the given message
