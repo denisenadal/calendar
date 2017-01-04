@@ -62,7 +62,6 @@
      */
     function loadCalendarApi() {
       console.log("begin api load");
-      //TODO get calID & calMonth
       var calID = 'dmail.dixie.edu_o8rcipn2b5um5tc9b1ssjuo0mo@group.calendar.google.com';
       var calMonth = "December";
       gapi.client.load('calendar', 'v3', getEvents(calID,calMonth));
