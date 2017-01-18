@@ -1,0 +1,12 @@
+ 
+SIMPLIFIED GAPI CALL for auth
+'https://www.googleapis.com/calendar/v3/calendars/'.urlencode($calID).'/events?key='. $apikey.'&timeMin='. $mintime.'&timeMax='. $maxtime.'&maxResults='. $maxresults.'&singleEvents=True&orderBy=startTime';
+
+
+
+
+SIMPLIFIED GAPI CALL (after AUTH):
+
+http://students.wpdev.dixie.edu/wp-content/themes/dixie-s15/includes/calendar_widget/calendar_json.php?cal=sgu.calendar%40gmail.com%2C1kkv66f846mc9pgivqc0iqqf8k%40group.calendar.google.com%2Cusa__en%40holiday.calendar.google.com%2C820ig00rconp8jkiu7lsmgmg5k%40group.calendar.google.com%2Cakluto6tf16nbcjs9sl0de3vls%40group.calendar.google.com%2Cdixiealumni%40gmail.com&limit=1
+
+urlORfilename?cal=calid1,calid2&limit=10
