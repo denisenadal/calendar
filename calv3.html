@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>g-calendar test</title>
+	<style>
+/*css goes here*/
+	</style>
+</head>
+<body>
+<div id='content'>
+	<h1>Events</h1>
+	<div id='calendar-wrap'></div>
+</div>
+<!--TODO add checkboxes for subject choices -->
+<!--TODO add code to scroll through weeks -->
+<!--TODO add function to calculate values for each week-->
+<!--TODO add table t o display each week for each subject -->
+
+<label for="caild-button">Choose calendar</label><input type="text" id='calid-button' onclick='loadCalID();'>
+<a href='#' id='authorize-button' onclick='handleAuthClick();'>Authorize App</a>
+
+<script>
+	// global variables
+	var CLIENT_ID = "781532624008-amifuh5lt04sdbba90gojoq2tr656rse.apps.googleusercontent.com";
+	var API_KEY ="AIzaSyA9T6mlurcWf2Bxqk5XLMCsdUYQML3zQW8";
+	var SCOPES = ["https://www.googleapis.com/auth/calendar.readonly"];
+	var CAL_ID = "dmail.dixie.edu_o8rcipn2b5um5tc9b1ssjuo0mo@group.calendar.google.com";
+	var EVENT_TYPES = ["Abdul","Zane","Nick"];
+
+	function getWeek() {
+		today= new Date();
+		var dayofWeek = today.getDay();
+		var diff = today.getDate() - dayofWeek + 1;
+		var monday =  new Date(today.setDate(diff));
+		today= new Date();
+		var diff = today.getDate() - dayofWeek + 5;
+		var friday =  new Date(today.setDate(diff));
+		return {"monday":monday,"friday":friday};
+	}
+
+	//check authorization on load?
+	function handleClientLoad() {
+		console.log("handleclient load called");
+		gapi.client.setApiKey(API_KEY);
+		checkAuth();
+	}
+	//checks to see if app is authorized, on callbak runs handleAuthResult
+	function checkAuth() {
+		gapi.auth.authorize({client_id: CLIENT_ID, scope: SCOPES, immediate: true},
+				handleAuthResult);
+	}
+	//callback to handle results of checkAuth
+	function handleAuthResult(authResult) {
+		console.log("handleauthresult called");
+		var authorizeButton = document.getElementById('authorize-button');
+		//if authorized make getSubjectCalendar
+		if (authResult) {
+			authorizeButton.style.visibility = 'hidden';
+			getSubjectCalendar();
+		//else show authorization button
+		} else {
+			authorizeButton.style.visibility = '';
+			authorizeButton.onclick = handleAuthClick;
+			}
+	 }
+	//handler to make authorization request
+	function handleAuthClick(event) {
+		console.log("handleauthclick called");
+		gapi.auth.authorize(
+			{client_id: CLIENT_ID, scope: SCOPES, immediate: false},
+			handleAuthResult);
+		CAL_ID = document.getElementById("calid-button").value;
+		return false;
+	}
+
+	//makes api call and handles results of authenticated request
+	function getSubjectCalendar() {
+		var calendarWrap = document.getElementById("calendar-wrap");
+
+		gapi.client.load('calendar', 'v3', function() {
+			var week = getWeek();
+			var request = gapi.client.calendar.events.list({
+				'calendarId': CAL_ID,
+				'timeMin': week.monday.toISOString(),
+				'timeMax': week.friday.toISOString(),
+	            'showDeleted': false,
+	            'singleEvents': true,
+	            'maxResults': 1000,
+	            'orderBy': 'startTime',
+
+			});
+
+			request.execute(function(resp) {
+				for(i=0;i<EVENT_TYPES.length;i++){
+					//create box for subject
+					var subjectListing = document.createElement('div');
+					subjectListing.setAttribute("class","subject-wrap");
+					calendarWrap.appendChild(subjectListing);
+					//create heading for subject
+					var subjectHeading = document.createElement('h2');
+					subjectHeading.innerHTML=EVENT_TYPES[i];
+					subjectListing.appendChild(subjectHeading);
+					//create box for results
+					var subjectResults = document.createElement("div");
+					subjectResults.setAttribute("id",EVENT_TYPES[i]+"-listing");
+					subjectListing.appendChild(subjectResults);
+				}
+				for (var j = 0; j < resp.items.length; j++) {
+					var event = resp.items[j];
+					var eventTime = event.start.dateTime;
+					eventTime  = new Date(Date.parse(eventTime));
+					eventTime = eventTime.toLocaleTimeString('en-US', { hour12: true,  hour:"numeric",minute:"2-digit" });
+					var tutoringSession = document.createElement('div');
+					tutoringSession.setAttribute('class','cal-event')
+					tutoringSession.innerHTML =  '<p>' + event.summary + '<br> @' + eventTime + '</p>';
+					var currentSubject = document.getElementById(event.summary+"-listing");
+					if(typeof currentSubject !== 'undefined' ){
+						currentSubject.appendChild(tutoringSession);
+						console.log(event.summary+"-listing");
+					}
+					else{
+						console.log("no results for: "+ event.summary+"-listing");
+					}
+				}//end event forloop
+			});//end request execute
+		});//end gapi load
+	}//end getSubjectCalendar
+</script>
+<script src="https://apis.google.com/js/client.js?onload=handleClientLoad"></script>
+</body>
+</html>

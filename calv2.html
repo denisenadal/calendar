@@ -44,11 +44,10 @@
  <script type="text/javascript">
     // Your Client ID can be retrieved from your project in the Google
     // Developer Console, https://console.developers.google.com
-    var CLIENT_ID = '480209896873-7rd62vd6dprtj0b2cakqr0l25pends3u.apps.googleusercontent.com';
-
+    var CLIENT_ID = '781532624008-amifuh5lt04sdbba90gojoq2tr656rse.apps.googleusercontent.com';
     var SCOPES = ["https://www.googleapis.com/auth/calendar.readonly"];
-
     var CAL_ID = '';
+
     /*Check if current user has authorized this application.*/
     function checkAuth() {
       gapi.auth.authorize(
@@ -58,7 +57,6 @@
           'immediate': true
         }, handleAuthResult);
     }
-
     /** Handle response from authorization server.*/
     function handleAuthResult(authResult) {
         var authorizeDiv = document.getElementById('authorize-div');
@@ -72,7 +70,6 @@
             if(!CAL_ID){
                 CAL_ID='dmail.dixie.edu_o8rcipn2b5um5tc9b1ssjuo0mo@group.calendar.google.com';
             console.log("using default cal-id"); }
-            //TODO implement server-side code to store CAL-ID in widget
             var calYear = parseInt(document.getElementById('cal-year').value);
             var calMonth = parseInt(document.getElementById('cal-month').value);
             loadCalendarApi(CAL_ID,calMonth,calYear);
@@ -84,7 +81,6 @@
             console.log("not authorized");
         }
     }
-
     /** Initiate auth flow in response to user clicking authorize button.*/
     function handleAuthClick(event) {
         gapi.auth.authorize(
@@ -92,13 +88,11 @@
             handleAuthResult);
         return false;
     }
-
     /*Load Google Calendar client library. & calls getEvents when loaded*/
     function loadCalendarApi(CAL_ID,calMonth,calYear) {
       console.log("begin api load");
       gapi.client.load('calendar', 'v3', getEvents(CAL_ID,calMonth,calYear));
     }
-
     /*makes the request and returns events for specified date range*/
     function getEvents(CAL_ID,calMonth,calYear) {
       return function(){
@@ -112,7 +106,6 @@
             'maxResults': 1000,
             'orderBy': 'startTime'
         });//end request definition
-
         request.then(
             function (resp) {
                 var calYear = parseInt(document.getElementById('cal-year').value);
@@ -128,17 +121,20 @@
                         for (var j=0; j<events.length; j++){
                             var event =  events[j];
                             var when = event.start.dateTime;
-                            if (!when) {
-                                when = event.start.date;
+                            if (typeof when =="undefined") {
+                                var when = event.start.date;
+                                when = new Date(Date.parse(when));
+                                var eventTime = " all day";
                             }
-                            var when = new Date(Date.parse(when));
+                            else{
+                                var when = new Date(Date.parse(when));
+                                var eventTime = when.toLocaleTimeString('en-US', { hour12: true,  hour:"numeric",minute:"2-digit" });
+                            }
                             if(when.getDate() == calDates[i]){
                                 //add event to calendar
-                                var eventTime = when.toLocaleTimeString('en-US', { hour12: true,  hour:"numeric",minute:"2-digit" });
                                 var calEvent = document.createElement('div');
                                 calEvent.setAttribute('class','cal-event')
                                 calEvent.innerHTML =  '<p>' + event.summary + '<br> @' + eventTime + '</p>';
-
                                 calDays[i].appendChild(calEvent);
                             }
                         }//for each event in list
@@ -152,36 +148,37 @@
         ); //ends then function
       };//ends anon return function
     }//ends getEvents
-
-
-
     //builds the base calendar for selected month, or today if none is provided
-    function buildCalendar(){
-        var calYear = document.getElementById('cal-year').value;
-        var calMonth = document.getElementById('cal-month').value;
+    function buildCalendar(calMonth,calYear){
+        console.log("building calendar using: "+calMonth+"/"+calYear);
         var monthArray =  {'01':'January', '02':'February','04':'March','05':'April','06':'June','07':'July','08':'August','09':'September','10':'October','11':'November','0':'December'};
         var calDays = document.getElementsByClassName('cal-day');
+        for (var i = 0; i < calDays.length; i ++){
+            calDays[i].textContent  = "";
+        }
         var dayOne = new Date(calYear,calMonth,1);
-        var lastDay = new Date(calYear,calMonth+1,0);
+        var lastDay = new Date(calYear,parseInt(calMonth)+1,0);
         var count = 0;
-        for (var i = dayOne.getDay(); i<lastDay+1; i++){
-            count+=1;
-            calDays[i].innerHTML = count;
-        }//loop over days from starting day of week to end of month
-
-        var dayOne = new Date(year,month,1);
-        var lastDay = new Date(year,parseInt(month)+1,0);
-        var count = 0;
-        for (var i = dayOne.getDay(); i<parseInt(lastDay.getDate())+1; i++){
+        for (var i = dayOne.getDay(); i < parseInt(lastDay.getDate()) + parseInt(dayOne.getDay()); i++){
             count+=1;
             calDays[i].textContent = count;
         }//loop over days from starting day of week to end of month
+        count = 0;
+        for (i = 35; i < 42; i ++){
+            if (calDays[i].textContent != ""){
+                count +=1;
+            }
+        }
+        if (count==0){
+            document.getElementById("extra-row").style.display = 'none';
+        }
+        else {
+            document.getElementById("extra-row").style.display = 'table-row';
+        }
     }//end buildCalendar
-
-
-//TODO make calEvents links to /event
+//TODO make calEvents listings link to /event details
 //TODO display event details on hover
-//TODO allow user to select month/year & refresh
+//TODO move API call into buildCalendar function
   </script>
   <script src="https://apis.google.com/js/client.js?onload=checkAuth">
   </script>
@@ -282,6 +279,15 @@
             <td class="cal-day fri"></td>
             <td class="cal-day sat"></td>
           </tr>
+          <tr id ="extra-row">
+            <td class="cal-day sun"></td>
+            <td class="cal-day mon"></td>
+            <td class="cal-day tues"></td>
+            <td class="cal-day wed"></td>
+            <td class="cal-day thurs"></td>
+            <td class="cal-day fri"></td>
+            <td class="cal-day sat"></td>
+          </tr>
         </tbody>
       </table>
     </div>
@@ -289,10 +295,12 @@
     //set default month & year on page load
     var month = new Date().getMonth();
     var year = new Date().getFullYear();
-    var monthOptions = document.getElementById('cal-month').getElementsByTagName("option");
-    var yearOptions = document.getElementById('cal-year').getElementsByTagName("option");
+    var monthSelect = document.getElementById('cal-month');
+    var monthOptions = monthSelect.getElementsByTagName("option");
+    var yearSelect = document.getElementById('cal-year');
+    var yearOptions = yearSelect.getElementsByTagName("option");
     for (var i=0; i < monthOptions.length; i++){
-        if(month = monthOptions[i].value){
+        if(month == monthOptions[i].value){
             monthOptions[i].setAttribute("selected","selected");
         }
     }
@@ -302,8 +310,14 @@
         }
     }
     //builds default calendar
-    buildCalendar();
-
+    buildCalendar(monthSelect.value, yearSelect.value);
+    monthSelect.onchange = function(){
+        return buildCalendar(monthSelect.value, yearSelect.value);
+    };
+    yearSelect.onchange = function(){
+        return buildCalendar(monthSelect.value, yearSelect.value);
+    };
     </script>
 </body>
 </html>
+Contact GitHub API Training Shop Blog About
