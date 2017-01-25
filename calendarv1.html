@@ -10,11 +10,24 @@
 	</style>
 
 <script type="text/javascript">
-	// global variables
-	var CLIENT_ID = "781532624008-amifuh5lt04sdbba90gojoq2tr656rse.apps.googleusercontent.com";
-	var API_KEY ="AIzaSyA9T6mlurcWf2Bxqk5XLMCsdUYQML3zQW8";
-	var SCOPES = ["https://www.googleapis.com/auth/calendar.readonly"];
-	var CAL_ID = "dmail.dixie.edu_o8rcipn2b5um5tc9b1ssjuo0mo@group.calendar.google.com";
+// global variables
+var CLIENT_ID = "781532624008-amifuh5lt04sdbba90gojoq2tr656rse.apps.googleusercontent.com";
+var API_KEY ="AIzaSyA9T6mlurcWf2Bxqk5XLMCsdUYQML3zQW8";
+var SCOPES = ["https://www.googleapis.com/auth/calendar.readonly"];
+var CAL_ID = "dmail.dixie.edu_o8rcipn2b5um5tc9b1ssjuo0mo@group.calendar.google.com";
+var EVENT_TYPES = ["Abdul","Zane","Nick"];
+
+function getWeek() {
+	today= new Date();
+	var dayofWeek = today.getDay();
+	var diff = today.getDate() - dayofWeek + 1;
+	var monday =  new Date(today.setDate(diff));
+	today= new Date();
+	var diff = today.getDate() - dayofWeek + 5;
+	var friday =  new Date(today.setDate(diff));
+	return {"monday":monday,"friday":friday};
+}
+
 //check authorization on load?
 	function handleClientLoad() {
 		gapi.client.setApiKey(API_KEY);
@@ -49,16 +62,29 @@
 
 //makes api call and handles results of authenticated request
 	function makeApiCall() {
+	var week = getWeek();
 	gapi.client.load('calendar', 'v3', function() {
 		var request = gapi.client.calendar.events.list({
-			'calendarId': 'primary'
+			'calendarId': CAL_ID,
+			'timeMin': week.monday.toISOString(),
+			'timeMax': week.friday.toISOString(),
+			'showDeleted': false,
+			'singleEvents': true,
+			'maxResults': 1000,
+			'orderBy': 'startTime',
 		});
 
 		request.execute(function(resp) {
 			for (var i = 0; i < resp.items.length; i++) {
-				var li = document.createElement('li');
-				li.appendChild(document.createTextNode(resp.items[i].summary));
-				document.getElementById('events').appendChild(li);
+				var event = resp.items[i];
+				var eventTime = event.start.dateTime;
+				eventTime  = new Date(Date.parse(eventTime));
+				eventTime = eventTime.toLocaleTimeString('en-US', { hour12: true,  hour:"numeric",minute:"2-digit" });
+				var calEvent = document.createElement('div');
+				calEvent.setAttribute('class','cal-event')
+				calEvent.innerHTML =  '<p>' + event.summary + '<br> @' + eventTime + '</p>';
+				var eventsDiv = document.getElementById("events");
+				eventsDiv.appendChild(calEvent);
 			}
 		});
 	});
