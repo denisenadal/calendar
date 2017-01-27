@@ -6,132 +6,99 @@
 	<meta http-equiv="X-UA-Compatible" content="ie=edge">
 	<title>g-calendar test</title>
 	<style>
-/*css goes here*/
+td,tr,table{
+	border:1px solid #ccc;
+	border-collapse: collapse;
+	vertical-align: top;
+	text-align: center;
+}
+table{margin:100px 0;width:80%;}
+ul,li{list-style:none;width:100%;text-align: center;margin:0;padding:0;}
+td.days{
+	width:18%;
+}
+.subject-choice{
+	display:inline-block;
+	padding:1rem;
+	border:1px solid #ccc;
+	width:12%;
+	cursor: pointer;
+}
+.subject-choice:hover{
+	background:red;
+}
+.subject-choice:active{
+	background: yellow;
+}
 	</style>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.6.1/angular.min.js"></script>
+<script type="text/javascript" src="app.js"></script>
+<script type="text/javascript" src="gapi.js"></script>
+<script type="text/javascript" src="controller.js"></script>
 </head>
 <body>
-<div id='content'>
-	<h1>Events</h1>
-	<div id='calendar-wrap'></div>
-</div>
-<!--TODO add checkboxes for subject choices -->
-<!--TODO add code to scroll through weeks -->
-<!--TODO add function to calculate values for each week-->
-<!--TODO add table t o display each week for each subject -->
+  <div id='content'>
+	<h1>Tutoring Schedule</h1>
+	<h2>Subjects Offered</h2>
+	<p>We offer tutoring in the following subjects:</p>
+	<ul id="subjects-offered">
+		<li class="subject-choice">Ross</li>
+		<li class="subject-choice">Nick</li>
+		<li class="subject-choice">Zane</li>
+		<li class="subject-choice">Matt</li>
+		<li class="subject-choice">Brandon</li>
+		<li class="subject-choice">Abdul</li>
+	</ul>
+	<h2>Times Offered</h2>
+	<p>Your selected subjects are offered at the following times:</p>
+	<table>
+		<tr>
+			<td><button class="week-nav" id="prev-week">prev</button></td>
+			<td><p>Change Week</p><button class="week-nav" id="reset-week"> reset </button></td>
+			<td><button class="week-nav" id="next-week">next</button></td>
+		</tr>
+	</table>
 
-<label for="caild-button">Choose calendar</label><input type="text" id='calid-button' onclick='loadCalID();'>
-<a href='#' id='authorize-button' onclick='handleAuthClick();'>Authorize App</a>
-
-<script>
-	// global variables
-	var CLIENT_ID = "781532624008-amifuh5lt04sdbba90gojoq2tr656rse.apps.googleusercontent.com";
-	var API_KEY ="AIzaSyA9T6mlurcWf2Bxqk5XLMCsdUYQML3zQW8";
-	var SCOPES = ["https://www.googleapis.com/auth/calendar.readonly"];
-	var CAL_ID = "dmail.dixie.edu_o8rcipn2b5um5tc9b1ssjuo0mo@group.calendar.google.com";
-	var EVENT_TYPES = ["Abdul","Zane","Nick"];
-
-	function getWeek() {
-		today= new Date();
-		var dayofWeek = today.getDay();
-		var diff = today.getDate() - dayofWeek + 1;
-		var monday =  new Date(today.setDate(diff));
-		today= new Date();
-		var diff = today.getDate() - dayofWeek + 5;
-		var friday =  new Date(today.setDate(diff));
-		return {"monday":monday,"friday":friday};
-	}
-
-	//check authorization on load?
-	function handleClientLoad() {
-		console.log("handleclient load called");
-		gapi.client.setApiKey(API_KEY);
-		checkAuth();
-	}
-	//checks to see if app is authorized, on callbak runs handleAuthResult
-	function checkAuth() {
-		gapi.auth.authorize({client_id: CLIENT_ID, scope: SCOPES, immediate: true},
-				handleAuthResult);
-	}
-	//callback to handle results of checkAuth
-	function handleAuthResult(authResult) {
-		console.log("handleauthresult called");
-		var authorizeButton = document.getElementById('authorize-button');
-		//if authorized make getSubjectCalendar
-		if (authResult) {
-			authorizeButton.style.visibility = 'hidden';
-			getSubjectCalendar();
-		//else show authorization button
-		} else {
-			authorizeButton.style.visibility = '';
-			authorizeButton.onclick = handleAuthClick;
-			}
-	 }
-	//handler to make authorization request
-	function handleAuthClick(event) {
-		console.log("handleauthclick called");
-		gapi.auth.authorize(
-			{client_id: CLIENT_ID, scope: SCOPES, immediate: false},
-			handleAuthResult);
-		CAL_ID = document.getElementById("calid-button").value;
-		return false;
-	}
-
-	//makes api call and handles results of authenticated request
-	function getSubjectCalendar() {
-		var calendarWrap = document.getElementById("calendar-wrap");
-
-		gapi.client.load('calendar', 'v3', function() {
-			var week = getWeek();
-			var request = gapi.client.calendar.events.list({
-				'calendarId': CAL_ID,
-				'timeMin': week.monday.toISOString(),
-				'timeMax': week.friday.toISOString(),
-	            'showDeleted': false,
-	            'singleEvents': true,
-	            'maxResults': 1000,
-	            'orderBy': 'startTime',
-
-			});
-
-			request.execute(function(resp) {
-				for(i=0;i<EVENT_TYPES.length;i++){
-					//create box for subject
-					var subjectListing = document.createElement('div');
-					subjectListing.setAttribute("class","subject-wrap");
-					calendarWrap.appendChild(subjectListing);
-					//create heading for subject
-					var subjectHeading = document.createElement('h2');
-					subjectHeading.innerHTML=EVENT_TYPES[i];
-					subjectListing.appendChild(subjectHeading);
-					//create box for results
-					var subjectResults = document.createElement("div");
-					subjectResults.setAttribute("id",EVENT_TYPES[i]+"-listing");
-					subjectListing.appendChild(subjectResults);
-				}
-				for (var j = 0; j < resp.items.length; j++) {
-					var event = resp.items[j];
-					var eventTime = event.start.dateTime;
-					eventTime  = new Date(Date.parse(eventTime));
-					eventTime = eventTime.toLocaleTimeString('en-US', { hour12: true,  hour:"numeric",minute:"2-digit" });
-					var tutoringSession = document.createElement('div');
-					tutoringSession.setAttribute('class','cal-event')
-					tutoringSession.innerHTML =  '<p>' + event.summary + '<br> @' + eventTime + '</p>';
-					var currentSubject = document.getElementById(event.summary+"-listing");
-					if(typeof currentSubject !== 'undefined' ){
-						currentSubject.appendChild(tutoringSession);
-						console.log(event.summary+"-listing");
-					}
-					else{
-						console.log("no results for: "+ event.summary+"-listing");
-					}
-				}//end event forloop
-			});//end request execute
-		});//end gapi load
-	}//end getSubjectCalendar
-</script>
-<script src="https://apis.google.com/js/client.js?onload=handleClientLoad"></script>
-<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.6/angular.min.js"></script>
-https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js
-
+	<table id="template-table" class="subject-results" style="display:none;">
+		<tr>
+			<td rowspan="2">{{icon}}</td>
+			<td colspan="5"><h3 id="subject-heading">{{heading}}</h3></td>
+		</tr>
+		<tr>
+			<td class="days monday">
+				<h4>M<br><span class="date">{{monday.date}}</span></h4>
+				<ul class="times monday">
+				</ul>
+			</td>
+			<td class="days tuesday">
+				<h4>T<br><span class="date">{{tuesday.date}}</span></h4>
+				<ul class="times tuesday">
+				</ul>
+			</td>
+			<td class="days wednesday">
+				<h4>W<br><span class="date">{{wednesday.date}}</span></h4>
+				<ul class="times wednesday">
+				</ul>
+			</td>
+			<td class="days thursday">
+				<h4>Th<br><span class="date">{{thursday.date}}</span></h4>
+				<ul class="times thursday">
+				</ul>
+			</td>
+			<td class="days friday">
+				<h4>F<br><span class="date">{{friday.date}}</span></h4>
+				<ul class="times friday">
+				</ul>
+			</td>
+		</tr>
+	</table>
+  </div>
+  <a href='#' id='authorize-button' onclick='handleAuthClick();'>Login</a>
+  <script>
+  </script>
+  <script src="https://apis.google.com/js/client.js?onload=handleClientLoad"></script>
 </body>
+</html>
 </html>

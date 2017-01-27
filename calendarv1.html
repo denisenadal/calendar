@@ -27,12 +27,21 @@ function getWeek() {
 	var friday =  new Date(today.setDate(diff));
 	return {"monday":monday,"friday":friday};
 }
+function addEvent(event){
+	var eventTime = event.start.dateTime;
+	eventTime  = new Date(Date.parse(eventTime));
+	eventTime = eventTime.toLocaleTimeString('en-US', { hour12: true,  hour:"numeric",minute:"2-digit" });
+	var calEvent = document.createElement('div');
+	calEvent.setAttribute('class','cal-event')
+	calEvent.innerHTML =  '<p>' + event.summary + '<br> @' + eventTime + '</p>';
+	var eventsDiv = document.getElementById("events");
+	eventsDiv.appendChild(calEvent);
+}
 
 //check authorization on load?
 	function handleClientLoad() {
 		gapi.client.setApiKey(API_KEY);
-		window.setTimeout(checkAuth,1);
-			checkAuth();
+		checkAuth();
 	}
 //checks to see if app is authorized, on callbak runs handleAuthResult
 	function checkAuth() {
@@ -76,15 +85,7 @@ function getWeek() {
 
 		request.execute(function(resp) {
 			for (var i = 0; i < resp.items.length; i++) {
-				var event = resp.items[i];
-				var eventTime = event.start.dateTime;
-				eventTime  = new Date(Date.parse(eventTime));
-				eventTime = eventTime.toLocaleTimeString('en-US', { hour12: true,  hour:"numeric",minute:"2-digit" });
-				var calEvent = document.createElement('div');
-				calEvent.setAttribute('class','cal-event')
-				calEvent.innerHTML =  '<p>' + event.summary + '<br> @' + eventTime + '</p>';
-				var eventsDiv = document.getElementById("events");
-				eventsDiv.appendChild(calEvent);
+				addEvent(resp.items[i]);
 			}
 		});
 	});
