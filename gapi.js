@@ -3,7 +3,7 @@ var CLIENT_ID = "781532624008-amifuh5lt04sdbba90gojoq2tr656rse.apps.googleuserco
 var API_KEY ="AIzaSyA9T6mlurcWf2Bxqk5XLMCsdUYQML3zQW8";
 var SCOPES = ["https://www.googleapis.com/auth/calendar.readonly"];
 var CAL_ID = "dmail.dixie.edu_o8rcipn2b5um5tc9b1ssjuo0mo@group.calendar.google.com";
-var EVENT_TYPES = ["Abdul","Matt","Nick"];
+var SUBJECT_LIST = ["Abdul","Matt","Nick"];
 var WEEK_OFFSET = null;
 
 //check authorization on load
@@ -44,7 +44,7 @@ var WEEK_OFFSET = null;
 			var request = gapi.client.calendar.events.list({
 				'calendarId': CAL_ID,
 				'timeMin': week.sunday.toISOString(),
-				'timeMax': week.friday.toISOString(),
+				'timeMax': week.saturday.toISOString(),
 				'showDeleted': false,
 				'singleEvents': true,
 				'maxResults': 1000,
@@ -52,7 +52,7 @@ var WEEK_OFFSET = null;
 			});
 
 			request.execute(function(resp) {
-				parseEvents(resp.items);
+				addSubjects(resp);
 			});//end request execute
 		});//end gapi load
 	}//endmakeapicall

@@ -1,4 +1,4 @@
-//functions to call other stuff
+//event handlers
 
 $(document).ready(function(){
 	addWeek();
@@ -19,6 +19,21 @@ $(document).ready(function(){
 			WEEK_OFFSET = 0;
 		}
 		addWeek();
-		makeApiCall();
+		batchRequest();
 	});
 });
+
+
+function initCal() {
+	gapi.client.init({
+		'apiKey': "AIzaSyDvK6WS3fU7B4maIWOwASaGBKfMQm9eCOI"
+	}).then(function() {
+		console.log("gapi init");
+		batchRequest();
+	}, function(reason) {
+		console.log('Error: ' + reason.result.error.message);
+	});
+}//ends initCal
+
+
+gapi.load('client', initCal);

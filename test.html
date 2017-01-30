@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>Document</title>
+</head>
+<body>
+	<div id="cal">
+	</div>
+</body>
+<script src="https://apis.google.com/js/api.js"></script>
+<script src="calList.js"></script>
+<script>
+ var WEEK_OFFSET = null;
+function start() {
+	// 2. Initialize the JavaScript client library.
+	gapi.client.init({
+		'apiKey': "AIzaSyDvK6WS3fU7B4maIWOwASaGBKfMQm9eCOI"
+	}).then(function() {
+		// 3. Initialize and make the API request.
+		console.log("gapi init");
+		var batchResults = batchRequest();
+	}, function(reason) {
+		console.log('Error: ' + reason.result.error.message);
+	});
+}//ends start
+
+
+function batchRequest(){
+	gapi.client.load('calendar', 'v3', function() {
+		var week = getWeek();
+		var batch = gapi.client.newBatch();
+		console.log("batch started");
+		for(i=0;i<CAL_LIST.length;i++){
+			var request = gapi.client.calendar.events.list({
+				'calendarId': CAL_LIST[i].calID,
+				'apiKey' : "AIzaSyDvK6WS3fU7B4maIWOwASaGBKfMQm9eCOI",
+				'timeMin': week.sunday.toISOString(),
+				'timeMax': week.saturday.toISOString(),
+				'showDeleted': false,
+				'singleEvents': true,
+				'maxResults': 2500,
+				'orderBy': 'startTime',
+			});//ends request declaration
+			batch.add(request);
+		}//ends loop over cals
+		batch.execute(function(respMap,rawResp){
+			console.log(respMap);
+			for(j=0;j<respMap.length;j++){
+				addSubjects(respMap[i]);
+			}
+		});
+	});//ends client load
+}//ends batchRequest
+
+function getWeek() {
+	today= new Date();
+	if(WEEK_OFFSET != null){
+		today.setDate(today.getDate() + (WEEK_OFFSET * 7))
+	}
+	var backup = new Date(today.valueOf());
+	var dayofWeek = today.getDay();
+	var week = {};
+	for (i=0;i<7;i++){
+		var diff = today.getDate() - dayofWeek + i;
+		if	(i==0){
+			var sunday =	new Date(today.setDate(diff));
+			today= new Date(backup.valueOf());
+			week["sunday"]=sunday;
+		}
+		if	(i==1){
+			var monday =	new Date(today.setDate(diff));
+			today= new Date(backup.valueOf());
+			week["monday"]=monday;
+		}
+		if	(i==2){
+			var tuesday =	new Date(today.setDate(diff));
+			today= new Date(backup.valueOf());
+			week["tuesday"]=tuesday;
+		}
+		if	(i==3){
+			var wednesday =	new Date(today.setDate(diff));
+			today= new Date(backup.valueOf());
+			week["wednesday"]=wednesday;
+		}
+		if	(i==4){
+			var thursday =	new Date(today.setDate(diff));
+			today= new Date(backup.valueOf());
+			week["thursday"]=thursday;
+		}
+		if	(i==5){
+			var friday =	new Date(today.setDate(diff));
+			today= new Date(backup.valueOf());
+			week["friday"]=friday;
+		}
+		if	(i==6){
+			var saturday =	new Date(today.setDate(diff));
+			today= new Date(backup.valueOf());
+			week["saturday"]=saturday;
+		}
+	}
+	return week;
+}
+
+gapi.load('client', start);
+</script>
+</html>

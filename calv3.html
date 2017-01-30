@@ -33,9 +33,9 @@ td.days{
 	</style>
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.6.1/angular.min.js"></script>
+<script src="https://apis.google.com/js/api.js"></script>
+<script type="text/javascript" src="calList.js"></script>
 <script type="text/javascript" src="app.js"></script>
-<script type="text/javascript" src="gapi.js"></script>
 <script type="text/javascript" src="controller.js"></script>
 </head>
 <body>
@@ -44,12 +44,25 @@ td.days{
 	<h2>Subjects Offered</h2>
 	<p>We offer tutoring in the following subjects:</p>
 	<ul id="subjects-offered">
-		<li class="subject-choice">Ross</li>
-		<li class="subject-choice">Nick</li>
-		<li class="subject-choice">Zane</li>
-		<li class="subject-choice">Matt</li>
-		<li class="subject-choice">Brandon</li>
-		<li class="subject-choice">Abdul</li>
+		<li class="subject-choice">accounting</li>
+		<li class="subject-choice">business</li>
+		<li class="subject-choice">biology</li>
+		<li class="subject-choice">chemistry</li>
+		<li class="subject-choice">communication</li>
+		<li class="subject-choice">economics</li>
+		<li class="subject-choice">engineering</li>
+		<li class="subject-choice">finance</li>
+		<li class="subject-choice">foriegn language</li>
+		<li class="subject-choice">geology</li>
+		<li class="subject-choice">management</li>
+		<li class="subject-choice">marketing</li>
+		<li class="subject-choice">math</li>
+		<li class="subject-choice">physics</li>
+		<li class="subject-choice">physiology</li>
+		<li class="subject-choice">psychology</li>
+		<li class="subject-choice">sociology</li>
+		<li class="subject-choice">statistics</li>
+		<li class="subject-choice">ochem</li>
 	</ul>
 	<h2>Times Offered</h2>
 	<p>Your selected subjects are offered at the following times:</p>
@@ -95,10 +108,6 @@ td.days{
 		</tr>
 	</table>
   </div>
-  <a href='#' id='authorize-button' onclick='handleAuthClick();'>Login</a>
-  <script>
-  </script>
-  <script src="https://apis.google.com/js/client.js?onload=handleClientLoad"></script>
 </body>
 </html>
 </html>
