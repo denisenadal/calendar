@@ -2,9 +2,14 @@
 
 $(document).ready(function(){
 	addWeek();
+	//event listener for active class
+
+	//add or remove subjects
 	$(".subject-choice").click(function(){
 		toggleSubject($(this));
+		$(this).toggleClass("active-subject")
 	});
+	//change week displayed
 	$(".week-nav").click(function(){
 		console.log("week nav clicked");
 		if($(this).attr('id') == "prev-week" ){
@@ -25,6 +30,8 @@ $(document).ready(function(){
 
 
 function initCal() {
+	var $elems = $(".active-subject");
+	changeColor($elems,"active");
 	gapi.client.init({
 		'apiKey': "AIzaSyDvK6WS3fU7B4maIWOwASaGBKfMQm9eCOI"
 	}).then(function() {

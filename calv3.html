@@ -1,113 +1,71 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<meta http-equiv="X-UA-Compatible" content="ie=edge">
-	<title>g-calendar test</title>
-	<style>
-td,tr,table{
-	border:1px solid #ccc;
-	border-collapse: collapse;
-	vertical-align: top;
-	text-align: center;
-}
-table{margin:100px 0;width:80%;}
-ul,li{list-style:none;width:100%;text-align: center;margin:0;padding:0;}
-td.days{
-	width:18%;
-}
-.subject-choice{
-	display:inline-block;
-	padding:1rem;
-	border:1px solid #ccc;
-	width:12%;
-	cursor: pointer;
-}
-.subject-choice:hover{
-	background:red;
-}
-.subject-choice:active{
-	background: yellow;
-}
-	</style>
 
-<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.js"></script>
+
 <script src="https://apis.google.com/js/api.js"></script>
-<script type="text/javascript" src="calList.js"></script>
-<script type="text/javascript" src="app.js"></script>
-<script type="text/javascript" src="controller.js"></script>
-</head>
-<body>
-  <div id='content'>
-	<h1>Tutoring Schedule</h1>
-	<h2>Subjects Offered</h2>
+<script type="text/javascript" src="wp-content/uploads/sites/63/calendar/calList.js"></script>
+<script type="text/javascript" src="wp-content/uploads/sites/63/calendar/app.js"></script>
+<script type="text/javascript" src="wp-content/uploads/sites/63/calendar/controller.js"></script>
+<link rel="stylesheet" href="wp-content/uploads/sites/63/calendar/cal.css" type="text/css">
+
+<h1>Tutoring Schedule</h1>
+<h2>Subjects Offered</h2>
+  <div id='calendar-app'>
 	<p>We offer tutoring in the following subjects:</p>
 	<ul id="subjects-offered">
-		<li class="subject-choice">accounting</li>
-		<li class="subject-choice">business</li>
-		<li class="subject-choice">biology</li>
-		<li class="subject-choice">chemistry</li>
-		<li class="subject-choice">communication</li>
-		<li class="subject-choice">economics</li>
-		<li class="subject-choice">engineering</li>
-		<li class="subject-choice">finance</li>
-		<li class="subject-choice">foriegn language</li>
-		<li class="subject-choice">geology</li>
-		<li class="subject-choice">management</li>
-		<li class="subject-choice">marketing</li>
-		<li class="subject-choice">math</li>
-		<li class="subject-choice">physics</li>
-		<li class="subject-choice">physiology</li>
-		<li class="subject-choice">psychology</li>
-		<li class="subject-choice">sociology</li>
-		<li class="subject-choice">statistics</li>
-		<li class="subject-choice">ochem</li>
+		<li class="subject-choice"><svg><use xlink:href="wp-content/uploads/sites/63/calendar/icon_set.svg#accounting"></use></svg>accounting</li>
+		<li class="subject-choice"><svg><use xlink:href="wp-content/uploads/sites/63/calendar/icon_set.svg#business"></use></svg>business</li>
+		<li class="subject-choice active-subject"><svg><use xlink:href="wp-content/uploads/sites/63/calendar/icon_set.svg#biology"></use></svg>biology</li>
+		<li class="subject-choice"><svg><use xlink:href="wp-content/uploads/sites/63/calendar/icon_set.svg#chemistry"></use></svg>chemistry</li>
+		<li class="subject-choice"><svg><use xlink:href="wp-content/uploads/sites/63/calendar/icon_set.svg#economics"></use></svg>economics</li>
+		<li class="subject-choice"><svg><use xlink:href="wp-content/uploads/sites/63/calendar/icon_set.svg#finance"></use></svg>finance</li>
+		<li class="subject-choice"><svg><use xlink:href="wp-content/uploads/sites/63/calendar/icon_set.svg#foriegn-language"></use></svg>foreign language</li>
+		<li class="subject-choice"><svg><use xlink:href="wp-content/uploads/sites/63/calendar/icon_set.svg#management"></use></svg>management</li>
+		<li class="subject-choice"><svg><use xlink:href="wp-content/uploads/sites/63/calendar/icon_set.svg#marketing"></use></svg>marketing</li>
+		<li class="subject-choice active-subject"><svg><use xlink:href="wp-content/uploads/sites/63/calendar/icon_set.svg#math"></use></svg>math</li>
+		<li class="subject-choice"><svg><use xlink:href="wp-content/uploads/sites/63/calendar/icon_set.svg#physics"></use></svg>physics</li>
+		<li class="subject-choice"><svg><use xlink:href="wp-content/uploads/sites/63/calendar/icon_set.svg#anatomy"></use></svg>physiology</li>
+		<li class="subject-choice"><svg><use xlink:href="wp-content/uploads/sites/63/calendar/icon_set.svg#psychology"></use></svg>psychology</li>
+		<li class="subject-choice"><svg><use xlink:href="wp-content/uploads/sites/63/calendar/icon_set.svg#sociology"></use></svg>sociology</li>
+		<li class="subject-choice active-subject"><svg><use xlink:href="wp-content/uploads/sites/63/calendar/icon_set.svg#statistics"></use></svg>statistics</li>
+		<li class="subject-choice"><svg><use xlink:href="wp-content/uploads/sites/63/calendar/icon_set.svg#organic-chemistry"></use></svg>organic chemistry</li>
 	</ul>
 	<h2>Times Offered</h2>
 	<p>Your selected subjects are offered at the following times:</p>
-	<table>
-		<tr>
-			<td><button class="week-nav" id="prev-week">prev</button></td>
-			<td><p>Change Week</p><button class="week-nav" id="reset-week"> reset </button></td>
-			<td><button class="week-nav" id="next-week">next</button></td>
-		</tr>
-	</table>
+	<div id="week-nav-wrap">
+		<div><button class="week-nav" id="prev-week"><i class="fa fa-chevron-left" aria-hidden="true"></i>previous week</button></div>
+		<div><button class="week-nav" id="reset-week"> reset to this week</button></div>
+		<div><button class="week-nav" id="next-week">next week <i class="fa fa-chevron-right" aria-hidden="true"></i></button></div>
+	</div>
 
-	<table id="template-table" class="subject-results" style="display:none;">
-		<tr>
-			<td rowspan="2">{{icon}}</td>
-			<td colspan="5"><h3 id="subject-heading">{{heading}}</h3></td>
-		</tr>
-		<tr>
-			<td class="days monday">
-				<h4>M<br><span class="date">{{monday.date}}</span></h4>
-				<ul class="times monday">
-				</ul>
-			</td>
-			<td class="days tuesday">
-				<h4>T<br><span class="date">{{tuesday.date}}</span></h4>
-				<ul class="times tuesday">
-				</ul>
-			</td>
-			<td class="days wednesday">
-				<h4>W<br><span class="date">{{wednesday.date}}</span></h4>
-				<ul class="times wednesday">
-				</ul>
-			</td>
-			<td class="days thursday">
-				<h4>Th<br><span class="date">{{thursday.date}}</span></h4>
-				<ul class="times thursday">
-				</ul>
-			</td>
-			<td class="days friday">
-				<h4>F<br><span class="date">{{friday.date}}</span></h4>
-				<ul class="times friday">
-				</ul>
-			</td>
-		</tr>
-	</table>
-  </div>
-</body>
-</html>
-</html>
+		<div id="template-table" class="subject-results" style="display:none;">
+			<div class="icon-wrap">{{icon}}</div>
+			<div class="days-wrap">
+				<h3 id="subject-heading">{{heading}} </h3>
+				<div class="days monday">
+					<h4>M<br><span class="date">{{monday.date}}</span></h4>
+					<ul class="times monday">
+					</ul>
+				</div>
+				<div class="days tuesday">
+					<h4>T<br><span class="date">{{tuesday.date}}</span></h4>
+					<ul class="times tuesday">
+					</ul>
+				</div>
+				<div class="days wednesday">
+					<h4>W<br><span class="date">{{wednesday.date}}</span></h4>
+					<ul class="times wednesday">
+					</ul>
+				</div>
+				<div class="days thursday">
+					<h4>Th<br><span class="date">{{thursday.date}}</span></h4>
+					<ul class="times thursday">
+					</ul>
+				</div>
+				<div class="days friday">
+					<h4>F<br><span class="date">{{friday.date}}</span></h4>
+					<ul class="times friday">
+					</ul>
+				</div>
+			</div><!-- end days wrap-->
+		</div><!-- end template table-->
+
+	</div><!-- end cal app-->

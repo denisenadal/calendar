@@ -28,11 +28,14 @@ function batchRequest(){
 }//ends batchRequest
 
 function calRequest(subject) {
+	subject=subject.replace(/^\s+|\s+$/g,'');
 	var week = getWeek();
 	var calID="";
+	console.log(subject);
 	for (cal in CAL_LIST){
 		if(CAL_LIST[cal].subject==subject){
 			calID = CAL_LIST[cal].calID;
+			console.log(calID);
 		}
 	}
 	gapi.client.load('calendar', 'v3', function() {
@@ -187,6 +190,10 @@ function generateTable(calendar){
 		$newSubject.attr("id",name);
 		$newSubject.insertAfter($template);
 		$newSubject.show();
+		addIcon($newSubject,displayName);
+		var color = $(".subject-choice:contains("+displayName+")").css("background-color");
+		$newSubject.css({"color":color});
+		$newSubject.find("svg").css({"fill":color});
 	}//clear table if already exists
 	else{
 		var $newSubject = $("#"+name);
@@ -217,6 +224,7 @@ function toggleSubject($elem){
 	console.log("toggleSubject called");
 	var subject = $elem.text();
 	if(document.getElementById(subject) == null){
+		changeColor($elem,"active");
 		SUBJECT_LIST.push(subject);
 		calRequest(subject);
 	}
@@ -225,6 +233,35 @@ function toggleSubject($elem){
 		SUBJECT_LIST = SUBJECT_LIST.filter(function(item) {
 			return item !== subject;
 		});
+		changeColor($elem, null);
 		console.log("hide element");
+	}
+}
+
+function addIcon($newSubject,displayName){
+	for(i=0;i<CAL_LIST.length;i++){
+		if(CAL_LIST[i].subject == displayName){
+			$newSubject.find(".icon-wrap").html(CAL_LIST[i].icon);
+		}
+		else if (CAL_LIST[i].subject == "organic chemistry" && displayName == "tutoring calendar") {
+			$newSubject.find(".icon-wrap").html(CAL_LIST[i].icon);
+		}
+	}
+}
+function changeColor($elems, status){
+	if(status == "active"){
+		$.each($elems,function(i,v){
+			var color = COLORS[CAL_COUNT];
+			CAL_COUNT++
+			if(CAL_COUNT > 5){
+				CAL_COUNT = 0;
+			}
+			$elems.eq(i).css({"background-color":color,"color":"#fff"});
+			$elems.eq(i).find("svg").css({"fill":"#fff"});
+		});
+	}
+	else{
+		$elems.css({"background-color":"#fff","color":"#aaa"});
+		$elems.find("svg").css({"fill":"#aaa"});
 	}
 }
