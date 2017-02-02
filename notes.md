@@ -14,11 +14,6 @@
 }
 
 ##TODOS##
-Options to resolve events issues:
-	1 - event subject gets own calendar - MUST stay on OWN calendar
-	2 - all events on same calendar, must use consistent naming
-
-
 
 project http://wpdev.dixie.edu//wp-content/uploads/sites/63/calendar/icon_set.svg
 

@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<!-- saved from url=(0032)http://localhost:8000/calv3.html -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>g-calendar test</title>
+
+<script src="./g-calendar test_files/cb=gapi.loaded_0" async=""></script><script src="./g-calendar test_files/jquery.js"></script>
+<script src="./g-calendar test_files/api.js" gapi_processed="true"></script>
+<script type="text/javascript" src="./g-calendar test_files/calList.js"></script>
+<script type="text/javascript" src="./g-calendar test_files/app.js"></script>
+<script type="text/javascript" src="./g-calendar test_files/controller.js"></script>
+<link rel="stylesheet" href="./g-calendar test_files/cal.css" type="text/css">
+<link rel="stylesheet" href="./g-calendar test_files/font-awesome.min.css">
+</head>
+<body>
+  <div id="calendar-app">
+	<h1>Tutoring Schedule</h1>
+	<h2>Subjects Offered</h2>
+	<p>We offer tutoring in the following subjects:</p>
+	<ul id="subjects-offered">
+		<li class="subject-choice"><svg><use xlink:href="icons/icon_set.svg#accounting"></use></svg>accounting</li>
+		<li class="subject-choice"><svg><use xlink:href="icons/icon_set.svg#business"></use></svg>business</li>
+		<li class="subject-choice active-subject" style="background-color: rgb(116, 17, 21); color: rgb(255, 255, 255);"><svg style="fill: rgb(255, 255, 255);"><use xlink:href="icons/icon_set.svg#biology"></use></svg>biology</li>
+		<li class="subject-choice"><svg><use xlink:href="icons/icon_set.svg#chemistry"></use></svg>chemistry</li>
+		<li class="subject-choice"><svg><use xlink:href="icons/icon_set.svg#economics"></use></svg>economics</li>
+		<li class="subject-choice"><svg><use xlink:href="icons/icon_set.svg#finance"></use></svg>finance</li>
+		<li class="subject-choice"><svg><use xlink:href="icons/icon_set.svg#foriegn-language"></use></svg>foreign language</li>
+		<li class="subject-choice"><svg><use xlink:href="icons/icon_set.svg#management"></use></svg>management</li>
+		<li class="subject-choice"><svg><use xlink:href="icons/icon_set.svg#marketing"></use></svg>marketing</li>
+		<li class="subject-choice active-subject" style="background-color: rgb(241, 20, 26); color: rgb(255, 255, 255);"><svg style="fill: rgb(255, 255, 255);"><use xlink:href="icons/icon_set.svg#math"></use></svg>math</li>
+		<li class="subject-choice"><svg><use xlink:href="icons/icon_set.svg#physics"></use></svg>physics</li>
+		<li class="subject-choice"><svg><use xlink:href="icons/icon_set.svg#anatomy"></use></svg>physiology</li>
+		<li class="subject-choice"><svg><use xlink:href="icons/icon_set.svg#psychology"></use></svg>psychology</li>
+		<li class="subject-choice"><svg><use xlink:href="icons/icon_set.svg#sociology"></use></svg>sociology</li>
+		<li class="subject-choice active-subject" style="background-color: rgb(186, 28, 33); color: rgb(255, 255, 255);"><svg style="fill: rgb(255, 255, 255);"><use xlink:href="icons/icon_set.svg#statistics"></use></svg>statistics</li>
+		<li class="subject-choice"><svg><use xlink:href="icons/icon_set.svg#organic-chemistry"></use></svg>organic chemistry</li>
+	</ul>
+	<h2>Times Offered</h2>
+	<p>Your selected subjects are offered at the following times:</p>
+	<div id="week-nav-wrap">
+		<div><button class="week-nav" id="prev-week"><i class="fa fa-chevron-left" aria-hidden="true"></i>
+previous week</button></div>
+		<div><button class="week-nav" id="reset-week"> reset to this week</button></div>
+		<div><button class="week-nav" id="next-week">next week <i class="fa fa-chevron-right" aria-hidden="true"></i>
+</button></div>
+	</div>
+
+		<div id="template-table" class="subject-results" style="display:none;">
+			<div class="icon-wrap">{{icon}}</div>
+			<div class="days-wrap">
+				<h3 id="subject-heading">{{heading}} </h3>
+				<div class="days monday" id="2017-01-30">
+					<h4>M<br><span class="date">30</span></h4>
+					<ul class="times monday">
+					</ul>
+				</div>
+				<div class="days tuesday" id="2017-01-31">
+					<h4>T<br><span class="date">31</span></h4>
+					<ul class="times tuesday">
+					</ul>
+				</div>
+				<div class="days wednesday" id="2017-02-01">
+					<h4>W<br><span class="date">1</span></h4>
+					<ul class="times wednesday">
+					</ul>
+				</div>
+				<div class="days thursday" id="2017-02-02">
+					<h4>Th<br><span class="date">2</span></h4>
+					<ul class="times thursday">
+					</ul>
+				</div>
+				<div class="days friday" id="2017-02-03">
+					<h4>F<br><span class="date">3</span></h4>
+					<ul class="times friday">
+					</ul>
+				</div>
+			</div><!-- end days wrap-->
+		</div><div id="math" class="subject-results" style="color: rgb(241, 20, 26);">
+			<div class="icon-wrap"><svg style="fill: rgb(241, 20, 26);"><use xlink:href="icons/icon_set.svg#math"></use></svg></div>
+			<div class="days-wrap">
+				<h3 id="subject-heading">math</h3>
+				<div class="days monday" id="2017-01-30">
+					<h4>M<br><span class="date">30</span></h4>
+					<ul class="times monday">
+					</ul>
+				</div>
+				<div class="days tuesday" id="2017-01-31">
+					<h4>T<br><span class="date">31</span></h4>
+					<ul class="times tuesday">
+					<li class="sessions">10:00 AM - 5:00 PM</li></ul>
+				</div>
+				<div class="days wednesday" id="2017-02-01">
+					<h4>W<br><span class="date">1</span></h4>
+					<ul class="times wednesday">
+					</ul>
+				</div>
+				<div class="days thursday" id="2017-02-02">
+					<h4>Th<br><span class="date">2</span></h4>
+					<ul class="times thursday">
+					<li class="sessions">10:00 AM - 8:00 PM</li></ul>
+				</div>
+				<div class="days friday" id="2017-02-03">
+					<h4>F<br><span class="date">3</span></h4>
+					<ul class="times friday">
+					<li class="sessions">10:00 AM - 5:00 PM</li></ul>
+				</div>
+			</div><!-- end days wrap-->
+		</div><div id="statistics" class="subject-results" style="color: rgb(186, 28, 33);">
+			<div class="icon-wrap"><svg style="fill: rgb(186, 28, 33);"><use xlink:href="icons/icon_set.svg#statistics"></use></svg></div>
+			<div class="days-wrap">
+				<h3 id="subject-heading">statistics</h3>
+				<div class="days monday" id="2017-01-30">
+					<h4>M<br><span class="date">30</span></h4>
+					<ul class="times monday">
+					</ul>
+				</div>
+				<div class="days tuesday" id="2017-01-31">
+					<h4>T<br><span class="date">31</span></h4>
+					<ul class="times tuesday">
+					</ul>
+				</div>
+				<div class="days wednesday" id="2017-02-01">
+					<h4>W<br><span class="date">1</span></h4>
+					<ul class="times wednesday">
+					</ul>
+				</div>
+				<div class="days thursday" id="2017-02-02">
+					<h4>Th<br><span class="date">2</span></h4>
+					<ul class="times thursday">
+					<li class="sessions"><strong>Stats - Math</strong><br>10:00 AM - 3:00 PM</li><li class="sessions"><strong>Stats - Psych</strong><br>2:00 PM - 4:00 PM</li><li class="sessions"><strong>Stats - Bus</strong><br>2:00 PM - 5:00 PM</li><li class="sessions"><strong>Stats - Bus</strong><br>6:00 PM - 7:00 PM</li></ul>
+				</div>
+				<div class="days friday" id="2017-02-03">
+					<h4>F<br><span class="date">3</span></h4>
+					<ul class="times friday">
+					<li class="sessions"><strong>Stats - Bus</strong><br>10:00 AM - 5:00 PM</li><li class="sessions"><strong>Stats - Math</strong><br>12:30 PM - 3:00 PM</li></ul>
+				</div>
+			</div><!-- end days wrap-->
+		</div><div id="biology" class="subject-results" style="color: rgb(116, 17, 21);">
+			<div class="icon-wrap"><svg style="fill: rgb(116, 17, 21);"><use xlink:href="icons/icon_set.svg#biology"></use></svg></div>
+			<div class="days-wrap">
+				<h3 id="subject-heading">biology</h3>
+				<div class="days monday" id="2017-01-30">
+					<h4>M<br><span class="date">30</span></h4>
+					<ul class="times monday">
+					</ul>
+				</div>
+				<div class="days tuesday" id="2017-01-31">
+					<h4>T<br><span class="date">31</span></h4>
+					<ul class="times tuesday">
+					</ul>
+				</div>
+				<div class="days wednesday" id="2017-02-01">
+					<h4>W<br><span class="date">1</span></h4>
+					<ul class="times wednesday">
+					</ul>
+				</div>
+				<div class="days thursday" id="2017-02-02">
+					<h4>Th<br><span class="date">2</span></h4>
+					<ul class="times thursday">
+					<li class="sessions">11:00 AM - 8:00 PM</li></ul>
+				</div>
+				<div class="days friday" id="2017-02-03">
+					<h4>F<br><span class="date">3</span></h4>
+					<ul class="times friday">
+					<li class="sessions">10:00 AM - 3:00 PM</li></ul>
+				</div>
+			</div><!-- end days wrap-->
+		</div><!-- end template table-->
+
+	</div><!-- end cal app-->
+
+
+
+<iframe name="oauth2relay734835607" id="oauth2relay734835607" src="./g-calendar test_files/postmessageRelay.html" tabindex="-1" aria-hidden="true" style="width: 1px; height: 1px; position: absolute; top: -100px;"></iframe><iframe id="apiproxyc0a9b2aae607ac4975964444093a761947461a4d0.5097078342692898" name="apiproxyc0a9b2aae607ac4975964444093a761947461a4d0.5097078342692898" src="./g-calendar test_files/proxy.html" tabindex="-1" aria-hidden="true" style="width: 1px; height: 1px; position: absolute; top: -100px;"></iframe></body></html>

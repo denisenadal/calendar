@@ -8,8 +8,8 @@ function batchRequest(){
 				var request = gapi.client.calendar.events.list({
 					'calendarId': CAL_LIST[cal].calID,
 					'apiKey' : "AIzaSyDvK6WS3fU7B4maIWOwASaGBKfMQm9eCOI",
-					'timeMin': week.monday.toISOString(),
-					'timeMax': week.sunday.toISOString(),
+					'timeMin': week.sunday.toISOString(),
+					'timeMax': week.saturday.toISOString(),
 					'showDeleted': false,
 					'singleEvents': true,
 					'maxResults': 2500,
@@ -41,8 +41,8 @@ function calRequest(subject) {
 	gapi.client.load('calendar', 'v3', function() {
 		var request = gapi.client.calendar.events.list({
 			'calendarId': calID,
-			'timeMin': week.monday.toISOString(),
-			'timeMax': week.sunday.toISOString(),
+			'timeMin': week.sunday.toISOString(),
+			'timeMax': week.saturday.toISOString(),
 			'showDeleted': false,
 			'singleEvents': true,
 			'maxResults': 1000,
@@ -70,37 +70,37 @@ function getWeek() {
 	for (i=0;i<7;i++){
 		var diff = today.getDate() - dayofWeek + i;
 		if	(i==0){
-			var sunday = new Date(today.setDate(diff+7));
+			var sunday =	new Date(today.setDate(diff));
 			today= new Date(backup.valueOf());
 			week["sunday"]=sunday;
 		}
 		if	(i==1){
-			var monday = new Date(today.setDate(diff));
+			var monday =	new Date(today.setDate(diff));
 			today= new Date(backup.valueOf());
 			week["monday"]=monday;
 		}
 		if	(i==2){
-			var tuesday = new Date(today.setDate(diff));
+			var tuesday =	new Date(today.setDate(diff));
 			today= new Date(backup.valueOf());
 			week["tuesday"]=tuesday;
 		}
 		if	(i==3){
-			var wednesday = new Date(today.setDate(diff));
+			var wednesday =	new Date(today.setDate(diff));
 			today= new Date(backup.valueOf());
 			week["wednesday"]=wednesday;
 		}
 		if	(i==4){
-			var thursday = new Date(today.setDate(diff));
+			var thursday =	new Date(today.setDate(diff));
 			today= new Date(backup.valueOf());
 			week["thursday"]=thursday;
 		}
 		if	(i==5){
-			var friday = new Date(today.setDate(diff));
+			var friday =	new Date(today.setDate(diff));
 			today= new Date(backup.valueOf());
 			week["friday"]=friday;
 		}
 		if	(i==6){
-			var saturday = new Date(today.setDate(diff));
+			var saturday =	new Date(today.setDate(diff));
 			today= new Date(backup.valueOf());
 			week["saturday"]=saturday;
 		}
