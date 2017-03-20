@@ -1,4 +1,8 @@
-main #the-content #calendar-app *{
+
+body{max-width: 1000px;font-size: 16px;font-family: 'Montserrat', sans-serif;}
+heaer,main,footer{margin:0 auto;}
+/*====== wp style modifications ========*/
+/*main #the-content #calendar-app *{
 	position: relative;
 	box-sizing: border-box;
 	font-size: 1.4rem;
@@ -9,16 +13,16 @@ main #the-content #calendar-app p{
 main #the-content #calendar-app h2{
 font-size: 2.827rem;
 margin-top: 7rem;
-}
+}*/
 /*=============== subject nav ==============*/
+
 #calendar-app #subjects-offered{padding-left:0;margin-left:0;}
 #calendar-app .subject-choice{
 	display:inline-block;
 	background:none;
 	border-radius:.5rem;
-	padding:1rem 2rem;
+	padding:.5rem 1rem;
 	border:1px solid #ccc;
-	font-size: 1.3rem;
 	line-height: 2.5rem;
 	cursor: pointer;
 	color: #aaa;
@@ -70,11 +74,11 @@ margin-top: 7rem;
 	display: block;
 	width:100%;
 	border: none;
-	font-size: 1.5rem;
 	color: #aaa;
 	outline:none;
 	box-sizing: border-box;
 	border-radius:.5rem;
+	font-size: 1rem;
 }
 #calendar-app #week-nav-wrap #reset-week{
 	width:33%;
@@ -111,11 +115,10 @@ margin-top: 7rem;
 	display: flex;
 	flex-flow:row wrap;
 }
-
 #calendar-app h3{
 	text-align: left;
-    font-size: 3.9rem!important;
-    font-weight: normal;
+    font-size: 3rem!important;
+    font-weight: 600;
     width: calc( 100% - 100px);
     padding: 0px 3rem 1rem 2.25rem;
     margin: 0;
@@ -126,15 +129,16 @@ margin-top: 7rem;
 }
 #calendar-app h4{
 	margin: .6rem;
-	font-size: 2.rem;
+	font-size: 1.2rem;
 	color:#bcbcbc;
 }
 #calendar-app h4 span{
 	display: block;
 }
 #calendar-app div.days{
-	padding-bottom: 1rem;
-	width:16.65%;
+	padding: 1rem;
+    width: 16.65%;
+    box-sizing: border-box;
 }
 #calendar-app div.days:nth-child(odd){
 	background:#f1f1f1;
@@ -150,7 +154,6 @@ margin-top: 7rem;
 main #the-content #calendar-app div.days li{
 	margin-bottom: 1rem;
 	line-height: 1.8rem;
-	font-size: 1.3rem;
 }
 
 /*=============== MOBILE ==============*/
@@ -173,7 +176,6 @@ main #the-content #calendar-app div.days li{
 }
 @media all and (max-width:768px){
 	main #the-content #calendar-app *{
-		font-size: 1.6rem;
 	}
 	#calendar-app .subject-choice{
 		padding: 2rem 3rem;
