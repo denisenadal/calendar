@@ -178,14 +178,14 @@ function sameDay(currentDay,dateofSession){
 function generateTable(calendar){
 	var name = (calendar.summary).toLowerCase();
 	name = name.replace(/\s+/g, '-');
-	if (name == "tutoring543@gmail.com"){
-		name = "tutoring-calendar";
+	if (name == "ochem"){
+		name = "organic-chemistry";
 	}
 	var $template = $("#template-table")
 	//creates table if it doesn't exist
 	if(document.getElementById(name) == null){
 		var $newSubject = $template.clone();
-		var displayName = name.replace('-'," ");
+		var displayName = name.replace(/-/g," ");
 		$newSubject.find("#subject-heading").text(displayName);
 		$newSubject.attr("id",name);
 		$newSubject.insertAfter($template);
@@ -223,13 +223,14 @@ function formatTime(dateTime){
 function toggleSubject($elem){
 	console.log("toggleSubject called");
 	var subject = $elem.text();
-	if(document.getElementById(subject) == null){
+	name = subject.replace(/\s+/g, '-');
+	if(document.getElementById(name) == null){
 		changeColor($elem,"active");
 		SUBJECT_LIST.push(subject);
 		calRequest(subject);
 	}
 	else {
-		$("#"+subject).remove();
+		$("#"+name).remove();
 		SUBJECT_LIST = SUBJECT_LIST.filter(function(item) {
 			return item !== subject;
 		});
@@ -241,9 +242,6 @@ function toggleSubject($elem){
 function addIcon($newSubject,displayName){
 	for(i=0;i<CAL_LIST.length;i++){
 		if(CAL_LIST[i].subject == displayName){
-			$newSubject.find(".icon-wrap").html(CAL_LIST[i].icon);
-		}
-		else if (CAL_LIST[i].subject == "organic chemistry" && displayName == "tutoring calendar") {
 			$newSubject.find(".icon-wrap").html(CAL_LIST[i].icon);
 		}
 	}

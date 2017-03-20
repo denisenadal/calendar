@@ -15,7 +15,7 @@
 
 ##TODOS##
 
-project http://wpdev.dixie.edu//wp-content/uploads/sites/63/calendar/icon_set.svg
+ADD: Nutrition 9hhbfrmhebgsgl2poqvk82drjg@group.calendar.google.com
 
 #EXPERIMENTS#
 Try authentication again - see how hard it is
