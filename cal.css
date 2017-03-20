@@ -1,6 +1,6 @@
 
-body{max-width: 1000px;font-size: 16px;font-family: 'Montserrat', sans-serif;}
-heaer,main,footer{margin:0 auto;}
+body{font-size: 13px;font-family: 'Montserrat', sans-serif;padding: 2rem 10vw;}
+header,main,footer{margin:0 auto;max-width: 1000px;}
 /*====== wp style modifications ========*/
 /*main #the-content #calendar-app *{
 	position: relative;
@@ -95,7 +95,6 @@ margin-top: 7rem;
 #calendar-app .icon-wrap{
 	width: 60px;
     height: 60px;
-    bottom: 1rem;
     position: relative;
     left: 1rem;
 }
